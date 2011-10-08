@@ -1,0 +1,80 @@
+Resources
+http://stackoverflow.com/questions/49092/online-interactive-consoleshttp://tryruby.org/
+http://www.codecademy.com/#!/exercise/0
+- develop lesson plan before the date
+
+Installation on windows
+- Navigate to rubyinstaller.org
+- Click the link 'Ruby 1.9.2-p290' to download the latest stable version
+- Once the file is downloaded, double-click on rubyinstaller-1.9.2-p290.exe
+- Once setup is running, click 'I accept the License'
+- Click 'Next'
+- Do not change the default install directory, C:\Ruby192
+- Check off 'Add Ruby executables to your PATH'
+- Check off 'Associate .rb and .rbw files with this Ruby installation'
+- Click 'Install'
+- Click 'Finish' when you see the completion window
+
+What is Ruby?
+- A programming language
+- Talk to your computer via a programming language
+
+Starting the console (OS X)
+- Applications -> Terminal
+
+Starting the console (Windows)
+- Click 'Start' -> 'All Programs' -> 'Accessories' -> 'Command Prompt' (C:\windows\system32\cmd.exe)
+
+Integers
+- Numbers without decimals
+
+Running ruby
+- Type ruby -v
+- You should see ruby 1.9.2p290 followed by other information
+- Type irb to enter the ruby console
+- Type 1 + 1
+- See the result 2 printed to the screen
+- Try this again with any other integers
+- Type 2 * 5
+- You can see the Ruby can perform calculations
+- You've just met your first data type! An integer. 
+
+What are data types?
+- Look at the two words separately: data and type
+- Data can be a word, a collection of words, a number, an integer, a decimal, or anything you would traditionally think of as data
+- Type refers to the kind of data that is provided; important because you have to be able to tell the computer what you expect to be able to do with the data you provide it
+- For instance, try typing 1 + 5 and then try typing 'ladies' + 'learning' + 'code'
+- Let's break down the two statements you just typed
+- Each one is made up of data and an operator
+- The data between the first and second is different; in the first statement you're using numbers, and in the second words
+- The operator in the first and second statement is the same, the + operator
+- Notice that Ruby did two different things with the data provided, using the same operator. How did ruby know what to do with the data provided?
+- The data has a type, and depending on the type, Ruby knows what to do with the data provided when an operator is applied to it. 
+- In the first statement, the data types of 1 and 5 is Integer, and in the second, the words are all of type String
+- Integer and String are only two of several data types in Ruby. We'll cover more a bit later on. 
+
+Writing a script and running it from the console
+- Write a simple script, save it, and run it
+
+Ruby I/O
+- Basic user input/outut
+
+Logic
+- Basic logic
+- booleans
+- if statements
+
+Methods
+- Extend the operator conversation earlier by introducing methods
+
+Loops
+- Introduce arrays
+- Discuss the basics of loops
+- Loop through a simple array
+
+Classes
+- Talk about OOP
+- Create a very simple class
+
+Ruby console game
+- Create a small game using only a few classes
