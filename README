@@ -1,7 +1,8 @@
-Resources
-http://stackoverflow.com/questions/49092/online-interactive-consoleshttp://tryruby.org/
+http://stackoverflow.com/questions/49092/online-interactive-consoles
+http://tryruby.org/
 http://www.codecademy.com/#!/exercise/0
 - develop lesson plan before the date
+
 
 Installation on windows
 - Navigate to rubyinstaller.org
@@ -15,9 +16,18 @@ Installation on windows
 - Click 'Install'
 - Click 'Finish' when you see the completion window
 
-What is Ruby?
+What is Ruby? - don't dwell on this too much
 - A programming language
 - Talk to your computer via a programming language
+- Examples of common web apps the they would know in Ruby
+
+- Screenshots of apps
+
+- Easy on the developer
+
+- Show C#/Java example vs Ruby example
+
+- Think of Rails example, try and explain framework vs. language
 
 Starting the console (OS X)
 - Applications -> Terminal
@@ -32,13 +42,16 @@ Running ruby
 - Type ruby -v
 - You should see ruby 1.9.2p290 followed by other information
 - Type irb to enter the ruby console
-- Type 1 + 1
+- Type 1 + 2
 - See the result 2 printed to the screen
-- Try this again with any other integers
 - Type 2 * 5
 - You can see the Ruby can perform calculations
 - You've just met your first data type! An integer. 
+- Why Ruby?
 
+- This is what you can do, this is what we're going to do
+
+- THINK OF ANALOGIES THE ENTIRE TIME!
 What are data types?
 - Look at the two words separately: data and type
 - Data can be a word, a collection of words, a number, an integer, a decimal, or anything you would traditionally think of as data
@@ -52,12 +65,20 @@ What are data types?
 - The data has a type, and depending on the type, Ruby knows what to do with the data provided when an operator is applied to it. 
 - In the first statement, the data types of 1 and 5 is Integer, and in the second, the words are all of type String
 - Integer and String are only two of several data types in Ruby. We'll cover more a bit later on. 
+- Talk about arrays
+
+(30 mins)
+
+- string manipulation - count number of words, count number of characters (Twitter 140 chars), ask them to do it and ask what they got
+
+- example of 5 different tweets, tell me which ones are under 140 chars
 
 Writing a script and running it from the console
 - Write a simple script, save it, and run it
 
 Ruby I/O
-- Basic user input/outut
+- Basic user input/output
+- Give them basic I/O script, get them to use it, break it down after
 
 Logic
 - Basic logic
@@ -78,3 +99,7 @@ Classes
 
 Ruby console game
 - Create a small game using only a few classes
+- Blackjack
+- Scrabble
+- Twitter game - very very basic Twitter
+- Password verification game
