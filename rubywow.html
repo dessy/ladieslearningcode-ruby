@@ -101,28 +101,154 @@
       </article>
       
       <article>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath.
-        </p>
+        <h3>
+        Time to open your command line
+        </h3>
+        <p>OS X</p>
+        <section>
+          <pre>Applications -> Utilities -> Terminal</pre>
+        </section>
+        <p />
+        <p>Windows (C:\windows\system32\cmd.exe)</p>
+        <section>
+          <pre>Start -> All Programs -> Accessories -> Command Prompt</pre>
+        </section>
+      </article>
+      
+      <article>
+        <section class='build'>
+          <pre>ruby -v<br>ruby 1.9.2p290 (2011-07-09 revision 32553) [x86_64-darwin10.7.0]</pre>
+          <pre>irb<br>ruby-1.9.2-p290 :001 > </pre>
+          <p>You're in the Interactive Ruby Shell! From here you can type any ruby commands and they'll execute immediately.</p>
+          <pre>> 1 + 1<br>=> 2</pre>
+          <pre>> 462 * 86<br>=> 39732</pre>
+          <p>Ruby can do math, and it can do it much quicker than a person can.</p>
+        </section>
+      </article>
+
+      <article>
+        <section class='build'>
+          <pre>> "ladieslearningcode"<br>=> "ladieslearningcode"</pre>
+          <pre>> "ladieslearningcode".length<br>=> 18</pre>
+          <p>
+            If you're familiar with Twitter, you're probably starting to get a sense of how Twitter knows 
+            how many characters you've typed in.
+          </p>
+          <p>
+            We'll play with this some more shortly. First, let's talk about what we just learned. 
+          </p>
+        </section>
+      </article>
+
+      <article>
+        <section class='build'>
+          <pre>> 1 + 2 + 3<br>=> 6</pre>
+          <pre>> "ladies" + "learning" + "code"</pre>
+          <pre>=> "ladieslearningcode"</pre>
+          <p>
+            How did Ruby know to add the numbers together, and to concatenate all of the words into one long word?
+          </p>
+          <p>
+            Ruby knows the difference between a number and a word.
+          </p>
+        </section>
       </article>
 
       <article>
         <h3>
-          Simple slide with header and text
+          Numbers and Words, Integers and Strings
+        </h3>
+        <p>In Ruby ...</p>
+        <p>Numbers without decimals are called integers. We just did some math with some integers.</p>
+        <p>Letters, words, and sentences are called strings. We tell Ruby that we are intending to use a string by wrapping it in quotes.</p>
+        <p>You've just met your first two types of Objects. That's a programming word!</p>
+      </article>
+
+      <!-- <article>
+        <h3>
+          Data Type, Data Type, Data Type. Words have lost all meaning.
         </h3>
         <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
+          Data can be a word, a sentence, an integer, a decimal, a collection of integers, or anything else that you would traditionally think of as data.
         </p>
-        <p>
-          There is more text just underneath with a <code>code sample: 5px</code>.
-        </p>
+        <p> Type is just the kind of data that you're providing. The two you've met so far are Integer and String.</p>
+      </article> -->
+
+      <article>
+        <h3>
+          Objects, Objects, Everywhere!
+        </h3>
+        <p>Objects are everywhere in Ruby.</p>
+        <p>You can think of an Object in the Ruby language the same way you can think of a noun in the English language.</p>
+        <p>A noun is a person, place, or a thing.</p>
+        <p>The objects we worked with earlier, the Integer 2, or the String "ladieslearningcode", are things.</p>
+        <p>Objects are represented by a Class. That's another programming word!</p>
+        <p>Let's look at an example.</p>
+      </article>
+
+      <article>
+        <h3>
+          Classes
+        </h3>
+        <p>Going back to the English language and nouns ...</p>
+        <p>Lisa Simpson is a noun. Lisa Simpson is a type of cartoon character.</p>
+        <p>In Ruby, Lisa Simpson would be an object, and the Class representing Lisa would be CartoonCharacter.</p>
+        <p>Now back to an object we've used ...</p>
+        <p>"ladieslearningcode" is an object, and the Class representing that object is String. Want proof? Try this:</p>
+        <section>
+          <pre>"ladieslearningcode".class<br>=> String</pre>
+        </section>
+      </article>
+
+      <article>
+        <h3>
+          Simple String Manipulation
+        </h3>
+        <section class='build'>
+          <pre>> "ladieslearningcode".capitalize</pre>
+          <pre>=> "Ladieslearningcode"</pre>
+
+          <pre>> "ladieslearningcode".upcase</pre>
+          <pre>=> "LADIESLEARNINGCODE"</pre>
+
+          <pre>> "ladieslearningcode".reverse</pre>
+          <pre>=> "edocgninraelseidal"</pre>
+        </section>
+      </article>
+
+      <article>
+        <h3>
+          Methods
+        </h3>
+        <p>capitalize, upcase, reverse, and length are all methods that you can call on a String.</p>
+        <p>When you call the method capitalize, you're telling the String to do something.</p>
+        <p>Methods are actions. You can compare methods in Ruby to verbs in English.</p>
+        <p>In English, you would tell Lisa Simpson to read a book. In Ruby, you would call the read_book method on lisa.</p>
+      </article>
+      
+      <article>
+        <h3>
+          Does an Integer Behave the Same Way?
+        </h3>
+        <section class='build'>
+          <pre>> 5.capitalize</pre>
+          <pre>NoMethodError: undefined method `capitalize' for 5:Fixnum</pre>
+          <p>Oops. Capitalizing the number 5 just doesn't make sense.</p>
+          <p>
+            Let's look at that error message. A developer (even the best of the best) spends a lot of time reading error messages.
+            NoMethodError.
+          </p>
+        </section>
+      </article>
+      
+      <article>
+        <h3>
+          Putting it all together
+        </h3>
+        <p>Some methods don't make sense on certain objects.</p>
+        <p>The capitalize method makes sense on the String "ladieslearningcode" but does not make sense on the Integer 5.</p>
+        <p>That's why 5 does not <b>respond to</b> the method capitalize.</p>
+        <p>TODO: Expand on this</p>
       </article>
 
       <article class='smaller'>
