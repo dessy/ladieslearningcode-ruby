@@ -128,20 +128,6 @@
 
       <article>
         <section class='build'>
-          <pre>> "ladieslearningcode"<br>=> "ladieslearningcode"</pre>
-          <pre>> "ladieslearningcode".length<br>=> 18</pre>
-          <p>
-            If you're familiar with Twitter, you're probably starting to get a sense of how Twitter knows 
-            how many characters you've typed in.
-          </p>
-          <p>
-            We'll play with this some more shortly. First, let's talk about what we just learned. 
-          </p>
-        </section>
-      </article>
-
-      <article>
-        <section class='build'>
           <pre>> 1 + 2 + 3<br>=> 6</pre>
           <pre>> "ladies" + "learning" + "code"</pre>
           <pre>=> "ladieslearningcode"</pre>
@@ -161,27 +147,17 @@
         <p>In Ruby ...</p>
         <p>Numbers without decimals are called integers. We just did some math with some integers.</p>
         <p>Letters, words, and sentences are called strings. We tell Ruby that we are intending to use a string by wrapping it in quotes.</p>
-        <p>You've just met your first two types of Objects. That's a programming word!</p>
       </article>
-
-      <!-- <article>
-        <h3>
-          Data Type, Data Type, Data Type. Words have lost all meaning.
-        </h3>
-        <p>
-          Data can be a word, a sentence, an integer, a decimal, a collection of integers, or anything else that you would traditionally think of as data.
-        </p>
-        <p> Type is just the kind of data that you're providing. The two you've met so far are Integer and String.</p>
-      </article> -->
 
       <article>
         <h3>
           Objects, Objects, Everywhere!
         </h3>
+        <p>You've already met Objects. That's a programming word!</p>
         <p>Objects are everywhere in Ruby.</p>
         <p>You can think of an Object in the Ruby language the same way you can think of a noun in the English language.</p>
-        <p>A noun is a person, place, or a thing.</p>
-        <p>The objects we worked with earlier, the Integer 2, or the String "ladieslearningcode", are things.</p>
+        <p>A noun is a particular person, place, or a thing.</p>
+        <p>The objects we worked with earlier, the Integer 99, or the String "ladieslearningcode", are things.</p>
         <p>Objects are represented by a Class. That's another programming word!</p>
         <p>Let's look at an example.</p>
       </article>
@@ -202,6 +178,22 @@
 
       <article>
         <h3>
+          Playing with Integers
+        </h3>
+        <section class='build'>
+          <pre>> 99.next</pre>
+          <pre>=> 100</pre>
+
+          <pre>> 99.odd?</pre>
+          <pre>=> true</pre>
+          
+          <pre>> 99.even?</pre>
+          <pre>=> false</pre>
+        </section>        
+      </article>
+
+      <article>
+        <h3>
           Simple String Manipulation
         </h3>
         <section class='build'>
@@ -212,7 +204,7 @@
           <pre>=> "LADIESLEARNINGCODE"</pre>
 
           <pre>> "ladieslearningcode".reverse</pre>
-          <pre>=> "edocgninraelseidal"</pre>
+          <pre>=> "edocgninraelseidal"</pre>          
         </section>
       </article>
 
@@ -220,10 +212,75 @@
         <h3>
           Methods
         </h3>
-        <p>capitalize, upcase, reverse, and length are all methods that you can call on a String.</p>
-        <p>When you call the method capitalize, you're telling the String to do something.</p>
+        <p>next, odd?, and even? are all methods that you can call on an Integer.</p>
+        <p>capitalize, upcase, and reverse are all methods that you can call on a String.</p>
+        <p>When you call the method upcase, you're telling the String to do something.</p>
         <p>Methods are actions. You can compare methods in Ruby to verbs in English.</p>
         <p>In English, you would tell Lisa Simpson to read a book. In Ruby, you would call the read_book method on lisa.</p>
+      </article>
+      
+      <article>
+        <h3>
+          I'm lazy! I don't want to do all of this typing!
+        </h3>
+        <p>When working with the String "ladieslearningcode", it was annoying to have to put it out every single time.</p>
+        <p>What if we could type in "ladieslearningcode" just once, and store it in our computer's memory for later use? We can!</p>
+        <section><pre>> llc = "ladieslearningcode"<br>=> "ladieslearningcode"</pre></section>
+        <p>You've just <b>assigned</b> the String "ladieslearningcode to the variable llc</p>
+      </article>
+      
+      <article>
+        <h3>
+          String Manipulation With Out Variable
+        </h3>
+        <p>You can now use this variable exactly like you would have used "ladieslearningcode" before.</p>
+        <section>
+          <pre>> llc.capitalize</pre>
+          <pre>=> "Ladieslearningcode"</pre>
+
+          <pre>> llc.upcase</pre>
+          <pre>=> "LADIESLEARNINGCODE"</pre>
+
+          <pre>> llc.reverse</pre>
+          <pre>=> "edocgninraelseidal"</pre>
+        </section>
+      </article>
+      
+      <article>
+        <h3>
+          Let's Try One More
+        </h3>
+        <pre>> llc.length</pre>
+        <pre>=> 18</pre>
+        
+        <p>
+          If you're familiar with Twitter, you're probably starting to get a sense of how Twitter knows 
+          how many characters you've typed in.
+        </p>
+      </article>
+      
+      <article>
+        <h3>
+          Writing Our First Program
+        </h3>
+        <p>
+          TODO: Twitter program
+        </p>
+      </article>
+      
+      <article>
+        <h3>
+          Getting Input From the User
+        </h3>
+        <p>The real Twitter asks you to type something, and then tells you how many characters you're working with.</p>
+        <p>So far, we've just been putting our tweet directly into the program.</p>
+        <p>Ask a programmer working on developing web applications like Twitter, you very often need to get something from the user.</p>
+      </article>
+      
+      <article>
+        <h3>
+          Asking for Input, Giving Output
+        </h3>
       </article>
       
       <article>
