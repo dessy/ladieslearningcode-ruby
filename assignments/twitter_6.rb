@@ -4,6 +4,8 @@ tweet = gets
 
 if tweet.length > 140
   puts "Your tweet is too long!"
-else
+elsif tweet.length < 140
+  puts "Tweet your heart out!"
+elsif tweet.length == 140
   puts "Tweet your heart out!"
 end

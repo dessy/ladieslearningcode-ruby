@@ -466,43 +466,92 @@
         <h3>
           Your First Bug!
         </h3>
-        <p>This is really a bug, and in most problems in programming, there is more than one way to fix this.</p>
-        <p>Your second statement could one of the following two:</p>
-        <p />
-        <div class='build'>
-          <p>if the tweet is <b>less than or equal to</b> 140 characters, tell the user that they can send their tweet</p>
-          <p><b>otherwise</b> tell the user that they can send their tweet</p>
-        </div>
+        <p>This is really a bug, since we're not actually taking into account all possible tweet lengths.</p>
+        <p>Most programming problems can be solved many different ways, and this bug is no exception.</p>
+        <p>
+          We're going to look at three different solutions, and learn more about if statements as 
+          well as comparing objects along the way.
+        </p>
+      </article>
+
+      <article>
+        <h3>
+          First (Worst) Solution
+        </h3>
+        <p>Since we're only missing one case, the case where the tweet is exactly 140 characters, we can just add another if statement.</p>
+        <p>Add this last if statement to the bottom of your file:</p>
+        <section>
+          <pre>if tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p>
+          The == operator checks that the value of the objects on either side of it are equal. 
+          Run your script again and notice that it catches the last case where a tweet is 140 characters long.
+        </p>
       </article>
       
       <article>
         <h3>
-          First Solution
+          Refactoring Our Code
         </h3>
-        <p>Instead of using the less than operator, you can use the less than or equal to operator.</p>
-        <p>Replace your second if statement with the code below:</p>
+        <p>
+          Programmers are always refactoring (re-strcturing, re-organizing) their code to make it cleaner and more readable.
+          Right now is a great time to do that. 
+        </p>
+        <p>Three if statements are unnecessary. We can actually combine all of these if statements into one, like so:</p>
         <section>
-          <pre>if tweet.length <= 140<br>  puts "Tweet your heart out!"<br>end</pre>
+          <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>elsif tweet.length < 140<br>  puts "Tweet your heart out!"<br>elsif tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
-        <p>This operator behaves the exact same way as the less than operator, but checks for equality as well.</p>
+        <p>
+          If the first if doesn't evaluate to true, then the next one is attempted, and so on.
+          TODO: Talk about the details of this. 
+        </p>
+      </article>
+      
+      <article>
+        <h3>
+          Second Solution
+        </h3>
+        <p>
+          Our code is already better (and still has no bugs), but more refactoring can be done.
+          Notice that the line puts "Tweet your hear out!" is repeated? This is unnecessary. 
+          Let's cut it out by replace the entire if statement with the code below:
+        </p>
+        <section>
+          <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>elsif tweet.length <= 140<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p>The <= operator behaves the exact same way as the less than operator, but checks for equality as well.</p>
         <p>As you may have guessed, checking for equality with greater than works exactly the same way, using the >= operator.</p>
       </article>
       
       <article>
         <h3>
-          Better Solution
+          Third Time's a Charm
         </h3>
-        <p>Every good programmer should be looking for ways to improve and simplify their code.</p>
-        <p>TODO: Benefits</p>
-        <p>We actually want our statements to read like this:</p>
-        <p>if tweet.length > 140, puts "Your tweet is too long!"</p>
-        <p>else "Tweet your heart out!"</p>
-        
-        <p>Replace the two if statements with a single if else statement.</p>
+        <p>
+          This is better, but look at the logic closely. Do we really even need to specify the second condition?
+          Can't we just prevent the user from tweeting is their tweet is over 140 characters, and let them tweet in all other cases?
+        </p>
+        <p>Yes we can! Replace your code again with the code below:</p>
         <section>
           <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>else<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
         <p>Run your code again, and it should function the exact same way!</p>        
+      </article>
+      
+      <article>
+        <h3>
+          Recap Slide
+        </h3>
+        <p>TODO: Recap of I/O and conditionals</p>
+      </article>
+      
+      <article>
+        <h3>
+          Puzzle Two - Conditionals
+        </h3>
+        <p>
+          Open puzzle_2.rb in the puzzles folder. Look at the logic closely, and try to simplify it down to as few lines of code as possible.
+        </p>
       </article>
       
       <article>
