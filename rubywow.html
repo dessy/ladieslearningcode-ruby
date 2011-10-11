@@ -394,8 +394,8 @@
           Programming is writing out sets of simple instructions for the computer to follow. 
           Let's break down out tweet logic into simple instructions. Here is what we want our program to do:
         </p>
-        <p>If the tweet is greater than 140 characters, tell the user that they cannot send their tweet.</p>
-        <p>If the tweet is less than or equal to 140 characters, tell the user that they can send their tweet.</p>
+        <p>if the tweet is greater than 140 characters, tell the user that they cannot send their tweet</p>
+        <p>if the tweet is less than or equal to 140 characters, tell the user that they can send their tweet</p>
       </article>
       
       <article>
@@ -422,6 +422,87 @@
           <pre>> tweet_length = 200<br>> tweet_length < 140</pre>
           <pre>> tweet_length = 80<br>> tweet_length < 140</pre>
         </section>
+      </article>
+      
+      <article>
+        <h3>
+          Conditional Logic in Our Simple Twitter
+        </h3>
+        <p>
+          Let's simplify our if statements from before using our new knowledge.
+          Remember that we're storing the user's tweet in the variable tweet.
+        </p>
+      </article>
+      
+      <article>
+        <h3>
+          Conditional Logic in Our Simple Twitter
+        </h3>
+        <p>Original if statements:</p>
+        <p>if the tweet is greater than 140 characters, tell the user that they cannot send their tweet</p>
+        <p>if the tweet is less than 140 characters, tell the user that they can send their tweet</p>
+        <p />
+        <div class='build'>
+          <p>if tweet.length > 140, puts "Your tweet is too long!"</p>
+          <p>if tweet.length < 140, puts "Tweet your heart out!"</p>
+        </div>
+      </article>
+      
+      <article>
+        <h3>
+          Try it out!
+        </h3>
+        <p>Replace the puts statements in your Twitter script with the code below.</p>
+        <section>
+          <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>end<br><br>if tweet.length < 140<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p>
+          Using the tweets from tweets.txt, try out your new script! 
+          What's the problem here? What do you notice happened when using the tweets in tweets.txt?
+        </p>
+      </article>
+
+      <article>
+        <h3>
+          Your First Bug!
+        </h3>
+        <p>This is really a bug, and in most problems in programming, there is more than one way to fix this.</p>
+        <p>Your second statement could one of the following two:</p>
+        <p />
+        <div class='build'>
+          <p>if the tweet is <b>less than or equal to</b> 140 characters, tell the user that they can send their tweet</p>
+          <p><b>otherwise</b> tell the user that they can send their tweet</p>
+        </div>
+      </article>
+      
+      <article>
+        <h3>
+          First Solution
+        </h3>
+        <p>Instead of using the less than operator, you can use the less than or equal to operator.</p>
+        <p>Replace your second if statement with the code below:</p>
+        <section>
+          <pre>if tweet.length <= 140<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p>This operator behaves the exact same way as the less than operator, but checks for equality as well.</p>
+        <p>As you may have guessed, checking for equality with greater than works exactly the same way, using the >= operator.</p>
+      </article>
+      
+      <article>
+        <h3>
+          Better Solution
+        </h3>
+        <p>Every good programmer should be looking for ways to improve and simplify their code.</p>
+        <p>TODO: Benefits</p>
+        <p>We actually want our statements to read like this:</p>
+        <p>if tweet.length > 140, puts "Your tweet is too long!"</p>
+        <p>else "Tweet your heart out!"</p>
+        
+        <p>Replace the two if statements with a single if else statement.</p>
+        <section>
+          <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>else<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p>Run your code again, and it should function the exact same way!</p>        
       </article>
       
       <article>
