@@ -364,8 +364,64 @@
         <p>Working with your group, modify your Twitter program to do the following:</p>
         <p>Ask (politely!) for a tweet from the user.</p>
         <p>Output the tweet the user gave.</p>
-        <p>Output the number of characters in the Tweet.</p>
+        <p>Output the number of characters in the tweet.</p>
         <p>Output how many <b>more</b> characters the user can add until they hit 140 characters.</p>
+      </article>
+      
+      <article>
+        <h3>
+          Giving Output Based on Input
+        </h3>
+        <p>
+          A lot of a programmer's job, especially when working on web applications, is doing something 
+          based on the input the user provided.
+        </p>
+        <p>
+          Twitter, for example, disables the Tweet button if your tweet is over 140 characters, 
+          and keeps the button enabled if your tweet is 140 characters or shorter.
+        </p>
+        <p>
+          So far we know how to determine the length of the user's tweet, but we don't know how to tell them 
+          whether they can or cannot send their tweet, depending on it's length.
+        </p>
+      </article>
+      
+      <article>
+        <h3>
+          Conditional Logic
+        </h3>
+        <p>
+          Programming is writing out sets of simple instructions for the computer to follow. 
+          Let's break down out tweet logic into simple instructions. Here is what we want our program to do:
+        </p>
+        <p>If the tweet is greater than 140 characters, tell the user that they cannot send their tweet.</p>
+        <p>If the tweet is less than or equal to 140 characters, tell the user that they can send their tweet.</p>
+      </article>
+      
+      <article>
+        <h3>
+          Conditional Logic: Greater Than
+        </h3>
+        <p>The mathematical symbol for <b>greater than</b> is <b>></b></p>
+        <p>Try the code below in irb (omitting output for now)</p>
+        <section class='build'>
+          <pre>> 5 > 1</pre>
+          <pre>> tweet_length = 200<br>> tweet_length > 140</pre>
+          <pre>> tweet_length = 80<br>> tweet_length > 140</pre>
+        </section>
+      </article>
+      
+      <article>
+        <h3>
+          Conditional Logic: Less Than
+        </h3>
+        <p>The mathematical symbol for <b>less than</b> is <b><</b></p>
+        <p>Try the code below in irb (omitting output for now)</p>
+        <section class='build'>
+          <pre>> 5 < 1</pre>
+          <pre>> tweet_length = 200<br>> tweet_length < 140</pre>
+          <pre>> tweet_length = 80<br>> tweet_length < 140</pre>
+        </section>
       </article>
       
       <article>
