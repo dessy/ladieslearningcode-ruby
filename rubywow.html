@@ -231,8 +231,23 @@
         <p>When working with the String "ladieslearningcode", it was annoying to have to type it out every single time.</p>
         <p>What if we could type in "ladieslearningcode" just once, and store it in our computer's memory for later use? We can!</p>
         <section><pre>> llc = "ladieslearningcode"<br>=> "ladieslearningcode"</pre></section>
-        <p>You've just <b>assigned</b> the String "ladieslearningcode to the variable llc</p>
+        <p>You've just <b>assigned</b> the String "ladieslearningcode to the variable llc.</p>
+        <p>A programmer would say that the variable llc points to the object "ladieslearningcode".</p>
         <p>TODO: confusing, de-confuse</p>
+      </article>
+      
+      <article>
+        <h3>
+          Variables Can (And Often Do!) Vary
+        </h3>
+        <p>A variable is called just that because the object it points to can change.</p>
+        <p>TODO: Draw diagram on whiteboard? Variable llc pointing to (arrows) different values.</p>
+        <p>Try executing the code below</p>
+        <section>
+          <pre>> llc = "a lady learning code"<br>=> "a lady learning code"</pre>
+          <pre>> llc = 99<br>=> 99</pre>
+          <pre>> llc = "ladieslearningcode"<br>=> "ladieslearningcode"</pre>
+        </section>
       </article>
       
       <article>
@@ -297,6 +312,20 @@
       
       <article>
         <h3>
+          Recap Slide
+        </h3>
+        <p>TODO: Quick recap of all concepts so far.</p>
+      </article>
+      
+      <article>
+        <h3>
+          Puzzle One - Variables
+        </h3>
+        <p>Open puzzle_1.rb in the puzzles folder, and write down the output you expect to see if you were to run this script.</p>
+      </article>
+      
+      <article>
+        <h3>
           Getting Input From the User
         </h3>
         <p>The real Twitter asks you to type something, and then tells you how many characters you're working with.</p>
@@ -306,8 +335,37 @@
       
       <article>
         <h3>
-          Asking for Input, Giving Output
+          Asking for Input
         </h3>
+        <p>The <b>puts</b> method is used for output, and the <b>gets</b> method is used for input. Try this:</p>
+        <section class='build'>
+          <pre>> puts gets<br>Hello? Anyone there?</pre>
+          <pre>Hello? Anyone there?<br>=> nil</pre>
+          <p>The gets method "listened" to what you said.</p>
+        </section>
+      </article>
+      
+      <article>
+        <h3>
+          Asking for Input
+        </h3>
+        <p>Now try this:</p>
+        <section class='build'>
+          <pre>> tweet = gets<br>I'm a lady learning code with @llcodedotcom #llc</pre>
+          <pre>=> "I'm a lady learning code with @llcodedotcom #llc\n"</pre>
+          <pre>> puts tweet<br>I'm a lady learning code with @llcodedotcom #llc<br>=> nil</pre>
+        </section>
+      </article>
+      
+      <article>
+        <h3>
+          Back to your Twitter Program
+        </h3>
+        <p>Working with your group, modify your Twitter program to do the following:</p>
+        <p>Ask (politely!) for a tweet from the user.</p>
+        <p>Output the tweet the user gave.</p>
+        <p>Output the number of characters in the Tweet.</p>
+        <p>Output how many <b>more</b> characters the user can add until they hit 140 characters.</p>
       </article>
       
       <article>
