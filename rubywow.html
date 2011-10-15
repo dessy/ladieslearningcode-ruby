@@ -5,15 +5,12 @@
     <title>Presentation</title>
 
     <meta charset='utf-8'>
-    <script
-      src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+    <script src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
   </head>
   
   <style>
     /* Your individual styles here, or just use inline styles if that’s
        what you want. */
-    
-    
   </style>
 
   <body style='display: none'>
@@ -156,36 +153,83 @@
         <h3>
           Why Ruby Rocks!
         </h3>
-        <p>TODO: Example of Ruby vs. Java</p>
-        <p>Cute, quirky description</p>
+        <p>Ruby was created in 1993 by Yukihiro Matsumoto, from Japan.</p>
+        <p> 
+          "I hope to see Ruby help every programmer in the world to be productive, and to enjoy programming, and to be happy. 
+          That is the primary purpose of Ruby language." - Yukihiro Matsumoto, 2008
+        </p>
+        <p>That's exactly how the language is known today by developers. Ruby is fun, it's easy to learn, and the syntax is very forgiving.</p>
       </article>
       
       <article>
+        <p>This is some code in Java:</p>
+        <section>
+          <pre>
+class Person {
+  private String name, int age;
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setAge(int age) {
+    this.age = age;
+  }
+
+  public String getAge() {
+    return age;
+  }
+}</pre>
+        </section>
+      </article>
+      
+      <article>
+        <p>The equivalent code in Ruby looks like this:</p>
+        <section>
+          <pre>
+class Person
+  attr_accessor :name, :age
+end
+          </pre>
+        </section>
+      </article>
+
+      <article>
         <h3>
-        Time to open your command line
+          Time to see Ruby in action!
         </h3>
-        <p>What is a command line?</p>
-        <p>It's like text messaging. You send one message, and it responds to you.</p>
-        <p>OS X</p>
+        <p>We're going to open IRB, our Interactive Ruby Shell.</p>
+        <p>IRB is like text messaging with Ruby. You type a message to Ruby, and Ruby responds to your message.</p>
+        <p>Often you'll be asking Ruby to do something, and it will respond with the result</p>
+        <p><b>OS X</b></p>
         <section>
           <pre>Applications -> Utilities -> Terminal</pre>
         </section>
         <p />
-        <p>Windows (C:\windows\system32\cmd.exe)</p>
+        <p><b>Windows</b> (C:\windows\system32\cmd.exe)</p>
         <section>
           <pre>Start -> All Programs -> Accessories -> Command Prompt</pre>
         </section>
       </article>
       
       <article>
-        <div class='build'>
-        </div>
-        <p>TODO: Explain irb</p>
         <section class='build'>
-          <pre>irb<br>ruby-1.9.2-p290 :001 > </pre>
-          <p>You're in the Interactive Ruby Shell! From here you can type any ruby commands and they'll execute immediately.</p>
-          <pre>> 1 + 1<br>=> 2</pre>
-          <pre>> 462 * 86<br>=> 39732</pre>
+          <pre>irb</pre>
+          <pre>ruby-1.9.2-p290 :001 > </pre>
+          <p>Let's ask Ruby to do something.</p>
+        </section>
+      </article>
+      
+      <article>
+        <section class='build'>
+          <pre>> 1 + 1</pre>
+          <pre>=> 2</pre>
+          <pre>> 462 * 86</pre>
+          <pre>=> 39732</pre>
           <p>Ruby can do math, and it can do it much quicker than a person can.</p>
         </section>
       </article>
@@ -222,7 +266,7 @@
         <p>Objects are everywhere in Ruby.</p>
         <p>You can think of an Object in the Ruby language the same way you can think of a noun in the English language.</p>
         <p>A noun is a particular person, place, or a thing.</p>
-        <p>The objects we worked with earlier, the Integer 99, or the String "ladieslearningcode", are things.</p>
+        <p>The objects we worked with earlier, the Integer 1, or the String "ladies", are things.</p>
         <p>Objects are represented by a Class. That's another programming word!</p>
         <p>Let's look at an example.</p>
       </article>
@@ -230,10 +274,7 @@
       <!-- Draw box representing class, full of Simpsons characters -->
       <!-- Box with String, with "ladieslearningcode" inside with other strings -->
       <article>
-        <h3>
-          Classes
-        </h3>
-        <p>TODO: Description for each of them being an object</p>
+        <h3>Classes</h3>
         <p>Going back to the English language and nouns ...</p>
         <p>Lisa Simpson is a noun. Lisa Simpson is a type of cartoon character.</p>
         <p>In Ruby, Lisa Simpson would be an object, and the Class representing Lisa would be CartoonCharacter.</p>
@@ -242,6 +283,13 @@
         <section>
           <pre>"ladieslearningcode".class<br>=> String</pre>
         </section>
+      </article>
+
+      <article>
+        <h3>CartoonCharacter</h3>
+        <div style='border:solid 2px black;padding:17px 0px 10px 80px'>
+          <img src="images/simpsons.png" alt="Crazy Talk!" width="600" height="411" border="1">
+        </div>
       </article>
 
       <article>
