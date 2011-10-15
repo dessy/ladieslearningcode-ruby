@@ -63,7 +63,7 @@
         </h3>
         <p>This is how your computer wishes you could speak to it:</p>
         <p />
-        <img src="images/machine-language.jpg" alt="Crazy Talk!" width="600" height="411" border="1">
+        <img src="images/machine-language.jpg" width="600" height="411" border="1">
       </article>
 
       <article>
@@ -265,25 +265,28 @@ end
         <p>We just worked with the String "ladies".</p>
         <p>We say that "ladies" is an <b>instance</b> of the class String.</p>
         <p>In the same way, any other particular word or sentence is an instance of the class String.</p>
+        <p>Instances of a class are like nouns in English.</p>
         <p>Let's look at some examples.</p>
       </article>
 
       <article>
         <h3>SimpsonsCharacter</h3>
         <div style='border:solid 2px black;padding:17px 0px 10px 80px'>
-          <img src="images/simpsons.png" alt="Simpsons" width="600" height="411" border="1">
+          <img src="images/simpsons.png" width="600" height="411" border="1">
         </div>
+        <p>SimpsonsCharacter is the class (category), and Lisa Simpson is the instance (noun) of the class SimpsonsCharacter.</p>
       </article>
 
       <article>
         <h3>City</h3>
         <div style='border:solid 2px black;padding:17px 0px 10px 80px'>
-          <img src="images/toronto.png" alt="Toronto">
-          <img src="images/london.jpg" alt="London">
+          <img src="images/toronto.png">
+          <img src="images/london.jpg">
           <br>
-          <img src="images/new-york.jpg" alt="New York">
-          <img src="images/paris.jpg" alt="Chicago">
+          <img src="images/new-york.jpg">
+          <img src="images/paris.jpg">
         </div>
+        <p>City is the class (category), and Toronto is the instance (noun) of the class City.</p>
       </article>
 
       <article>
@@ -293,6 +296,7 @@ end
           "ladieslearningcode"<br><br>
           "Today you are You, that is truer than true. There is no one alive who is Youer than You."
         </div>
+        <p>String is the class (category), and "ladies" is the instance (noun) of the class City.</p>
       </article>
 
       <article>
@@ -347,7 +351,7 @@ end
         <p>capitalize, upcase, and reverse are all methods that you can call on a String.</p>
         <p>When you call a method, you're telling the String "ladieslearningcode" to do something.</p>
         <p>Methods are actions. You can compare methods in Ruby to verbs in English.</p>
-        <p>In English, you would tell Lisa Simpson to jump. In Ruby, you would call the jump method on lisa.</p>
+        <p>In English, you would tell Lisa Simpson to jump. In Ruby, you would call the jump method on Lisa.</p>
       </article>
       
       <!-- long ass llc hash tag -->
@@ -359,9 +363,8 @@ end
         <p>When working with the String "ladieslearningcode", it was annoying to have to type it out every single time.</p>
         <p>What if we could type in "ladieslearningcode" just once, and store it in our computer's memory for later use? We can!</p>
         <section><pre>> llc = "ladieslearningcode"<br>=> "ladieslearningcode"</pre></section>
-        <p>You've just <b>assigned</b> the String "ladieslearningcode to the variable llc.</p>
+        <p>You've just <b>assigned</b> the String "ladieslearningcode to the <b>variable</b> llc.</p>
         <p>A programmer would say that the variable llc points to the object "ladieslearningcode".</p>
-        <p>TODO: confusing, de-confuse</p>
       </article>
       
       <!-- temporary, equals sign means assignment, llc alone just means get it -->
@@ -371,12 +374,40 @@ end
           Variables Can (And Often Do!) Vary
         </h3>
         <p>A variable is called just that because the object it points to can change.</p>
-        <p>TODO: Draw diagram on whiteboard? Variable llc pointing to (arrows) different values.</p>
-        <p>Try executing the code below</p>
-        <section>
-          <pre>> llc = "a lady learning code"<br>=> "a lady learning code"</pre>
-          <pre>> llc = 99<br>=> 99</pre>
-          <pre>> llc = "ladieslearningcode"<br>=> "ladieslearningcode"</pre>
+        <section class='build'>
+          <pre>> llc = "a lady learning code"</pre><pre>=> "a lady learning code"</pre>
+          <div>llc <img src='images/arrow.png'> "a lady learning code"</div>
+          <p>Now let's ask for the value of llc.</p>
+          <pre>> llc</pre><pre>=> "a lady learning code"</pre>
+        </section>
+      </article>
+      
+      <article>
+        <p>Let's try some more</p>
+        <section class='build'>
+          <pre>> llc = 99</pre><pre>=> 99</pre>
+          <div>llc <img src='images/arrow.png'> 99</div>
+          <p>Let's ask for the value of llc once again.</p>
+          <pre>> llc</pre><pre>=> 99</pre>
+        </section>
+      </article>
+      
+      <article>
+        <h3>The More the Merrier</h3>
+        <p>Let's introduce another variable.</p>
+        <section class='build'>
+          <pre>> copy_cat = llc</pre><pre>=> 99</pre>
+          <div>llc <img src='images/arrow.png'> 99 <img src='images/back-arrow.png'> copy_cat</div>
+        </section>
+      </article>
+
+      <article>
+        <p>Let's ask for the value of each variable.</p>
+        <section class='build'>
+          <pre>> llc</pre><pre>=> 99</pre>
+          <pre>> copy_cat</pre><pre>=> 99</pre>
+          <p>Now set llc back to "ladieslearningcode"</p>
+          <pre>> llc = "ladieslearningcode"</pre><pre>=> "ladieslearningcode"</pre>
         </section>
       </article>
       
@@ -394,6 +425,26 @@ end
 
           <pre>> llc.reverse</pre>
           <pre>=> "edocgninraelseidal"</pre>
+        </section>
+      </article>
+      
+      <article>
+        <h3>Modifying the value with a method</h3>
+        <p>Try asking for the value of llc now.</p>
+        <section class='build'>
+          <pre>> llc</pre><pre>=> "ladieslearningcode"</pre>
+          <p>But wait, why didn't it change to "edocgninraelseidal"?</p>
+          <div>llc <img src='images/arrow.png'> "ladieslearningcode"</div>
+          <p>llc is still pointing to "ladieslearningcode". You didn't tell it to point to a different string.</p>
+          <p>If you want the value to change, you have to set it to something else.</p>
+        </section>
+      </article>
+      
+      <article>
+        <section class='build'>
+          <pre>> llc = llc.reverse</pre><pre>=> "edocgninraelseidal"</pre>
+          <pre>> llc</pre><pre>=> "edocgninraelseidal"</pre>
+          <p>If you want the value of a variable to change, you have to explicitly tell it to change.</p>
         </section>
       </article>
       
