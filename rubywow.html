@@ -461,19 +461,32 @@ end
         </p>
       </article>
       
-      <!-- do it in irb first, then have them save it in a program -->
-      <!-- no one at Twitter is typing this out for you again, how do they do it? -->
+      <article>
+        <p>Let's write and manipulate a few tweets</p>
+        <section class='build'>
+          <pre>> tweet = "I'm writing my first program at the @llcodedotcom<br>Intro to Ruby workshop!"</pre>
+          <pre>=> "I'm writing my first program at the @llcodedotcom <br>Intro to Ruby workshop!"</pre>
+          <pre>> tweet.length</pre>
+          <pre>=> 73</pre>
+          <p>
+            So far we've been working only in IRB, but our code is getting more complicated and we 
+            want to be able to run it again without having to type it all out. We want to save our code 
+            somewhere so that we can run it again and again. This is called a program.
+          </p>
+        </section>
+      </article>
+      
       <article>
         <h3>
           Writing Our First Program
         </h3>
         <p>
-          Open any text editor, add the code below, and save it as twitter.rb in your llc directory.
+          Open any text editor, add the same code, and save it as twitter.rb in your llc directory.
         </p>
         <section>
           <pre>tweet = "I'm writing my first program at the @llcodedotcom<br>Intro to Ruby workshop!"<br>tweet.length</pre>
         </section>
-        <p>Type quit to exit from irb, and from the command line, run the following:</p>
+        <p>To run your program, type <b>quit</b> to exit from IRB, and then type:</p>
         <section>
           <pre>ruby twitter.rb</pre>
         </section>
@@ -484,9 +497,13 @@ end
         <h3>
           Outputting Text to the Screen
         </h3>
-        <p>When you're in irb, you see the <b>return value</b> of each statement you execute.</p>
-        <p>In Ruby, every statement you execute returns an object. We'll get back to this shortly when we write our own methods.</p>
-        <p>When you're writing a program and running it, you have to explicitly tell the program when you want it to output something.</p>
+        <p>
+          In IRB, we were used to seeing the return value of every statement we executed. 
+          Remember, IRB is like back and forth text messaging.
+        </p>
+        <p>
+          When you're writing a program and running it, you have to explicitly tell the program when you want it to output something.
+        </p>
         <p>Modify your program with the code below, and notice the result when you run it again.</p>
         <section>
           <pre>tweet = "I'm writing my first program at the @llcodedotcom<br>Intro to Ruby workshop!"<br>puts tweet.length</pre>
@@ -498,7 +515,11 @@ end
         <h3>
           Recap Slide
         </h3>
-        <p>TODO: Quick recap of all concepts so far.</p>
+        <p>Integer</p>
+        <p>String</p>
+        <p>Class</p>
+        <p>Object</p>
+        <p>Variable</p>
       </article>
       
       <!-- tell them to try it in the console, tell mentors to comment the thing -->
