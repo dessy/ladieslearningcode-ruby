@@ -12,6 +12,8 @@ puts lisa + bart.reverse
 
 puts lisa.upcase
 
+puts lisa
+
 lisa = lisa.upcase
 
 puts lisa
