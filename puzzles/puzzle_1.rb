@@ -1,6 +1,6 @@
 lisa = "Lisa Simpson"
 
-puts lisa.upcase
+puts lisa.length
 
 bart = "Bart" + "Simpson"
 
@@ -10,7 +10,11 @@ puts lisa + bart
 
 puts lisa + bart.reverse
 
-puts lisa.length
+puts lisa.upcase
+
+lisa = lisa.upcase
+
+puts lisa
 
 cartoon = lisa
 

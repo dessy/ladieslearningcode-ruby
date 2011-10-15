@@ -1,17 +1,5 @@
 <!DOCTYPE html>
 
-<!--
-  Google HTML5 slide template
-
-  Authors: Luke Mahé (code)
-           Marcin Wichary (code and design)
-           
-           Dominic Mazzoni (browser compatibility)
-           Charles Chen (ChromeVox support)
-
-  URL: http://code.google.com/p/html5slides/
--->
-
 <html>
   <head>
     <title>Presentation</title>
@@ -53,6 +41,7 @@
         <p>Why I love programming. Why it's an art, and why the audience should get excited about it.</p>
       </article>
       
+      <!-- invented it to make it fun, why Ruby is cool and different -->
       <article>
         <h3>
           What is Ruby?
@@ -65,9 +54,11 @@
         </div>
       </article>
       
+      <!-- confusing slide of how your computer wishes you spoke to it -->
+      <!-- english vs. spanish translation -->
       <article>
         <h3>
-          The Dilemma
+          The Dilemma - kill this, too simple
         </h3>
         <p>Your computer speaks a language called machine language.</p>
         <p>You can interact with you computer using your mouse and your keyboard.</p>
@@ -89,6 +80,7 @@
         <h3>
           You've just learned what programming is!
         </h3>
+        <p>A recipe, very specific, use peanut butter sandwich analogy</p>
         <p>Programming is simply writing out sets of instructions that your computer can follow to do things.</p>
       </article>
       
@@ -104,7 +96,8 @@
         <h3>
         Time to open your command line
         </h3>
-        <p>TODO: What is a command line?</p>
+        <p>What is a command line?</p>
+        <p>It's like text messaging. You send one message, and it responds to you.</p>
         <p>OS X</p>
         <section>
           <pre>Applications -> Utilities -> Terminal</pre>
@@ -121,7 +114,6 @@
         </div>
         <p>TODO: Explain irb</p>
         <section class='build'>
-          <pre>ruby -v<br>ruby 1.9.2p290 (2011-07-09 revision 32553) [x86_64-darwin10.7.0]</pre>
           <pre>irb<br>ruby-1.9.2-p290 :001 > </pre>
           <p>You're in the Interactive Ruby Shell! From here you can type any ruby commands and they'll execute immediately.</p>
           <pre>> 1 + 1<br>=> 2</pre>
@@ -130,6 +122,7 @@
         </section>
       </article>
 
+      <!-- BIGGER CODE SNIPPETS!!! -->
       <article>
         <section class='build'>
           <pre>> 1 + 2 + 3<br>=> 6</pre>
@@ -166,6 +159,8 @@
         <p>Let's look at an example.</p>
       </article>
 
+      <!-- Draw box representing class, full of Simpsons characters -->
+      <!-- Box with String, with "ladieslearningcode" inside with other strings -->
       <article>
         <h3>
           Classes
@@ -224,6 +219,8 @@
         <p>In English, you would tell Lisa Simpson to jump. In Ruby, you would call the jump method on lisa.</p>
       </article>
       
+      <!-- long ass llc hash tag -->
+      <!-- functions like a nickname -->
       <article>
         <h3>
           I'm lazy! I don't want to do all of this typing!
@@ -236,6 +233,8 @@
         <p>TODO: confusing, de-confuse</p>
       </article>
       
+      <!-- temporary, equals sign means assignment, llc alone just means get it -->
+      <!-- explain why .upcase doesn't change the value of the variable itself -->
       <article>
         <h3>
           Variables Can (And Often Do!) Vary
@@ -280,6 +279,8 @@
         </p>
       </article>
       
+      <!-- do it in irb first, then have them save it in a program -->
+      <!-- no one at Twitter is typing this out for you again, how do they do it? -->
       <article>
         <h3>
           Writing Our First Program
@@ -310,6 +311,7 @@
         </section>
       </article>
       
+      <!-- just words, highlight in a different colour before -->
       <article>
         <h3>
           Recap Slide
@@ -317,6 +319,8 @@
         <p>TODO: Quick recap of all concepts so far.</p>
       </article>
       
+      <!-- tell them to try it in the console, tell mentors to comment the thing -->
+      <!-- give them the answer -->
       <article>
         <h3>
           Puzzle One - Variables
@@ -340,22 +344,28 @@
         <p>The <b>puts</b> method is used for output, and the <b>gets</b> method is used for input. Try this:</p>
         <section class='build'>
           <pre>> puts gets<br>Hello? Anyone there?</pre>
+          <!-- split these two lines -->
           <pre>Hello? Anyone there?<br>=> nil</pre>
           <p>The gets method "listened" to what you said.</p>
         </section>
       </article>
       
+      <!-- you're warning it that you're about to speak, you can type in whatever you want, gets is no longer a command -->
+      <!-- reminder that in irb, you always get responses, like in Twitter, but in your program, you have to tell it when you want it to voice its opinion -->
       <article>
         <h3>
           Asking for Input
         </h3>
         <p>Now try this:</p>
         <section class='build'>
-          <pre>> tweet = gets<br>I'm a lady learning code with @llcodedotcom #llc</pre>
-          <pre>=> "I'm a lady learning code with @llcodedotcom #llc\n"</pre>
-          <pre>> puts tweet<br>I'm a lady learning code with @llcodedotcom #llc<br>=> nil</pre>
+          <pre>> tweet = gets<br>I'm a lady learning code with @llcodedotcom #ladieslearningcode</pre>
+          <pre>=> "I'm a lady learning code with @llcodedotcom #ladieslearningcode\n"</pre>
+          <!-- usually you get something back, but puts has nothing else to do once it's finished, so it gives you back nothing -->
+          <pre>> puts tweet<br>I'm a lady learning code with @llcodedotcom #ladieslearningcode<br>=> nil</pre>
         </section>
       </article>
+      
+       <!-- slide here that says 'WHOA! what's niL? It's nothing, don't worry -->
       
       <article>
         <h3>
@@ -366,8 +376,10 @@
         <p>Output the tweet the user gave.</p>
         <p>Output the number of characters in the tweet.</p>
         <p>Output how many <b>more</b> characters the user can add until they hit 140 characters.</p>
+        <p>TODO: Give them sample output</p>
       </article>
       
+      <!-- fuck the buttons, tell them twitter -->
       <article>
         <h3>
           Giving Output Based on Input
@@ -398,6 +410,7 @@
         <p>if the tweet is less than or equal to 140 characters, tell the user that they can send their tweet</p>
       </article>
       
+      <!-- tell them what a valid variable is -->
       <article>
         <h3>
           Conditional Logic: Greater Than
@@ -405,7 +418,8 @@
         <p>The mathematical symbol for <b>greater than</b> is <b>></b></p>
         <p>Try the code below in irb (omitting output for now)</p>
         <section class='build'>
-          <pre>> 5 > 1</pre>
+          <pre>> 200 > 140</pre>
+          <!-- change variable from tweet_length -->
           <pre>> tweet_length = 200<br>> tweet_length > 140</pre>
           <pre>> tweet_length = 80<br>> tweet_length > 140</pre>
         </section>
@@ -419,6 +433,7 @@
         <p>Try the code below in irb (omitting output for now)</p>
         <section class='build'>
           <pre>> 5 < 1</pre>
+          <!-- "ladieslearningcode".length < 140 -->
           <pre>> tweet_length = 200<br>> tweet_length < 140</pre>
           <pre>> tweet_length = 80<br>> tweet_length < 140</pre>
         </section>
@@ -443,8 +458,9 @@
         <p>if the tweet is less than 140 characters, tell the user that they can send their tweet</p>
         <p />
         <div class='build'>
-          <p>if tweet.length > 140, puts "Your tweet is too long!"</p>
-          <p>if tweet.length < 140, puts "Tweet your heart out!"</p>
+          <!-- split up, and put actual statement instead of crap code -->
+          <p>if tweet.length > 140 puts "Your tweet is too long!"</p>
+          <p>if tweet.length < 140 puts "Tweet your heart out!"</p>
         </div>
       </article>
       
@@ -489,6 +505,7 @@
         </p>
       </article>
       
+      <!-- evaluated in order, the first one wins -->
       <article>
         <h3>
           Refactoring Our Code
@@ -538,6 +555,9 @@
         <p>Run your code again, and it should function the exact same way!</p>        
       </article>
       
+      <!-- slide with all of the operators that they can goof around with, stop for a bit and play around -->
+      <!-- cheat sheet of this is a keyword, this is a variable, etc. etc. -->
+      
       <article>
         <h3>
           Recap Slide
@@ -545,6 +565,7 @@
         <p>TODO: Recap of I/O and conditionals</p>
       </article>
       
+      <!-- tell them the ideal solution, how many lines should they shorten it to -->
       <article>
         <h3>
           Puzzle Two - Conditionals
@@ -559,6 +580,8 @@
           Try simplifying the program one step at a time, and run it each time to make sure it behaves like you expect it to.
         </p>
       </article>
+      
+      <!-- each puzzle, challenge, etc. is a recipe with ingredients -->
       
       <article>
         <h3>

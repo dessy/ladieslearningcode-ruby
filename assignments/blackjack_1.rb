@@ -25,6 +25,7 @@ while move == "h"
   if move == "h"
     player_sum += deck.delete_at(rand(deck.count - 1))
     if player_sum > 21
+      # is this a win or lose? give the appropriate message.
       puts "You lose! Gimme your money."
       puts "Your sum: #{player_sum}"
       puts "Dealer sum: #{dealer_sum}"
