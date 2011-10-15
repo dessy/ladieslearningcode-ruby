@@ -529,6 +529,7 @@ end
           Puzzle One - Variables
         </h3>
         <p>Open puzzle_1.rb in the puzzles folder, and write down the output you expect to see if you were to run this script.</p>
+        <p>If you're not sure of something, remember that you can type <b>irb</b> again and try it out.</p>
       </article>
       
       <article>
@@ -546,14 +547,27 @@ end
         </h3>
         <p>The <b>puts</b> method is used for output, and the <b>gets</b> method is used for input. Try this:</p>
         <section class='build'>
-          <pre>> puts gets<br>Hello? Anyone there?</pre>
-          <!-- split these two lines -->
-          <pre>Hello? Anyone there?<br>=> nil</pre>
-          <p>The gets method "listened" to what you said.</p>
+          <pre>> tweet = gets</pre><pre>I'm learning Ruby with #ladieslearningcode</pre><pre>=> "I'm learning Ruby with #ladieslearningcode\n"</pre>
+          <p>
+            The gets method warns Ruby that you're about to speak. You can type anything you want, and it will store that in the variable tweet.
+            But wait, we didn't type \n in our tweet. What is that?
+          </p>
         </section>
       </article>
       
-      <!-- you're warning it that you're about to speak, you can type in whatever you want, gets is no longer a command -->
+      <article>
+        <h3>
+          Asking for Input
+        </h3>
+        <p>
+          The \n is there because you hit the enter button after you typed your tweet. It represents a new line, and counts as exactly one character.
+          To get rid of it, do this:
+        </p>
+        <section class='build'>
+          <pre>> tweet = gets.chomp</pre><pre>I'm learning Ruby with #ladieslearningcode</pre><pre>=> "I'm learning Ruby with #ladieslearningcode"</pre>
+        </section>
+      </article>
+      
       <!-- reminder that in irb, you always get responses, like in Twitter, but in your program, you have to tell it when you want it to voice its opinion -->
       <article>
         <h3>
@@ -561,11 +575,22 @@ end
         </h3>
         <p>Now try this:</p>
         <section class='build'>
-          <pre>> tweet = gets<br>I'm a lady learning code with @llcodedotcom #ladieslearningcode</pre>
-          <pre>=> "I'm a lady learning code with @llcodedotcom #ladieslearningcode\n"</pre>
-          <!-- usually you get something back, but puts has nothing else to do once it's finished, so it gives you back nothing -->
-          <pre>> puts tweet<br>I'm a lady learning code with @llcodedotcom #ladieslearningcode<br>=> nil</pre>
+          <pre>> tweet = gets.chomp</pre>
+          <pre>I'm a lady learning code with @llcodedotcom #ladieslearningcode</pre>
+          <pre>=> "I'm a lady learning code with @llcodedotcom #ladieslearningcode"</pre>
+          <pre>> puts tweet</pre>
+          <pre>I'm a lady learning code with @llcodedotcom #ladieslearningcode<br>=> nil</pre>
         </section>
+      </article>
+      
+      <article>
+        <h3>What's nil? It's nothing, don't worry.</h3>
+        <p>You asked Ruby to output your tweet, and Ruby did just that.</p>
+        <p>
+          Remember that in IRB, Ruby always responds to your message.
+          This time, it gave the output, and had nothing else to say, so it returned nil. 
+        </p>
+        <p>nil is also an Object, and it just represents nothing.</p>
       </article>
       
        <!-- slide here that says 'WHOA! what's niL? It's nothing, don't worry -->
@@ -576,13 +601,13 @@ end
         </h3>
         <p>Working with your group, modify your Twitter program to do the following:</p>
         <p>Ask (politely!) for a tweet from the user.</p>
+        <p>Store the tweet in a variable, without \n</p>
         <p>Output the tweet the user gave.</p>
         <p>Output the number of characters in the tweet.</p>
         <p>Output how many <b>more</b> characters the user can add until they hit 140 characters.</p>
-        <p>TODO: Give them sample output</p>
+        <p>(answers in assignments/twitter_3.rb)</p>
       </article>
       
-      <!-- fuck the buttons, tell them twitter -->
       <article>
         <h3>
           Giving Output Based on Input
@@ -592,8 +617,8 @@ end
           based on the input the user provided.
         </p>
         <p>
-          Twitter, for example, disables the Tweet button if your tweet is over 140 characters, 
-          and keeps the button enabled if your tweet is 140 characters or shorter.
+          Twitter lets you send your tweet if it is 140 characters or less, 
+          and tells you that your tweet is too long to send otherwise.
         </p>
         <p>
           So far we know how to determine the length of the user's tweet, but we don't know how to tell them 
@@ -613,18 +638,38 @@ end
         <p>if the tweet is less than or equal to 140 characters, tell the user that they can send their tweet</p>
       </article>
       
-      <!-- tell them what a valid variable is -->
       <article>
         <h3>
           Conditional Logic: Greater Than
         </h3>
         <p>The mathematical symbol for <b>greater than</b> is <b>></b></p>
-        <p>Try the code below in irb (omitting output for now)</p>
+        <p>Try the code below in IRB:</p>
         <section class='build'>
-          <pre>> 200 > 140</pre>
-          <!-- change variable from tweet_length -->
-          <pre>> tweet_length = 200<br>> tweet_length > 140</pre>
-          <pre>> tweet_length = 80<br>> tweet_length > 140</pre>
+          <pre>> 200 > 140</pre><pre>=> true</pre>
+        </section>
+      </article>
+      
+      <article>
+        <h3>
+          Conditional Logic: Greater Than
+        </h3>
+        <p>The mathematical symbol for <b>greater than</b> is <b>></b></p>
+        <p>Try the code below in IRB:</p>
+        <section class='build'>
+          <pre>> number_of_characters = 200</pre><pre>=> 200</pre>
+          <pre>> number_of_characters > 140</pre><pre>=> true</pre>
+        </section>
+      </article>
+      
+      <article>
+        <h3>
+          Conditional Logic: Greater Than
+        </h3>
+        <p>The mathematical symbol for <b>greater than</b> is <b>></b></p>
+        <p>Try the code below in IRB:</p>
+        <section class='build'>
+          <pre>> number_of_characters = 80</pre><pre>=> 80</pre>
+          <pre>> number_of_characters > 140</pre><pre>=> false</pre>
         </section>
       </article>
       
@@ -635,10 +680,8 @@ end
         <p>The mathematical symbol for <b>less than</b> is <b><</b></p>
         <p>Try the code below in irb (omitting output for now)</p>
         <section class='build'>
-          <pre>> 5 < 1</pre>
-          <!-- "ladieslearningcode".length < 140 -->
-          <pre>> tweet_length = 200<br>> tweet_length < 140</pre>
-          <pre>> tweet_length = 80<br>> tweet_length < 140</pre>
+          <pre>> llc = "ladieslearningcode"</pre><pre>=> "ladieslearningcode"</pre>
+          <pre>> llc.length < 140</pre><pre>=> true</pre>
         </section>
       </article>
       
