@@ -932,11 +932,6 @@ end</pre>
         <p>
           Again, there are several ways to do this
         </p>
-        <section>
-          <pre>TODO: Code form loop_2.rb, code form loop_3.rb, loop_4.rb, loop_5.rb</pre>
-        </section>
-        <p>TODO: Explain outputting a variable within a string</p>
-        <p>TODO: Avoid showing loop_4.rb and challenge them to do it themselves?</p>
       </article>
       
       <article>
@@ -958,31 +953,78 @@ end</pre>
       
       <article>
         <h3>Count from 1 to 5</h3>
-        <p>Create a new program with the following code, or use run the program in assignments/loop_2.rb:</p>
+        <p>Create a new program with the following code, or use run the program in assignments/loop_3.rb:</p>
         <section>
           <pre>
 puts "Okay, on the count of 5 ..."
-(1..5).each do |i|
+[1, 2, 3, 4, 5].each do |i|
   puts i
   sleep 1
 end
 puts "GO!"</pre>
         </section>
         <p>This program moves through each Integer from 1 to 5, and outputs the Integer, again sleeping for 1 second in between.</p>
-        <div style='padding:20px 0px 0px 225px;'>
+        <div style='padding:20px 0px 0px 240px;'>
           <img src='images/curved-arrow.gif'>
           <img src='images/curved-arrow.gif'>
           <img src='images/curved-arrow.gif'>
           <img src='images/curved-arrow.gif'>
         </div>
         <div style='padding-left:200px'>[&nbsp;
-          1,&nbsp;&nbsp;&nbsp;
+          1,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           2,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           3,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           4,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           5&nbsp;&nbsp;]</div>
       </article>
       
+      <article>
+        <h3>Counting down</h3>
+        <p>
+          Maybe we wants a program that simulates a countdown. 
+          Create a new program with the following code, or use run the program in assignments/loop_4.rb:
+        </p>
+        <section>
+          <pre>
+99.downto(1).each do |i|
+  puts "#{i} bottles of beer on the wall, #{i} bottles of beer.
+        Take one down, pass it around, 
+        and now there are #{i - 1} bottles of beer on the wall!"
+  sleep 0.5
+end</pre>
+        </section>
+        <p>
+          This program moves through each Integer from 99 down to 1, and outputs the Integer, this time sleeping for half a second in between.
+        </p>
+        <div style='padding:20px 0px 0px 205px;'>
+          <img src='images/curved-arrow.gif'>
+          <img src='images/curved-arrow.gif'>
+          <img src='images/curved-arrow.gif'>
+          <img src='images/curved-arrow.gif'>
+        </div>
+        <div style='padding-left:150px'>[&nbsp;
+          99,&nbsp;&nbsp;&nbsp;&nbsp;
+          98,&nbsp;&nbsp;&nbsp;&nbsp;
+          97,&nbsp;&nbsp;&nbsp;&nbsp;
+          96,&nbsp;&nbsp;&nbsp;&nbsp;
+          95, . . .&nbsp;&nbsp;]</div>
+      </article>
+
+      <article>
+        <h3>Counting down</h3>
+        <p>Wait a second, how did we get Integers in that String?</p>
+        <section>
+          <pre>puts "#{i} bottles of beer on the wall, #{i} bottles of beer.
+      Take one down, pass it around, 
+      and now there are #{i - 1} bottles of beer on the wall!"
+          </pre>
+        </section>
+        <p>
+          If you want to output any variable within a String, you can use the syntax <b>#{my_variable}</b> inside of the String, 
+          and Ruby will treat the variable exactly like a String.
+        </p>
+      </article>
+
       <article>
         <h3>
           What if we don't want to count, but we have a set of something else we want to loop over?
