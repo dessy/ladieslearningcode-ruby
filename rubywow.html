@@ -1012,7 +1012,7 @@ end</pre>
 
       <article>
         <h3>Counting down</h3>
-        <p>Wait a second, how did we get Integers in that String?</p>
+        <p>Wait a second, how did we get an Integer in that String?</p>
         <section>
           <pre>puts "#{i} bottles of beer on the wall, #{i} bottles of beer.
       Take one down, pass it around, 
@@ -1029,19 +1029,78 @@ end</pre>
         <h3>
           What if we don't want to count, but we have a set of something else we want to loop over?
         </h3>
-        <p>Look again at loop_5.rb, example of an array</p>
-        <p>TODO: Explain arrays - a collection of any object</p>
+        <p>
+          Create a new program with the following code, or use run the program in assignments/loop_5.rb:
+        </p>
         <section>
-          <pre>TODO: Code form loop_6.rb</pre>
+          <pre>
+puts "And the lucky numbers are ..."
+[7, 13, 14, 16, 22, 48].each do |i|
+  puts i
+  sleep 1
+end
+puts "With a bonus number 32!"</pre>
         </section>
+        <div style='padding:20px 0px 0px 170px;'>
+          <img src='images/curved-arrow.gif'>
+          <img src='images/curved-arrow.gif'>
+          <img src='images/curved-arrow.gif'>
+          <img src='images/curved-arrow.gif'>
+          <img src='images/curved-arrow.gif'>
+        </div>
+        <div style='padding-left:125px'>[&nbsp;
+          7,&nbsp;&nbsp;&nbsp;&nbsp;
+          13,&nbsp;&nbsp;&nbsp;&nbsp;
+          14,&nbsp;&nbsp;&nbsp;&nbsp;
+          16,&nbsp;&nbsp;&nbsp;&nbsp;
+          22,&nbsp;&nbsp;&nbsp;&nbsp;
+          48&nbsp;&nbsp;]</div>
+      </article>
+      
+      <article>
+        <h3>Loops + Arrays = <3</h3>
+        <p>
+          Every time you were looping, regardless or whether you were counting using <b>[1, 2, 3, 4, 5]</b>, or 
+          just looping over <b>[7, 13, 14, 16, 22, 48]</b>, you were using <b>arrays</b>.
+        </p>
+        <p>
+          An array is simply a collection of objects. Loops are used to move from one element of an array to another.
+        </p>
+      </article>
+      
+      <article>
+        <h3>Array</h3>
+        <div style='border:solid 2px black;padding:20px'>
+          [1, 2, 3, 4, 5]<br><br>
+          [7, 13, 14, 16, 22, 48]<br><br>
+          ["ladies", "learning", "code"]
+        </div>
+        <p>Array is the class (category), and [1, 2, 3, 4, 5] is the instance (noun) of the class Array.</p>
       </article>
       
       <article>
         <h3>
           There are many methods on Array, as well
         </h3>
-        <p>TODO: Examples of array methods</p>
-        <p>join, delete_at, [], <<</p>
+        <p>Back in IRB, let's create an array of winning lottery numbers and store it in the variable lottery.</p>
+        <section><pre>> lottery = [7, 13, 14, 16, 22, 48]</pre></section>
+      </article>
+      
+      <article>
+        <h3>
+          String Manipulation With Our Variable
+        </h3>
+        <p>You can now use this variable exactly like you would have used "ladieslearningcode" before.</p>
+        <section>
+          <pre>> llc.capitalize</pre>
+          <pre>=> "Ladieslearningcode"</pre>
+
+          <pre>> llc.upcase</pre>
+          <pre>=> "LADIESLEARNINGCODE"</pre>
+
+          <pre>> llc.reverse</pre>
+          <pre>=> "edocgninraelseidal"</pre>
+        </section>
       </article>
       
       <article>
