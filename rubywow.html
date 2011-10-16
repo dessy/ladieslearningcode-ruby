@@ -714,7 +714,10 @@ end
         <h3>
           Try it out!
         </h3>
-        <p>Replace the puts statements in your Twitter script with the code below.</p>
+        <p>
+          Replace the puts statements in your Twitter program with the code below.
+          (see assignments/twitter_4.rb if needed)
+        </p>
         <section>
           <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>end<br><br>if tweet.length < 140<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
@@ -741,7 +744,7 @@ end
           First (Worst) Solution
         </h3>
         <p>Since we're only missing one case, the case where the tweet is exactly 140 characters, we can just add another if statement.</p>
-        <p>Add this last if statement to the bottom of your file:</p>
+        <p>Add this last if statement to the bottom of your file: (see assignments/twitter_5.rb if needed)</p>
         <section>
           <pre>if tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
@@ -764,10 +767,20 @@ end
         <section>
           <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>elsif tweet.length < 140<br>  puts "Tweet your heart out!"<br>elsif tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
+        <p>(see assignments/twitter_6.rb if needed)</p>
+      </article>
+      
+      <article>
+        <h3>if .. elsif</h3>
+        <section>
+          <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>elsif tweet.length < 140<br>  puts "Tweet your heart out!"<br>elsif tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p>In the above code, if the first statement doesn't evaluate to true, then the next one is attempted, and so on.</p>
         <p>
-          If the first if doesn't evaluate to true, then the next one is attempted, and so on.
-          TODO: Talk about the details of this. 
+          Only one puts statement is ever executed.
+          The statements are evaluated in the order they are written, so the first one to evaluate to true is the only one executed.
         </p>
+        <p>If none of the statements evaluate to true, then none of the puts statements are executed.</p>
       </article>
       
       <article>
@@ -782,8 +795,13 @@ end
         <section>
           <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>elsif tweet.length <= 140<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
-        <p>The <= operator behaves the exact same way as the less than operator, but checks for equality as well.</p>
-        <p>As you may have guessed, checking for equality with greater than works exactly the same way, using the >= operator.</p>
+        <p>(see assignments/twitter_7.rb if needed)</p>
+      </article>
+      
+      <article>
+        <h3>Less than or equal to with <=, Greater than or equal to with >=</h3>
+        <p>The <b><=</b> operator behaves the exact same way as the less than operator, but checks for equality as well.</p>
+        <p>As you may have guessed, checking for equality with greater than works exactly the same way, using the <b>>=</b> operator.</p>
       </article>
       
       <article>
@@ -792,13 +810,66 @@ end
         </h3>
         <p>
           This is better, but look at the logic closely. Do we really even need to specify the second condition?
-          Can't we just prevent the user from tweeting is their tweet is over 140 characters, and let them tweet in all other cases?
+          Can't we just prevent the user from tweeting if their tweet is over 140 characters, and let them tweet otherwise?
         </p>
         <p>Yes we can! Replace your code again with the code below:</p>
         <section>
           <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>else<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
+        <p>(see assignments/twitter_8.rb if needed)</p>
         <p>Run your code again, and it should function the exact same way!</p>        
+      </article>
+      
+      <article>
+        <h3>if .. else</h3>
+        <section>
+          <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>else<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p>
+          Just like with if .. elsif, only one puts statement is ever executed. The difference here is that one of the
+          puts statements is <b>always</b> executed. 
+        </p>
+        <p>
+          The else is there are a catch-all. You can think of it like a last resort. 
+          If none of the other options are true, then just execute the puts statement after the else.
+        </p>
+      </article>
+      
+      <article>
+        <h3>Hello, Operator?</h3>
+        <table>
+          <tr><td>Operator</td><td>True</td><td>False</td></tr>
+          <tr>
+            <td>==</td>
+            <td>99 == 99</td>
+            <td>99 == 100</td>
+          </tr>
+          <tr>
+            <td>!=</td>
+            <td>99 != 100</td>
+            <td>99 != 99</td>
+          </tr>
+          <tr>
+            <td>></td>
+            <td>100 > 99</td>
+            <td>99 > 100</td>
+          </tr>
+          <tr>
+            <td><</td>
+            <td>99 < 100</td>
+            <td>100 < 99</td>
+          </tr>
+          <tr>
+            <td>>=</td>
+            <td>99 >= 99</td>
+            <td>99 >= 100</td>
+          </tr>
+          <tr>
+            <td><=</td>
+            <td>99 <= 99</td>
+            <td>100 <= 99</td>
+          </tr>
+        </table>
       </article>
       
       <!-- slide with all of the operators that they can goof around with, stop for a bit and play around -->
