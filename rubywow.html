@@ -885,7 +885,6 @@ end
         <p>if .. else</p>
       </article>
       
-      <!-- tell them the ideal solution, how many lines should they shorten it to -->
       <article>
         <h3>
           Puzzle Two - Conditionals
@@ -899,26 +898,36 @@ end
           Can you simplify the logic to make the program as few lines of code as possible? 
           Try simplifying the program one step at a time, and run it each time to make sure it behaves like you expect it to.
         </p>
+        <p>
+          If you start your if statement on the same line as the original puzzle (line 6), you should be able to shorten 
+          the entire program to 20 lines of much easier to read code!
+        </p>
       </article>
-      
-      <!-- each puzzle, challenge, etc. is a recipe with ingredients -->
       
       <article>
         <h3>
           Loopy
         </h3>
         <p>
-          What if you want to be able to tell your program when to stop running? Create a new program with the following code:
+          What if you want to be able to tell your program when to stop running? Create a new program with the following code, 
+          or use run the program in assignments/loop_1.rb:
         </p>
         <section>
-          <pre>TODO: Code form loop_1.rb</pre>
+          <pre>
+puts "Hi!"
+greeting = gets.chomp
+
+while greeting != "bye!"
+  puts greeting
+  greeting = gets.chomp
+end</pre>
         </section>
-        <p>TODO: Explain chomp, explain looping</p>
+        <p>This is called a while loop. The program will run while the user inputs anything other than "bye!"</p>
       </article>
       
       <article>
         <h3>
-          What if we know how many times the program needs to do that same thing?
+          What if we know exactly how many times the program needs to do that same thing?
         </h3>
         <p>
           Again, there are several ways to do this
@@ -928,6 +937,50 @@ end
         </section>
         <p>TODO: Explain outputting a variable within a string</p>
         <p>TODO: Avoid showing loop_4.rb and challenge them to do it themselves?</p>
+      </article>
+      
+      <article>
+        <h3>Tell me exactly how many times</h3>
+        <p>Create a new program with the following code, or use run the program in assignments/loop_2.rb:</p>
+        <section>
+          <pre>
+3.times do
+  puts "Hip-Hop-Hooray!"
+  sleep 1
+end</pre>
+        </section>
+        <p>This program will output "Hip-Hip-Hooray!" exactly 3 times.</p>
+        <p>
+          The <b>sleep 1</b> tells the program to wait 1 second after outputting each statement.
+          Try taking it out to see what happens. Not as exciting. 
+        </p>
+      </article>
+      
+      <article>
+        <h3>Count from 1 to 5</h3>
+        <p>Create a new program with the following code, or use run the program in assignments/loop_2.rb:</p>
+        <section>
+          <pre>
+puts "Okay, on the count of 5 ..."
+(1..5).each do |i|
+  puts i
+  sleep 1
+end
+puts "GO!"</pre>
+        </section>
+        <p>This program moves through each Integer from 1 to 5, and outputs the Integer, again sleeping for 1 second in between.</p>
+        <div style='padding:20px 0px 0px 225px;'>
+          <img src='images/curved-arrow.gif'>
+          <img src='images/curved-arrow.gif'>
+          <img src='images/curved-arrow.gif'>
+          <img src='images/curved-arrow.gif'>
+        </div>
+        <div style='padding-left:200px'>[&nbsp;
+          1,&nbsp;&nbsp;&nbsp;
+          2,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          3,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          4,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          5&nbsp;&nbsp;]</div>
       </article>
       
       <article>
