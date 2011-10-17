@@ -16,8 +16,8 @@ deck = # TODO:
 # dealer and player, respectively, throughout the program. 
 # At the start of every game, the dealer and player each get two cards. 
 # The dealer_sum and player_sum are created with the sum of the first two cards dealt.
-dealer_sum = deck.delete_at(rand(51)) + deck.delete_at(rand(51))
-player_sum = deck.delete_at(rand(51)) + deck.delete_at(rand(51))
+dealer_sum = deck.delete_at(rand(deck.count - 1)) + deck.delete_at(rand(deck.count - 1))
+player_sum = deck.delete_at(rand(deck.count - 1)) + deck.delete_at(rand(deck.count - 1))
 
 move = "h"
 while move == "h"
@@ -27,9 +27,8 @@ while move == "h"
   move = # TODO: Store the input from the player in the variable move. Don't forget to remove the \n.
 
   if # TODO: Check if move is equal to "h"
-    
     # Deal the player another card, and add the value of that card to their sum.
-    player_sum = player_sum + deck.delete_at(rand(51))
+    player_sum = player_sum + deck.delete_at(rand(deck.count - 1))
     
     if # TODO: Check if the player_sum is greater than 21
       # TODO:
@@ -54,7 +53,7 @@ while move == "h"
     # This loop keeps dealing cards to the dealer and incresing the dealer_sum
     # while the dealer sum is less than 17.
     while dealer_sum < 17
-      dealer_sum = dealer_sum + deck.delete_at(rand(51))
+      dealer_sum = dealer_sum + deck.delete_at(rand(deck.count - 1))
     end
 
     if # TODO: Check if the dealer_sum is greater than 21.

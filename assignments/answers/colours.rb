@@ -10,7 +10,7 @@ colours.each do |colour|
   end
 end
 
-if favourite_colour
+if favourite_colour != nil
   puts "Your favourite colour is #{favourite_colour}"
 else
   puts "Your favourite colour is something other than " + colours.join(", ")
