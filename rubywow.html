@@ -1207,8 +1207,33 @@ end</pre>
       <article>
         <h3>Blackjack Game</h3>
         <p>We're going to create a Blackjack game with some simplified rules.</p>
-        <p>OR give them the game as a challenge, and walk them through the steps</p>
-        <p>Use blackjack_1.rb vs. blackjack_2.rb to teach them methods</p>
+        <p>At the start of the game, the player and the dealer each get 2 cards.</p>
+        <p>
+          The player is told the sum of their two cards, and then has the opportunity to type h
+          if they want to hit, or anything else if they want to stand.
+        </p>
+      </article>
+      
+      <article>
+        <h3>Blackjack Game</h3>
+        <p>The player continues to receive cards, and their sum continues to go up, until:</p>
+        <p>1. They no longer want to hit.</p>
+        <p>2. Their sum exceeds 21, in which case they lose.</p>
+        <p>3. Their sum amounts to exactly 21, in which case they win.</p>
+        <p>The player is told their current sum before every opportunity to hit.</p>
+      </article>
+
+      <article>
+        <h3>Blackjack Game</h3>
+        <p>
+          If the player manages to make it through the hitting cycle without winning or losing, the dealer
+          receives cards until their sum is greater than or equal to 17.
+        </p>
+        <p>The sum of the player's cards and the sum of the dealer's cards are compared.</p>
+        <p>If the dealer's sum is greater than 21, then the player wins.</p>
+        <p>Otherwise if the player's sum is greater than the dealer's sum, then the player wins.</p>
+        <p>Otherwise if the player's sum is equal to the dealer's sum, then there is a tie.</p>
+        <p>In all other cases, the player loses.</p>
       </article>
       
     </section>

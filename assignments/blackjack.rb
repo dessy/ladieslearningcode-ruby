@@ -57,7 +57,6 @@ while move == "h"
       dealer_sum = dealer_sum + deck.delete_at(rand(51))
     end
 
-    
     if # TODO: Check if the dealer_sum is greater than 21.
       # TODO:
       # This code will execute if the dealer_sum is greater than 21. Does the player win or lose in this situation?
