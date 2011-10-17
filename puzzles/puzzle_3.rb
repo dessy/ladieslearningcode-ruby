@@ -10,7 +10,6 @@ names << "Milhouse"
 
 puts names
 puts names.uniq
-puts names.join(' - ')
 
 names.each do |name|
   if name.length != 5

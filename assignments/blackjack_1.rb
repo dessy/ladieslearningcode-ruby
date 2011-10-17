@@ -14,8 +14,8 @@ deck = [
   10,10,10,10
 ]
 
-dealer_sum = deck.delete_at(rand(deck.count - 1)) + deck.delete_at(rand(deck.count - 1))
-player_sum = deck.delete_at(rand(deck.count - 1)) + deck.delete_at(rand(deck.count - 1))
+dealer_sum = deck.delete_at(rand(51)) + deck.delete_at(rand(51))
+player_sum = deck.delete_at(rand(51)) + deck.delete_at(rand(51))
 
 move = "h"
 while move == "h"
@@ -23,7 +23,7 @@ while move == "h"
   move = gets.chomp
 
   if move == "h"
-    player_sum += deck.delete_at(rand(deck.count - 1))
+    player_sum += deck.delete_at(rand(51))
     if player_sum > 21
       # is this a win or lose? give the appropriate message.
       puts "You lose! Gimme your money."
@@ -33,7 +33,7 @@ while move == "h"
     end
   else
     while dealer_sum < 17
-      dealer_sum += deck.delete_at(rand(deck.count - 1))
+      dealer_sum += deck.delete_at(rand(51))
     end
 
     if dealer_sum > 21 || (player_sum > dealer_sum)

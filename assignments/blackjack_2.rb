@@ -14,8 +14,8 @@ deck = [
   10,10,10,10
 ]
 
-dealer_sum = deck.delete_at(rand(deck.count - 1)) + deck.delete_at(rand(deck.count - 1))
-player_sum = deck.delete_at(rand(deck.count - 1)) + deck.delete_at(rand(deck.count - 1))
+dealer_sum = deck.delete_at(rand(51)) + deck.delete_at(rand(51))
+player_sum = deck.delete_at(rand(51)) + deck.delete_at(rand(51))
 
 def player_stats(player_sum, dealer_sum)
   puts "Your sum: #{player_sum}"
@@ -28,7 +28,7 @@ while move == "h"
   move = gets.chomp
 
   if move == "h"
-    player_sum += deck.delete_at(rand(deck.count - 1))
+    player_sum += deck.delete_at(rand(51))
     if player_sum > 21
       puts "You lose! Gimme your money."
       player_stats(player_sum, dealer_sum)
@@ -36,7 +36,7 @@ while move == "h"
     end
   else
     while dealer_sum < 17
-      dealer_sum += deck.delete_at(rand(deck.count - 1))
+      dealer_sum += deck.delete_at(rand(51))
     end
 
     if dealer_sum > 21 || (player_sum > dealer_sum)
@@ -55,4 +55,3 @@ while move == "h"
 end
 
 puts "Please play again!"
-

@@ -1035,7 +1035,7 @@ end</pre>
         <section>
           <pre>
 puts "And the lucky numbers are ..."
-[7, 13, 14, 16, 22, 48].each do |i|
+[7, 13, 14, 16, 14, 48].each do |i|
   puts i
   sleep 1
 end
@@ -1061,7 +1061,7 @@ puts "With a bonus number 32!"</pre>
         <h3>Loops + Arrays = <3</h3>
         <p>
           Every time you were looping, regardless or whether you were counting using <b>[1, 2, 3, 4, 5]</b>, or 
-          just looping over <b>[7, 13, 14, 16, 22, 48]</b>, you were using <b>arrays</b>.
+          just looping over <b>[7, 13, 14, 16, 14, 48]</b>, you were using <b>arrays</b>.
         </p>
         <p>
           An array is simply a collection of objects. Loops are used to move from one element of an array to another.
@@ -1072,7 +1072,7 @@ puts "With a bonus number 32!"</pre>
         <h3>Array</h3>
         <div style='border:solid 2px black;padding:20px'>
           [1, 2, 3, 4, 5]<br><br>
-          [7, 13, 14, 16, 22, 48]<br><br>
+          [7, 13, 14, 16, 14, 48]<br><br>
           ["ladies", "learning", "code"]
         </div>
         <p>Array is the class (category), and [1, 2, 3, 4, 5] is the instance (noun) of the class Array.</p>
@@ -1082,24 +1082,80 @@ puts "With a bonus number 32!"</pre>
         <h3>
           There are many methods on Array, as well
         </h3>
-        <p>Back in IRB, let's create an array of winning lottery numbers and store it in the variable lottery.</p>
-        <section><pre>> lottery = [7, 13, 14, 16, 22, 48]</pre></section>
+        <p>
+          Back in IRB, let's create an array of winning lottery numbers and store it in the variable lottery.
+        </p>
+        <section class='build'>
+          <pre>> lottery = [7, 13, 14, 16, 14, 48]</pre>
+          <pre>=> [7, 13, 14, 16, 14, 48]</pre>
+        </section>
       </article>
       
       <article>
         <h3>
-          String Manipulation With Our Variable
+          Methods that do NOT modify the array
         </h3>
-        <p>You can now use this variable exactly like you would have used "ladieslearningcode" before.</p>
-        <section>
-          <pre>> llc.capitalize</pre>
-          <pre>=> "Ladieslearningcode"</pre>
+        <section class='build'>
+          <pre>> lottery.join(', ')</pre>
+          <pre>=> "7, 13, 14, 16, 14, 48"</pre>
 
-          <pre>> llc.upcase</pre>
-          <pre>=> "LADIESLEARNINGCODE"</pre>
+          <pre>> lottery</pre>
+          <pre>=> [7, 13, 14, 16, 14, 48]</pre>
+        </section>
+      </article>
 
-          <pre>> llc.reverse</pre>
-          <pre>=> "edocgninraelseidal"</pre>
+      <article>
+        <h3>
+          Methods that do NOT modify the array
+        </h3>
+        <section class='build'>
+          <pre>> lottery[0]</pre>
+          <pre>=> 7</pre>
+
+          <pre>> lottery[1]</pre>
+          <pre>=> 13</pre>
+          
+          <pre>> lottery[6]</pre>
+          <pre>=> nil</pre>
+        </section>
+      </article>
+
+      <article>
+        <h3>
+          Methods that do NOT modify the array
+        </h3>
+        <section class='build'>
+          <pre>> lottery.uniq</pre>
+          <pre>=> [7, 13, 14, 16, 48]</pre>
+          
+          <pre>> lottery</pre>
+          <pre>=> [7, 13, 14, 16, 14, 48]</pre>
+        </section>
+      </article>
+      
+      <article>
+        <h3>
+          Methods that DO modify the array
+        </h3>
+        <section class='build'>
+          <pre>> lottery.delete_at(0)</pre>
+          <pre>=> 7</pre>
+          
+          <pre>> lottery</pre>
+          <pre>=> [13, 14, 16, 14, 48]</pre>
+        </section>
+      </article>
+      
+      <article>
+        <h3>
+          Methods that DO modify the array
+        </h3>
+        <section class='build'>
+          <pre>> lottery << 92</pre>
+          <pre>=> [13, 14, 16, 14, 48, 92]</pre>
+          
+          <pre>> lottery</pre>
+          <pre>=> [13, 14, 16, 14, 48, 92]</pre>
         </section>
       </article>
       
@@ -1108,6 +1164,7 @@ puts "With a bonus number 32!"</pre>
           Puzzle 3 - Arrays
         </h3>
         <p>What will be the output of puzzle 3?</p>
+        <p>Remember to think about which methods modify the array, and which do not.</p>
       </article>
       
       <article>
