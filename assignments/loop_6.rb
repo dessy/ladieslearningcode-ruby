@@ -1,16 +1,16 @@
-favourite_colour = nil
-colours = ["red", "green", "blue", "yellow"]
+puts "Time to play Blackjack! Let's simulate a losing game."
 
-colours.each do |colour|
-  puts "Is your favourite colour #{colour}?"
-  answer = gets.chomp
-  if answer == "yes"
-    favourite_colour = colour
+sum = 0
+[2, 4, 10, 9, 3].each do |card|
+  sleep 1
+  puts "Dealing a card with value #{card}"
+  sum = sum + card
+
+  if sum > 21
+    puts "You lost!"
+    break
+  else
+    puts "Hit me!"
   end
 end
 
-if favourite_colour
-  puts "Your favourite colour is #{favourite_colour}"
-else
-  puts "Your favourite colour is something other than " + colours.join(", ")
-end

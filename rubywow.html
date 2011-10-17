@@ -1058,6 +1058,36 @@ puts "With a bonus number 32!"</pre>
       </article>
       
       <article>
+        <h3>Leaving early</h3>
+        <p>What if we want to be able to leave a loop early, before we have finished looping?</p>
+        <p>We need a way to tell Ruby to stop looping. We do that using the command <b>break</b>.</p>
+        <p>The command <b>break</b> tells the loop to stop where it is, and continue running the code after the loop.</p>
+      </article>
+      
+      <article>
+        <h3>Leaving early</h3>
+        <p>Create a new program with the following code, or run the program in assignments/loop_6.rb:</p>
+        <section>
+          <pre>
+puts "Time to play Blackjack! Let's simulate a losing game."
+
+sum = 0
+[2, 4, 10, 9, 3].each do |card|
+  sleep 1
+  puts "Dealing a card with value #{card}"
+  sum = sum + card
+
+  if sum > 21
+    puts "You lost!"
+    break
+  else
+    puts "Hit me!"
+  end
+end</pre>
+        </section>
+      </article>
+      
+      <article>
         <h3>Loops + Arrays = <3</h3>
         <p>
           Every time you were looping, regardless or whether you were counting using <b>[1, 2, 3, 4, 5]</b>, or 
@@ -1171,14 +1201,12 @@ puts "With a bonus number 32!"</pre>
         <h3>
           Challenge
         </h3>
-        <p>TODO: Challenge them to write the code in loop_6.rb</p>
+        <p>TODO: Challenge them to write the code in loop_7.rb</p>
       </article>
       
       <article>
-        <h3>
-          Blackjack Game
-        </h3>
-        <p>TODO: Either look at game and go over each part</p>
+        <h3>Blackjack Game</h3>
+        <p>We're going to create a Blackjack game with some simplified rules.</p>
         <p>OR give them the game as a challenge, and walk them through the steps</p>
         <p>Use blackjack_1.rb vs. blackjack_2.rb to teach them methods</p>
       </article>
