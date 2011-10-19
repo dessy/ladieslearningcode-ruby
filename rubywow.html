@@ -1268,11 +1268,11 @@ puts "With a bonus number 32!"</pre>
           48&nbsp;&nbsp;]</div>
       </article>
       
-      <article>
+      <article id='conditional-instructions'>
         <h3>Leaving early</h3>
-        <p>What if we want to be able to leave a loop early, before we have finished looping?</p>
-        <p>We need a way to tell Ruby to stop looping. We do that using the command <b>break</b>.</p>
-        <p>The command <b>break</b> tells the loop to stop where it is, and continue running the code after the loop.</p>
+        <p class='large-font'>What if we want to be able to leave a loop early, before we have finished looping?</p>
+        <p class='large-font'>We need a way to tell Ruby to stop looping. We do that using the command <b>break</b>.</p>
+        <p class='large-font'><b>break</b> tells the loop to stop where it is.</p>
       </article>
       
       <article>
@@ -1298,30 +1298,32 @@ end</pre>
         </section>
       </article>
       
-      <article>
+      <article id='conditional-instructions'>
         <h3>Loops + Arrays = <3</h3>
         <p>
           Every time you were looping, regardless or whether you were counting using <b>[1, 2, 3, 4, 5]</b>, or 
           just looping over <b>[7, 13, 14, 16, 14, 48]</b>, you were using <b>arrays</b>.
         </p>
-        <p>
-          An array is simply a collection of objects. Loops are used to move from one element of an array to another.
+        <p class='large-font'>
+          An <b>array</b> is simply a <b>collection of objects</b>. Loops are used to move from one element of an array to another.
         </p>
       </article>
       
-      <article>
+      <article id='string-class'>
+        <style>
+          #string-class div { padding: 20px; }
+        </style>
         <h3>Array</h3>
-        <div style='border:solid 2px black;padding:20px'>
+        <div class='class-diagram'>
           [1, 2, 3, 4, 5]<br><br>
           [7, 13, 14, 16, 14, 48]<br><br>
           ["ladies", "learning", "code"]
         </div>
-        <p>Array is the class (category), and [1, 2, 3, 4, 5] is the instance (noun) of the class Array.</p>
       </article>
       
       <article>
         <h3>
-          There are many methods on Array, as well
+          There are many methods on Array, as well.
         </h3>
         <p>
           Back in IRB, let's create an array of winning lottery numbers and store it in the variable lottery.
@@ -1400,44 +1402,53 @@ end</pre>
         </section>
       </article>
       
-      <article>
+      <article id='conditional-logic'>
         <h3>
           Puzzle 3 - Arrays
         </h3>
-        <p>What will be the output of puzzle 3?</p>
-        <p>Remember to think about which methods modify the array, and which do not.</p>
+        <p class='large-font'>What will be the output of puzzle 3?</p>
+        <p class='large-font'>Remember to think about which methods modify the array, and which do not.</p>
       </article>
       
-      <article>
+      <article id='instructions'>
+        <style>
+          #instructions .build { margin-top: 30px }
+        </style>
         <h3>Favourite Colour</h3>
         <p>Write a program that does the following:</p>
-        <p>1. Loops through an array of the colours red, green, blue, and yellow.</p>
-        <p>2. For each colour, asks the user if it is their favourite.</p>
-        <p>3. If the user types yes, then a variable called favourite_colour is set to that colour.</p>
-        <p>4. If the user types anything else, the loop continues.</p>
-        <p>
-          5. Once the loop is complete, if the user said yes to a colour, the program outputs their favourite colour to them.
-          If the user did not say yes to any of the colours, it tells them that their favourite colour is not red, green, blue, or yellow.
-        </p>
+        <div class='build'>
+          <p>1. Loops through an array of the colours red, green, blue, and yellow.</p>
+          <p>2. For each colour, asks the user if it is their favourite.</p>
+          <p>3. If the user types yes, then a variable called favourite_colour is set to that colour.</p>
+          <p>4. If the user types anything else, the loop continues.</p>
+          <p>
+            5. Once the loop is complete, if the user said yes to a colour, the program outputs their favourite colour to them.
+            If the user did not say yes to any of the colours, it tells them that their favourite colour is not red, green, blue, or yellow.
+          </p>
+        </div>
       </article>
       
-      <article>
+      <article id='conditional-instructions'>
         <h3>Blackjack Game</h3>
         <p>We're going to create a Blackjack game with some simplified rules.</p>
-        <p>At the start of the game, the player and the dealer each get 2 cards.</p>
-        <p>
-          The player is told the sum of their two cards, and then has the opportunity to type h
-          if they want to hit, or anything else if they want to stand.
-        </p>
+        <div class='build'>
+          <p class='large-font'>At the start of the game, the player and the dealer each get 2 cards.</p>
+          <p class='large-font'>
+            The player is told the sum of their two cards, and then has the opportunity to type h
+            if they want to hit, or anything else if they want to stand.
+          </p>
+        </div>
       </article>
       
-      <article>
+      <article id='instructions'>
         <h3>Blackjack Game</h3>
-        <p>The player continues to receive cards, and their sum continues to go up, until:</p>
-        <p>1. They no longer want to hit.</p>
-        <p>2. Their sum exceeds 21, in which case they lose.</p>
-        <p>3. Their sum amounts to exactly 21, in which case they win.</p>
-        <p>The player is told their current sum before every opportunity to hit.</p>
+        <div class='build'>
+          <p class='large-font'>The player continues to receive cards, and their sum continues to go up, until:</p>
+          <p>1. They no longer want to hit.</p>
+          <p>2. Their sum exceeds 21, in which case they lose.</p>
+          <p>3. Their sum amounts to exactly 21, in which case they win.</p>
+          <p class='large-font'>The player is told their current sum before every opportunity to hit.</p>
+        </div>
       </article>
 
       <article>
@@ -1451,6 +1462,27 @@ end</pre>
         <p>Otherwise if the player's sum is greater than the dealer's sum, then the player wins.</p>
         <p>Otherwise if the player's sum is equal to the dealer's sum, then there is a tie.</p>
         <p>In all other cases, the player loses.</p>
+      </article>
+      
+      <article id='credits-book'>
+        <style>
+          #credits-book img { margin: 30px 0px 0px 100px; }
+        </style>
+        <h3>Credits</h3>
+        <p>Inspired by Chris Pine's <b>Learn to Program</b></p>
+        <img src='images/learn-to-program.jpg'>
+      </article>
+      
+      <article id='credits-twg'>
+        <style>
+          #credits-twg .large-font { line-height: 80px; margin: 100px; text-align: center; }
+        </style>
+        <p class='large-font'>
+          Big, big thank you to <br /><a href='http://www.theworkinggroup.ca'>The Working Group</a>, 
+          to <a href='http://twitter.com/jack_neto'>Jack</a>, <a href='http://twitter.com/tadmanter'>Scott</a>, 
+          and <a href='http://twitter.com/bgilham'>Brian</a>, for helping out with this workshop, 
+          and to <a href='http://ladieslearningcode.com/'>Ladies Learning Code</a>!
+        </p>
       </article>
       
     </section>
