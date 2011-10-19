@@ -1041,23 +1041,25 @@ end
         </div>
       </article>
       
-      <article>
+      <article id='conditional-logic'>
         <h3>
           Puzzle Two - Conditionals
         </h3>
-        <p>
-          Look at the program in puzzle_2.rb. The program asks the user for the month of their birthday, 
+        <p class='large-font'>Look at the program in puzzle_2.rb.</p>
+        <p class='large-font'>The program asks the user for the month of their birthday, 
           and then outputs a message about the season the user celebrates their birthday in. 
         </p>
-        <p>Which months does this program consider to be spring, summer, winter, and fall?</p>
-        <p>
-          Can you simplify the logic to make the program as few lines of code as possible? 
-          Try simplifying the program one step at a time, and run it each time to make sure it behaves like you expect it to.
+      </article>
+
+      <article id='conditional-instructions'>
+        <h3>
+          Puzzle Two - Conditionals
+        </h3>
+        <p class='large-font'>Which months does this program consider to be spring, summer, winter, and fall?</p>
+        <p class='large-font'>
+          Simplify the logic to make the program as few lines of code as possible? 
         </p>
-        <p>
-          If you start your if statement on the same line as the original puzzle (line 6), you should be able to shorten 
-          the entire program to 20 lines of much easier to read code!
-        </p>
+        <p class='large-font'>Goal: 20 lines!</p>
       </article>
       
       <article>
@@ -1081,13 +1083,11 @@ end</pre>
         <p>This is called a while loop. The program will run while the user inputs anything other than "bye!"</p>
       </article>
       
-      <article>
+      <article id='conditional-logic'>
         <h3>
           What if we know exactly how many times the program needs to do that same thing?
         </h3>
-        <p>
-          Again, there are several ways to do this
-        </p>
+        <p class='large-font'>Again, there are several ways to do this.</p>
       </article>
       
       <article>
@@ -1101,10 +1101,19 @@ end</pre>
 end</pre>
         </section>
         <p>This program will output "Hip-Hip-Hooray!" exactly 3 times.</p>
-        <p>
-          The <b>sleep 1</b> tells the program to wait 1 second after outputting each statement.
-          Try taking it out to see what happens. Not as exciting. 
-        </p>
+      </article>
+      
+      <article>
+        <h3>Tell me exactly how many times</h3>
+        <section>
+          <pre>
+3.times do
+  puts "Hip-Hop-Hooray!"
+  sleep 1
+end</pre>
+        </section>
+        <p>The <b>sleep 1</b> tells the program to wait 1 second after outputting each statement.</p>
+        <p>Try taking it out to see what happens. Not as exciting.</p>
       </article>
       
       <article>
@@ -1119,7 +1128,20 @@ puts "Okay, on the count of 5 ..."
 end
 puts "GO!"</pre>
         </section>
-        <p>This program moves through each Integer from 1 to 5, and outputs the Integer, again sleeping for 1 second in between.</p>
+      </article>
+      
+      <article>
+        <h3>Count from 1 to 5</h3>
+        <section>
+          <pre>
+puts "Okay, on the count of 5 ..."
+[1, 2, 3, 4, 5].each do |i|
+  puts i
+  sleep 1
+end
+puts "GO!"</pre>
+        </section>
+        <p>This program loops through each Integer from 1 to 5, and outputs the Integer, again sleeping for 1 second in between.</p>
         <div style='padding:20px 0px 0px 240px;'>
           <img src='images/curved-arrow.gif'>
           <img src='images/curved-arrow.gif'>
@@ -1136,10 +1158,21 @@ puts "GO!"</pre>
       
       <article>
         <h3>Counting down</h3>
-        <p>
-          Maybe we wants a program that simulates a countdown. 
-          Create a new program with the following code, or use run the program in assignments/loop_4.rb:
-        </p>
+        <p>Maybe we wants a program that simulates a countdown.</p>
+        <p>Create a new program with the following code, or use run the program in assignments/loop_4.rb:</p>
+        <section>
+          <pre>
+99.downto(1).each do |i|
+  puts "#{i} bottles of beer on the wall, #{i} bottles of beer.
+        Take one down, pass it around, 
+        and now there are #{i - 1} bottles of beer on the wall!"
+  sleep 0.5
+end</pre>
+        </section>
+      </article>
+
+      <article>
+        <h3>Counting down</h3>
         <section>
           <pre>
 99.downto(1).each do |i|
@@ -1175,10 +1208,32 @@ end</pre>
       and now there are #{i - 1} bottles of beer on the wall!"
           </pre>
         </section>
-        <p>
-          If you want to output any variable within a String, you can use the syntax <b>#{my_variable}</b> inside of the String, 
+        <p class='large-font'>
+          You can use the syntax <b>#{my_variable}</b> inside of the String, 
           and Ruby will treat the variable exactly like a String.
         </p>
+      </article>
+
+      <article>
+        <h3>String Interpolation</h3>
+        <section class='build'>
+          <pre>> lesson = "Ruby"</pre>
+          <pre>=> "Ruby"</pre>
+          
+          <pre>> tweet = "I am learning all about #{lesson} at the <br />#ladieslearningcode workshop"</pre>
+          <pre>=> "I am learning all about Ruby at the <br />#ladieslearningcode workshop"</pre>
+        </section>
+      </article>
+
+      <article>
+        <h3>String Interpolation</h3>
+        <section class='build'>
+          <pre>> lesson = "String Interpolation"</pre>
+          <pre>=> "String Interpolation"</pre>
+          
+          <pre>> tweet = "I am learning all about #{lesson} at the <br />#ladieslearningcode workshop"</pre>
+          <pre>=> "I am learning all about String Interpolation at the <br />#ladieslearningcode workshop"</pre>
+        </section>
       </article>
 
       <article>
