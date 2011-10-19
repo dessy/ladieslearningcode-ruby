@@ -659,6 +659,15 @@ article.smaller q::after {
   display: block;
   overflow: hidden;
   background: white;
-/*  background: url(images/ladieslearningcode-125x125.gif) 10px top no-repeat;*/
   border-top: 15px #B1009A solid;
+}
+
+.large-font {
+  font-size: 40px; 
+  line-height: 50px;
+}
+
+.keyword {
+  font-color: #B1009A;
+  display: inline;
 }

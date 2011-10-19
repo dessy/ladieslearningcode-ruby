@@ -52,8 +52,9 @@
       
       <article id='computer-wishes'>
         <style>
-          #computer-wishes h3 { padding-bottom: 10px; }
-          #computer-wishes img { margin-left: 70px; }
+          #computer-wishes 
+            h3 { padding-bottom: 10px; }
+            img { margin-left: 70px; }
         </style>
         <h3>
           1. Your computer speaks a different language.
@@ -87,15 +88,20 @@
           Suppose you had to teach a person how to make a peanut butter sandwich.
           You might give the person an easy to follow recipe.
         </p>
-        <p>1. Toast two slices of bread</p>
-        <p>2. Spread peanut butter on one slice of bread</p>
-        <p>3. Spread jam on the other slice of bread</p>
-        <p>4. Put the two pieces of bread together</p>
-        <p>5. Put the sandwich on a plate and serve it</p>
+        <!-- number these, 1, 2, etc. the others then become 1. a, 1. b, etc. -->
+        <!-- break it down and then assemble it -->
+        <!-- ruby already gives you a bit, libraries give you more -->
+        <ul>
+          <li>1. Toast two slices of bread</li>
+          <li>2. Spread peanut butter on one slice of bread</li>
+          <li>3. Spread jam on the other slice of bread</li>
+          <li>4. Put the two pieces of bread together</li>
+          <li>5. Put the sandwich on a plate and serve it</li>
+        </ul>
       </article>
             
       <article>
-        <h3>People understand GENERAL instructions.</h3>
+        <h3>People understand GENERAL instructions</h3>
         <p>
           We left out some parts of the process, but a person could figure out:
         </p>
@@ -105,82 +111,61 @@
         <p>etc, etc, etc (there are many little steps)</p>
       </article>
       
-      <article id='computers-exact'>
-        <style>
-          #computers-exact p { margin: 150px 0px; };
-        </style>
-        <h3>Computers understand EXACT instructions.</h3>
-        <p class='large-font'>
+      <article>
+        <h3>Computers understand EXACT instructions</h3>
+        <p>
           This same recipe for a computer would be much, much longer.
         </p>
       </article>
       
       <article>
-        <h3>1. Toast two slices of bread</h3>
-        <p>What is bread?</p>
-        <p>Where is it found?</p>
-        <p>How do I open the bag?</p>
-        <p>What is a slice?</p>
-        <p>How do I slice the bread?</p>
-        <p>How do I "toast"?</p>
-        <p>What is a toaster?</p>
-        <p>How do I use a toaster?</p>
-        <p>etc, etc, etc</p>
+        <p>Firstly, a computer doesn't know what bread, peanut butter, or jam are, so you would have to define them.</p>
+        <p>Once a computer knows what all of the ingredients are, you would have to tell it where to find them.</p>
+      </article>
+      
+      <article>
+        <p>
+          For instance, you would have to tell it to take the bread off of the counter (after defining a counter!), 
+          and if the bread is in a bag (again, defining the bag!), to open the bag first. 
+        </p>
+        <p>          
+          Then you would have to go through the different
+          ways that a bag can be sealed: if the bad is twisted, then untwist it; if the bag has a plastic fastener, 
+          then take off the fastener; if the bad is tied, then untie it.
+        </p>
+        <p>You can quickly see how complicated the entire process becomes!</p>
       </article>
 
       <article>
-        <h3>2. Spread peanut butter on one slice of bread</h3>
-        <p>What is peanut butter?</p>
-        <p>How do I "spread" peanut butter?</p>
-        <p>What is a butter knife?</p>
-        <p>Where is it found?</p>
-        <p>How do I open the knife drawer?</p>
-        <p>Which slice do I spread it on?</p>
-        <p>How much peanut butter do I spread?</p>
-        <p>etc, etc, etc</p>
-      </article>
-
-      <article id='programming-languages'>
-        <style>
-          #programming-languages p { margin-top: 80px; }
-          #programming-languages .mixed-font { line-height: 50px; }
-          #programming-languages b { font-size: 40px; }
-        </style>
-        <h3>Back to programming languages.</h3>
+        <h3>Back to programming languages</h3>
         <p>A programming language makes it easier for you to give the computer instructions.</p>
-        <p class='mixed-font'>
-          It's made up of <b>simple elements</b>, that when <b>combined together</b>, 
-          are used to write a set of <b>instructions</b> that the computer then breaks down and interprets as its own language.
+        <p>
+          It's made up of simple elements, and by combining those elements together, 
+          a programmer can write a set of instructions that the computer then breaks down and interprets as its own language.
         </p>
       </article>
 
-      <article id='learned-programming'>
-        <style>
-          #learned-programming p { margin-top: 100px; }
-        </style>
+      <article>
         <h3>
           You've just learned what programming is!
         </h3>
-        <p class='large-font'>Programming is writing out <b>exact instructions</b> that your computer can follow to do things.</p>
-      </article>
-      
-      <article id='ruby-rocks'>
-        <style>
-          #ruby-rocks .large-font { margin: 50px; }
-        </style>
-        <h3>
-          Why Ruby Rocks!
-        </h3>
-        <p>Created in 1993 by Yukihiro Matsumoto, from Japan.</p>
-        <p class='large-font'> 
-          "I hope to see Ruby help every programmer in the world to be productive, and to enjoy programming, and to be happy. 
-          That is the primary purpose of the Ruby language."
-        </p>
-        <p>Ruby is <b>fun</b>, it's <b>easy to learn</b>, and the <b>syntax is very forgiving</b>.</p>
+        <p>Programming is writing out exact instructions that your computer can follow to do things.</p>
       </article>
       
       <article>
-        <p class='large-font'>This is some code in Java:</p>
+        <h3>
+          Why Ruby Rocks!
+        </h3>
+        <p>Ruby was created in 1993 by Yukihiro Matsumoto, from Japan.</p>
+        <p> 
+          "I hope to see Ruby help every programmer in the world to be productive, and to enjoy programming, and to be happy. 
+          That is the primary purpose of Ruby language." - Yukihiro Matsumoto, 2008
+        </p>
+        <p>That's exactly how the language is known today by developers. Ruby is fun, it's easy to learn, and the syntax is very forgiving.</p>
+      </article>
+      
+      <article>
+        <p>This is some code in Java:</p>
         <section>
           <pre>
 class Person {
@@ -206,7 +191,7 @@ class Person {
       </article>
       
       <article>
-        <p class='large-font'>The equivalent code in Ruby looks like this:</p>
+        <p>The equivalent code in Ruby looks like this:</p>
         <section>
           <pre>
 class Person
@@ -216,36 +201,29 @@ end
         </section>
       </article>
 
-      <article id='irb-intro'>
-        <style>
-          #irb-intro .instructions { margin-top: 100px; }
-        </style>
+      <article>
         <h3>
           Time to see Ruby in action!
         </h3>
-        <p>IRB is like text messaging with Ruby.</p>
-        <p>You'll ask Ruby to do something, and it will respond.</p>
-        <div class='instructions'>
-          <p><b>OS X</b></p>
-          <section>
-            <pre>Applications -> Utilities -> Terminal</pre>
-          </section>
-          <p />
-          <p><b>Windows</b> (C:\windows\system32\cmd.exe)</p>
-          <section>
-            <pre>Start -> All Programs -> Accessories -> Command Prompt</pre>
-          </section>
-        </div>
+        <p>We're going to open IRB, our Interactive Ruby Shell.</p>
+        <p>IRB is like text messaging with Ruby. You type a message to Ruby, and Ruby responds to your message.</p>
+        <p>Often you'll be asking Ruby to do something, and it will respond with the result</p>
+        <p><b>OS X</b></p>
+        <section>
+          <pre>Applications -> Utilities -> Terminal</pre>
+        </section>
+        <p />
+        <p><b>Windows</b> (C:\windows\system32\cmd.exe)</p>
+        <section>
+          <pre>Start -> All Programs -> Accessories -> Command Prompt</pre>
+        </section>
       </article>
       
-      <article id='ask-ruby'>
-        <style>
-          #ask-ruby .large-font { margin-top: 100px; }
-        </style>
+      <article>
         <section class='build'>
           <pre>irb</pre>
           <pre>ruby-1.9.2-p290 :001 > </pre>
-          <p class='large-font'>Let's ask Ruby to do something.</p>
+          <p>Let's ask Ruby to do something.</p>
         </section>
       </article>
       
@@ -255,32 +233,32 @@ end
           <pre>=> 2</pre>
           <pre>> 462 * 86</pre>
           <pre>=> 39732</pre>
-          <p class='large-font'>Ruby can do math, and it can do it much quicker than a person can.</p>
+          <p>Ruby can do math, and it can do it much quicker than a person can.</p>
         </section>
       </article>
 
-      <article id='ruby-knows'>
-        <style>
-          #ruby-knows .large-font { margin-top: 100px; }
-        </style>
+      <!-- BIGGER CODE SNIPPETS!!! -->
+      <article>
         <section class='build'>
           <pre>> 1 + 2 + 3<br>=> 6</pre>
           <pre>> "ladies" + "learning" + "code"</pre>
           <pre>=> "ladieslearningcode"</pre>
-          <p class='large-font'>Ruby knows the difference between a number and a word.</p>
+          <p>
+            How did Ruby know to add the numbers together, and to concatenate all of the words into one long word?
+          </p>
+          <p>
+            Ruby knows the difference between a number and a word.
+          </p>
         </section>
       </article>
 
-      <article id='integer-string'>
-        <style>
-          #integer-string .ruby-class { margin: 100px 0px; }
-        </style>
+      <article>
         <h3>
           Numbers and Words, Integers and Strings
         </h3>
         <p>In Ruby ...</p>
-        <p class='ruby-class'>Numbers without decimals are called <b>INTEGERS</b>. We just did some math with some integers.</p>
-        <p class='ruby-class'>Letters, words, and sentences are called <b>STRINGS</b>. We tell Ruby that we are intending to use a string by wrapping it in quotes.</p>
+        <p>Numbers without decimals are called integers. We just did some math with some integers.</p>
+        <p>Letters, words, and sentences are called strings. We tell Ruby that we are intending to use a string by wrapping it in quotes.</p>
       </article>
 
       <article>
