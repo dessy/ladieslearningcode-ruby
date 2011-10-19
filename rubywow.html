@@ -627,13 +627,19 @@ end
         <p class='large-font'>If you're not sure of something, remember that you can type <b>irb</b> again and try it out.</p>
       </article>
       
-      <article>
+      <article id='real-twitter'>
+        <style>
+          #real-twitter .large-font { margin: 60px 0px; }
+        </style>
         <h3>
           Getting Input From the User
         </h3>
-        <p>The real Twitter asks you to type something, and then tells you how many characters you're working with.</p>
-        <p>So far, we've just been putting our tweet directly into the program.</p>
-        <p>As a programmer working on developing web applications like Twitter, you very often need to get something from the user.</p>
+        <p>The real Twitter...</p>
+        <div class='build'>
+          <p class='large-font'>Asks you to type something.</p>
+          <p class='large-font'>Tells you how many characters you're working with.</p>
+          <p>So far, we've just been putting our tweet directly into the program.</p>
+        </div>
       </article>
       
       <article>
@@ -641,11 +647,12 @@ end
           Asking for Input
         </h3>
         <p>The <b>puts</b> method is used for output, and the <b>gets</b> method is used for input. Try this:</p>
+        <p>The gets method warns Ruby that you're about to speak.</p>
         <section class='build'>
-          <pre>> tweet = gets</pre><pre>I'm learning Ruby with #ladieslearningcode</pre><pre>=> "I'm learning Ruby with #ladieslearningcode\n"</pre>
+          <pre>> tweet = gets</pre>
+          <pre class='all-string'>I'm learning Ruby with #ladieslearningcode</pre><pre>=> "I'm learning Ruby with #ladieslearningcode\n"</pre>
           <p>
-            The gets method warns Ruby that you're about to speak. You can type anything you want, and it will store that in the variable tweet.
-            But wait, we didn't type \n in our tweet. What is that?
+            Wait, we didn't type \n in our tweet. What is that?
           </p>
         </section>
       </article>
@@ -659,11 +666,12 @@ end
           To get rid of it, do this:
         </p>
         <section class='build'>
-          <pre>> tweet = gets.chomp</pre><pre>I'm learning Ruby with #ladieslearningcode</pre><pre>=> "I'm learning Ruby with #ladieslearningcode"</pre>
+          <pre>> tweet = gets.chomp</pre>
+          <pre class='all-string'>I'm learning Ruby with #ladieslearningcode</pre>
+          <pre>=> "I'm learning Ruby with #ladieslearningcode"</pre>
         </section>
       </article>
       
-      <!-- reminder that in irb, you always get responses, like in Twitter, but in your program, you have to tell it when you want it to voice its opinion -->
       <article>
         <h3>
           Asking for Input
@@ -671,14 +679,17 @@ end
         <p>Now try this:</p>
         <section class='build'>
           <pre>> tweet = gets.chomp</pre>
-          <pre>I'm a lady learning code with @llcodedotcom #ladieslearningcode</pre>
+          <pre class='all-string'>I'm a lady learning code with @llcodedotcom #ladieslearningcode</pre>
           <pre>=> "I'm a lady learning code with @llcodedotcom #ladieslearningcode"</pre>
           <pre>> puts tweet</pre>
-          <pre>I'm a lady learning code with @llcodedotcom #ladieslearningcode<br>=> nil</pre>
+          <pre class='all-string'>I'm a lady learning code with @llcodedotcom #ladieslearningcode<br>=> nil</pre>
         </section>
       </article>
       
-      <article>
+      <article id='nil-nothing'>
+        <style>
+          #nil-nothing p { margin: 80px 0px; }
+        </style>
         <h3>What's nil? It's nothing, don't worry.</h3>
         <p>You asked Ruby to output your tweet, and Ruby did just that.</p>
         <p>
@@ -687,20 +698,23 @@ end
         </p>
         <p>nil is also an Object, and it just represents nothing.</p>
       </article>
-      
-       <!-- slide here that says 'WHOA! what's niL? It's nothing, don't worry -->
-      
-      <article>
+
+      <article id='ask-for-tweet'>
+        <style>
+          #ask-for-tweet .build { margin-top: 60px; }
+        </style>
         <h3>
           Back to your Twitter Program
         </h3>
         <p>Working with your group, modify your Twitter program to do the following:</p>
-        <p>Ask (politely!) for a tweet from the user.</p>
-        <p>Store the tweet in a variable, without \n</p>
-        <p>Output the tweet the user gave.</p>
-        <p>Output the number of characters in the tweet.</p>
-        <p>Output how many <b>more</b> characters the user can add until they hit 140 characters.</p>
-        <p>(answers in assignments/twitter_3.rb)</p>
+        <div class='build'>
+          <p>1. Ask (politely!) for a tweet from the user.</p>
+          <p>2. Store the tweet in a variable, without \n</p>
+          <p>3. Output the tweet the user gave.</p>
+          <p>4. Output the number of characters in the tweet.</p>
+          <p>5. Output how many <b>more</b> characters the user can add until they hit 140 characters.</p>
+          <p>(answers in assignments/twitter_3.rb)</p>
+        </div>
       </article>
       
       <article>

@@ -677,3 +677,7 @@ article.smaller q::after {
   padding:17px 0px 10px 80px; 
   margin-top: 50px; 
 }
+
+.all-string { 
+  color: #008A35; 
+}
