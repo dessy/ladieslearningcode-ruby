@@ -283,57 +283,110 @@ end
         <p class='ruby-class'>Letters, words, and sentences are called <b>STRINGS</b>. We tell Ruby that we are intending to use a string by wrapping it in quotes.</p>
       </article>
 
-      <article>
+      <article id='classes-galore'>
+        <style>
+          #classes-galore .build { margin-top: 40px; }
+          #classes-galore .large-font { margin: 70px 0px; }
+        </style>
         <h3>Classes</h3>
-        <p>We call Integers and Strings Classes. That's a programming word!</p>
-        <p>Classes are like categories.</p>
-        <p>We just worked with the String "ladies".</p>
-        <p>We say that "ladies" is an <b>instance</b> of the class String.</p>
-        <p>In the same way, any other particular word or sentence is an instance of the class String.</p>
-        <p>Instances of a class are like nouns in English.</p>
-        <p>Let's look at some examples.</p>
-      </article>
-
-      <article>
-        <h3>SimpsonsCharacter</h3>
-        <div style='border:solid 2px black;padding:17px 0px 10px 80px'>
-          <img src="images/simpsons.png" width="600" height="411" border="1">
+        <div class='build'>
+          <p>Ruby is extremely picky and needs to classify everything before it knows what to do with it.<br>Ruby knows that ...</p>
+          <p class='large-font'>The number <b>1</b> is an <b>Integer</b>.
+          <p class='large-font'>The word <b>"ladies"</b> is a <b>String</b>.
+          <p>Integers and Strings are classes in Ruby. That's a programming word!</p>
         </div>
-        <p>SimpsonsCharacter is the class (category), and Lisa Simpson is the instance (noun) of the class SimpsonsCharacter.</p>
       </article>
 
       <article>
         <h3>City</h3>
-        <div style='border:solid 2px black;padding:17px 0px 10px 80px'>
+        <div class='class-diagram'>
           <img src="images/toronto.png">
           <img src="images/london.jpg">
           <br>
           <img src="images/new-york.jpg">
           <img src="images/paris.jpg">
         </div>
-        <p>City is the class (category), and Toronto is the instance (noun) of the class City.</p>
       </article>
 
-      <article>
+      <article id='city-instance'>
+        <style>
+          #city-instance p { margin: 70px 0px; }
+        </style>
+        <div class='build'>
+          <p class='large-font'>Toronto is an instance of the class City.</p>
+          <p class='large-font'>London is an instance of the class City.</p>
+          <p class='large-font'>New York is an instance of the class City.</p>
+          <p class='large-font'>Paris is an instance of the class City.</p>
+        </div>
+      </article>
+
+      <article id='simpsons'>
+        <h3>SimpsonsCharacter</h3>
+        <div class='class-diagram'>
+          <img src="images/simpsons.png" width="600" height="411" border="1">
+        </div>
+      </article>
+
+      <article id='simpsons-instance'>
+        <style>
+          #simpsons-instance p { margin: 40px 0px; }
+        </style>
+        <div class='build'>
+          <p class='large-font'>Lisa Simpson is an instance of the class SimpsonsCharacter.</p>
+          <p class='large-font'>Bart Simpson is an instance of the class SimpsonsCharacter.</p>
+          <p class='large-font'>Homer Simpson is an instance of the class SimpsonsCharacter.</p>
+          <p class='large-font'>Marge Simpson is an instance of the class SimpsonsCharacter.</p>
+        </div>
+      </article>
+
+      <article id='string-class'>
+        <style>
+          #string-class div { padding: 20px; }
+        </style>
         <h3>String</h3>
-        <div style='border:solid 2px black;padding:20px'>
+        <div class='class-diagram'>
           "ladies"<br><br>
           "ladieslearningcode"<br><br>
-          "Today you are You, that is truer than true. There is no one alive who is Youer than You."
+          "The dog jumped over the fence."
         </div>
-        <p>String is the class (category), and "ladies" is the instance (noun) of the class String.</p>
+      </article>
+      
+      <article id='string-instance'>
+        <style>
+          #string-instance p { margin: 70px 0px; }
+        </style>
+        <div class='build'>
+          <p class='large-font'>"ladies" is an instance of the class String.</p>
+          <p class='large-font'>"ladieslearningcode" is an instance of the class String.</p>
+          <p class='large-font'>"The dog jumped over the fence." is an instance of the class String.</p>
+        </div>
       </article>
 
-      <article>
+      <article id='objects-objects'>
+        <style>
+          #objects-objects .large-font { margin: 150px 0px; }
+        </style>
         <h3>
           Objects, Objects, Everywhere!
         </h3>
         <p>You've already met Objects. That's another programming word!</p>
-        <p>Everything is Ruby is an Object.</p>
-        <p>Classes themselves are Objects, and instances of those classes are also Objects.</p>
-        <p>The class SimpsonsCharacter is an Object, and Homer Simpson is also an Object.</p>
-        <p>The class City is an Object, and Toronto is also an Object.</p>
-        <p>The class String is an Object, and "ladies" is also an Object.</p>
+        <div class='build'>
+          <p class='large-font'>Everything in Ruby is an Object.</p>
+        </div>
+      </article>
+
+      <article id='this-is-an-object'>
+        <style>
+          #this-is-an-object .large-font { margin: 50px 0px; }
+        </style>
+        <div class='build'>
+          <p class='large-font'>Classes are <b>objects</b>.</p>
+          <p>String is an object.</p>
+          <p>Integer is an object.</p>
+          <p class='large-font'>Instances of classes are <b>objects</b>.</p>
+          <p>1 is an object.</p>
+          <p>"ladies" is an object.</p>
+        </div>
       </article>
 
       <article>
@@ -368,32 +421,39 @@ end
         </section>
       </article>
 
-      <article>
+      <article id='ruby-method'>
+        <style>
+          #ruby-method .large-font { margin: 60px 0px; }
+        </style>
         <h3>
           Methods
         </h3>
-        <p>next, odd?, and even? are all methods that you can call on an Integer.</p>
-        <p>capitalize, upcase, and reverse are all methods that you can call on a String.</p>
-        <p>When you call a method, you're telling the String "ladieslearningcode" to do something.</p>
-        <p>Methods are actions. You can compare methods in Ruby to verbs in English.</p>
-        <p>In English, you would tell Lisa Simpson to jump. In Ruby, you would call the jump method on Lisa.</p>
+        <div class='build'>
+          <p class='large-font'><b>next</b>, <b>odd?</b>, and <b>even?</b> are all methods that you can call on an Integer.</p>
+          <p class='large-font'><b>capitalize</b>, <b>upcase</b>, and <b>reverse</b> are all methods that you can call on a String.</p>
+          <p class='large-font'>Methods are actions.</p>
+        </div>
       </article>
       
-      <!-- long ass llc hash tag -->
-      <!-- functions like a nickname -->
+      <article id='class-methods'>
+        <style>
+          #class-methods .large-font { margin: 200px 0px; }
+        </style>
+        <p class='large-font'>Classes come packaged with methods.</p>
+      </article>
+      
       <article>
         <h3>
           I'm lazy! I don't want to do all of this typing!
         </h3>
-        <p>When working with the String "ladieslearningcode", it was annoying to have to type it out every single time.</p>
-        <p>What if we could type in "ladieslearningcode" just once, and store it in our computer's memory for later use? We can!</p>
-        <section><pre>> llc = "ladieslearningcode"<br>=> "ladieslearningcode"</pre></section>
+        <p>What if we could type in "ladieslearningcode" just once, and store it for later use? We can!</p>
+        <section>
+          <pre>> llc = "ladieslearningcode"</pre>
+          <pre>=> "ladieslearningcode"</pre></section>
         <p>You've just <b>assigned</b> the String "ladieslearningcode to the <b>variable</b> llc.</p>
         <p>A programmer would say that the variable llc points to the object "ladieslearningcode".</p>
       </article>
       
-      <!-- temporary, equals sign means assignment, llc alone just means get it -->
-      <!-- explain why .upcase doesn't change the value of the variable itself -->
       <article>
         <h3>
           Variables Can (And Often Do!) Vary
@@ -455,13 +515,22 @@ end
       
       <article>
         <h3>Modifying the value with a method</h3>
-        <p>Try asking for the value of llc now.</p>
         <section class='build'>
+          <pre>> llc.reverse</pre><pre>=> "edocgninraelseidal"</pre>
+          <p>Try asking for the value of llc now.</p>
           <pre>> llc</pre><pre>=> "ladieslearningcode"</pre>
-          <p>But wait, why didn't it change to "edocgninraelseidal"?</p>
+        </section>
+      </article>
+      
+      <article id='wait-why'>
+        <style>
+          #wait-why p { margin: 50px 0px; }
+        </style>
+        <h3>Wait. Why didn't it change?</h3>
+        <section class='build'>
+          <p class='large-font'>llc is still pointing to "ladieslearningcode". You didn't tell it to point to a different string.</p>
           <div>llc <img src='images/arrow.png'> "ladieslearningcode"</div>
-          <p>llc is still pointing to "ladieslearningcode". You didn't tell it to point to a different string.</p>
-          <p>If you want the value to change, you have to set it to something else.</p>
+          <p class='large-font'>If you want the value to change, you have to set it to something else.</p>
         </section>
       </article>
       
@@ -469,7 +538,7 @@ end
         <section class='build'>
           <pre>> llc = llc.reverse</pre><pre>=> "edocgninraelseidal"</pre>
           <pre>> llc</pre><pre>=> "edocgninraelseidal"</pre>
-          <p>If you want the value of a variable to change, you have to explicitly tell it to change.</p>
+          <p class='large-font'>If you want the value of a variable to change, you have to explicitly tell it to change.</p>
         </section>
       </article>
       
@@ -477,27 +546,24 @@ end
         <h3>
           Let's Try One More
         </h3>
-        <pre>> llc.length</pre>
-        <pre>=> 18</pre>
-        
-        <p>
-          If you're familiar with Twitter, you're probably starting to get a sense of how Twitter knows 
-          how many characters you've typed in.
-        </p>
+        <div class='build'>
+          <pre>> llc.length</pre>
+          <pre>=> 18</pre>
+          <p class='large-font'>
+            You're probably starting to get a sense of how Twitter knows 
+            how many characters you've typed in.
+          </p>
+        </div>
       </article>
       
       <article>
-        <p>Let's write and manipulate a few tweets</p>
+        <h3>Doing like Twitter does.</h3>
         <section class='build'>
           <pre>> tweet = "I'm writing my first program at the @llcodedotcom<br>Intro to Ruby workshop!"</pre>
           <pre>=> "I'm writing my first program at the @llcodedotcom <br>Intro to Ruby workshop!"</pre>
           <pre>> tweet.length</pre>
           <pre>=> 73</pre>
-          <p>
-            So far we've been working only in IRB, but our code is getting more complicated and we 
-            want to be able to run it again without having to type it all out. We want to save our code 
-            somewhere so that we can run it again and again. This is called a program.
-          </p>
+          <p class='large-font'>We now know enough to write a program.</p>
         </section>
       </article>
       
@@ -515,46 +581,50 @@ end
         <section>
           <pre>ruby twitter.rb</pre>
         </section>
-        <p>Wait, what? Why didn't it show me the length of my string?</p>
+        <div class='build'><p>Wait, what? Why didn't it show me the length of my string?</p></div>
       </article>
       
-      <article>
+      <article id='ruby-output'>
+        <style>
+          #ruby-output .large-font { margin: 50px 0px; }
+        </style>
         <h3>
           Outputting Text to the Screen
         </h3>
-        <p>
-          In IRB, we were used to seeing the return value of every statement we executed. 
-          Remember, IRB is like back and forth text messaging.
-        </p>
-        <p>
-          When you're writing a program and running it, you have to explicitly tell the program when you want it to output something.
-        </p>
-        <p>Modify your program with the code below, and notice the result when you run it again.</p>
+        <p class='large-font'>IRB is like back-and-forth text messaging.</p>
+        <p class='large-font'>A program has to be told when to output something</p>
+        <p>Modify your program:</p>
         <section>
           <pre>tweet = "I'm writing my first program at the @llcodedotcom<br>Intro to Ruby workshop!"<br>puts tweet.length</pre>
         </section>
       </article>
       
       <!-- just words, highlight in a different colour before -->
-      <article>
+      <article id='recap-one'>
+        <style>
+          #recap-one .large-font { margin: 50px 0px; text-align: center; }
+        </style>
         <h3>
           Recap Slide
         </h3>
-        <p>Integer</p>
-        <p>String</p>
-        <p>Class</p>
-        <p>Object</p>
-        <p>Variable</p>
+        <div class='build'>
+          <p class='large-font'>Integer</p>
+          <p class='large-font'>String</p>
+          <p class='large-font'>Class</p>
+          <p class='large-font'>Object</p>
+          <p class='large-font'>Variable</p>
+        </div>
       </article>
       
-      <!-- tell them to try it in the console, tell mentors to comment the thing -->
-      <!-- give them the answer -->
-      <article>
+      <article id='puzzle-one'>
+        <style>
+          #puzzle-one .large-font { margin: 100px 0px; }
+        </style>
         <h3>
           Puzzle One - Variables
         </h3>
-        <p>Open puzzle_1.rb in the puzzles folder, and write down the output you expect to see if you were to run this script.</p>
-        <p>If you're not sure of something, remember that you can type <b>irb</b> again and try it out.</p>
+        <p class='large-font'>Open puzzle_1.rb in the puzzles folder, and write down the output you expect to see if you were to run this script.</p>
+        <p class='large-font'>If you're not sure of something, remember that you can type <b>irb</b> again and try it out.</p>
       </article>
       
       <article>

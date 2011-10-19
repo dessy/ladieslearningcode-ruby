@@ -671,3 +671,9 @@ article.smaller q::after {
   font-color: #B1009A;
   display: inline;
 }
+
+.class-diagram { 
+  border:solid 2px black; 
+  padding:17px 0px 10px 80px; 
+  margin-top: 50px; 
+}
