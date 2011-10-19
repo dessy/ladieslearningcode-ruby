@@ -169,6 +169,39 @@ body {
 .slides > article {
   display: none;
 }
+
+/*.slides > article.far-past {
+  display: block;
+  margin-left: -2400px;
+}
+
+.slides > article.past {
+  visibility: visible;
+  display: block;
+  margin-left: -1400px;
+}
+
+.slides > article.current {
+  visibility: visible;
+  display: block;
+  margin-left: -450px;
+  -webkit-transform: scale(1.0);
+  -moz-transform: scale(1.0);
+  -o-transform: scale(1.0);
+  opacity: 1.0;
+}
+
+.slides > article.future {
+  visibility: visible;
+  display: block;
+  margin-left: 500px;
+}
+
+.slides > article.far-future {
+  display: block;
+  margin-left: 1500px;
+}*/
+
 .slides > article.far-past {
   display: block;
   transform: translate(-2040px);
@@ -178,6 +211,7 @@ body {
 }
 .slides > article.past {
   display: block;
+  opacity: 0;
   transform: translate(-1020px);
   -o-transform: translate(-1020px);
   -moz-transform: translate(-1020px);
@@ -192,6 +226,7 @@ body {
 }
 .slides > article.next {
   display: block;
+  opacity: 0.35;
   transform: translate(1020px);
   -o-transform: translate(1020px);
   -moz-transform: translate(1020px);
@@ -610,3 +645,16 @@ article.smaller q::after {
 .prettyprint .var { /* a declaration; a variable name */
   color: rgb(127, 0, 127);
 }  
+
+.slides {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  display: block;
+  overflow: hidden;
+  background: white;
+/*  background: url(images/ladieslearningcode-125x125.gif) 10px top no-repeat;*/
+  border-top: 15px #B1009A solid;
+}
