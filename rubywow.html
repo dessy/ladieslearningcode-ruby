@@ -717,41 +717,61 @@ end
         </div>
       </article>
       
-      <article>
+      <article id='conditional-twitter-1'>
+        <style>
+          #conditional-twitter-1 .large-font { margin-top: 100px; }
+        </style>
         <h3>
           Giving Output Based on Input
         </h3>
-        <p>
-          A lot of a programmer's job, especially when working on web applications, is doing something 
-          based on the input the user provided.
+        <p>Twitter...</p>
+        <p class='large-font'>Lets you send your tweet if it is 140 characters or less</p>
+        <p class='large-font'>Tells you that your tweet is too long to send otherwise.</p>
+      </article>
+      
+      <article id='conditional-twitter-2'>
+        <style>
+          #conditional-twitter-2 .large-font { margin-top: 100px; }
+        </style>
+        <h3>Giving Output Based on Input</h3>
+        <p class='large-font'>
+          So far we know how to determine the length of the user's tweet. 
         </p>
-        <p>
-          Twitter lets you send your tweet if it is 140 characters or less, 
-          and tells you that your tweet is too long to send otherwise.
-        </p>
-        <p>
-          So far we know how to determine the length of the user's tweet, but we don't know how to tell them 
+        <p class='large-font'>
+          We don't know how to tell them 
           whether they can or cannot send their tweet, depending on it's length.
         </p>
       </article>
       
-      <article>
+      <article id='conditional-logic'>
+        <style>
+          #conditional-logic .large-font { margin-top: 100px; }
+        </style>
+        <h3>Conditional Logic</h3>
+        <p class='large-font'>Programming is writing out sets of simple instructions for the computer to follow.</p>
+        <p class='large-font'>Let's break down out tweet logic into simple instructions.</p>
+      </article>
+      
+      <article id='conditional-instructions'>
+        <style>
+          #conditional-instructions .large-font { margin-top: 80px; }
+        </style>
         <h3>
           Conditional Logic
         </h3>
-        <p>
-          Programming is writing out sets of simple instructions for the computer to follow. 
-          Let's break down out tweet logic into simple instructions. Here is what we want our program to do:
-        </p>
-        <p>if the tweet is greater than 140 characters, tell the user that they cannot send their tweet</p>
-        <p>if the tweet is less than or equal to 140 characters, tell the user that they can send their tweet</p>
+        <p>We want our program to ...</p>
+        <p class='large-font'>if the tweet is greater than 140 characters, tell the user that they cannot send their tweet</p>
+        <p class='large-font'>if the tweet is less than or equal to 140 characters, tell the user that they can send their tweet</p>
       </article>
       
-      <article>
+      <article id='greater-than'>
+        <style>
+          #greater-than .large-font { margin: 100px 0px; }
+        </style>
         <h3>
           Conditional Logic: Greater Than
         </h3>
-        <p>The mathematical symbol for <b>greater than</b> is <b>></b></p>
+        <p class='large-font'>The math symbol for <b>greater than</b> is <b>></b></p>
         <p>Try the code below in IRB:</p>
         <section class='build'>
           <pre>> 200 > 140</pre><pre>=> true</pre>
@@ -762,8 +782,7 @@ end
         <h3>
           Conditional Logic: Greater Than
         </h3>
-        <p>The mathematical symbol for <b>greater than</b> is <b>></b></p>
-        <p>Try the code below in IRB:</p>
+        <p>Now try:</p>
         <section class='build'>
           <pre>> number_of_characters = 200</pre><pre>=> 200</pre>
           <pre>> number_of_characters > 140</pre><pre>=> true</pre>
@@ -774,37 +793,40 @@ end
         <h3>
           Conditional Logic: Greater Than
         </h3>
-        <p>The mathematical symbol for <b>greater than</b> is <b>></b></p>
-        <p>Try the code below in IRB:</p>
+        <p>Now try:</p>
         <section class='build'>
           <pre>> number_of_characters = 80</pre><pre>=> 80</pre>
           <pre>> number_of_characters > 140</pre><pre>=> false</pre>
         </section>
       </article>
       
-      <article>
+      <article id='less-than'>
+        <style>
+          #less-than .large-font { margin: 50px 0px; }
+        </style>
         <h3>
           Conditional Logic: Less Than
         </h3>
-        <p>The mathematical symbol for <b>less than</b> is <b><</b></p>
-        <p>Try the code below in irb (omitting output for now)</p>
+        <p class='large-font'>The math symbol for <b>less than</b> is <b><</b></p>
+        <p>Try the code below in irb</p>
         <section class='build'>
           <pre>> llc = "ladieslearningcode"</pre><pre>=> "ladieslearningcode"</pre>
           <pre>> llc.length < 140</pre><pre>=> true</pre>
         </section>
       </article>
       
-      <article>
+      <article id='conditional-logic'>
         <h3>
           Conditional Logic in Our Simple Twitter
         </h3>
-        <p>
-          Let's simplify our if statements from before using our new knowledge.
-          Remember that we're storing the user's tweet in the variable tweet.
-        </p>
+        <p class='large-font'>Let's simplify our if statements.</p>
+        <p class='large-font'>Remember that we're storing the user's tweet in the variable tweet.</p>
       </article>
       
-      <article>
+      <article id='conditional-simplify'>
+        <style>
+          #conditional-simplify p { margin: 50px 0px; }
+        </style>
         <h3>
           Conditional Logic in Our Simple Twitter
         </h3>
@@ -836,81 +858,100 @@ end
         </p>
       </article>
 
-      <article>
+      <article id='conditional-instructions'>
         <h3>
           Your First Bug!
         </h3>
-        <p>This is really a bug, since we're not actually taking into account all possible tweet lengths.</p>
-        <p>Most programming problems can be solved many different ways, and this bug is no exception.</p>
-        <p>
-          We're going to look at three different solutions, and learn more about if statements as 
-          well as comparing objects along the way.
+        <p class='large-font'>We're not actually taking into account all possible tweet lengths.</p>
+        <p class='large-font'>Programming problems can be solved many different ways.</p>
+        <p class='large-font'>We'll look at three different solutions.</p>
+      </article>
+
+      <article id='conditional-logic'>
+        <h3>
+          First (Worst) Solution
+        </h3>
+        <p class='large-font'>Since we're only missing one case, the case where the tweet is exactly 140 characters, we can just add another if statement.</p>
+      </article>
+      
+      <article>
+        <h3>
+          First (Worst) Solution
+        </h3>
+        <p>Add this last if statement to the bottom of your file: (see assignments/twitter_5.rb if needed)</p>
+        <section>
+          <pre>if tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p class='large-font'>
+          The == operator checks that the value of the objects on either side of it are equal. 
+        </p>
+      </article>
+      
+      <article id='conditional-logic'>
+        <h3>
+          Refactoring Our Code
+        </h3>
+        <p class='large-font'>
+          Programmers are always refactoring (re-strcturing, re-organizing) their code to make it cleaner and more readable.
+          Right now is a great time to do that. 
         </p>
       </article>
 
       <article>
         <h3>
-          First (Worst) Solution
-        </h3>
-        <p>Since we're only missing one case, the case where the tweet is exactly 140 characters, we can just add another if statement.</p>
-        <p>Add this last if statement to the bottom of your file: (see assignments/twitter_5.rb if needed)</p>
-        <section>
-          <pre>if tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
-        </section>
-        <p>
-          The == operator checks that the value of the objects on either side of it are equal. 
-          Run your script again and notice that it catches the last case where a tweet is 140 characters long.
-        </p>
-      </article>
-      
-      <!-- evaluated in order, the first one wins -->
-      <article>
-        <h3>
           Refactoring Our Code
         </h3>
-        <p>
-          Programmers are always refactoring (re-strcturing, re-organizing) their code to make it cleaner and more readable.
-          Right now is a great time to do that. 
-        </p>
         <p>Three if statements are unnecessary. We can actually combine all of these if statements into one, like so:</p>
         <section>
           <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>elsif tweet.length < 140<br>  puts "Tweet your heart out!"<br>elsif tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
         <p>(see assignments/twitter_6.rb if needed)</p>
       </article>
+
       
-      <article>
+      <article id='conditional-logic'>
         <h3>if .. elsif</h3>
         <section>
           <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>elsif tweet.length < 140<br>  puts "Tweet your heart out!"<br>elsif tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
-        <p>In the above code, if the first statement doesn't evaluate to true, then the next one is attempted, and so on.</p>
-        <p>
+        <p class='large-font'>In the above code, if the first statement doesn't evaluate to true, then the next one is attempted, and so on.</p>
+      </article>
+
+      <article id='conditional-logic'>
+        <h3>if .. elsif</h3>
+        <section>
+          <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>elsif tweet.length < 140<br>  puts "Tweet your heart out!"<br>elsif tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p class='large-font'>
           Only one puts statement is ever executed.
           The statements are evaluated in the order they are written, so the first one to evaluate to true is the only one executed.
         </p>
-        <p>If none of the statements evaluate to true, then none of the puts statements are executed.</p>
+      </article>
+      
+      <article id='conditional-logic'>
+        <h3>if .. elsif</h3>
+        <section>
+          <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>elsif tweet.length < 140<br>  puts "Tweet your heart out!"<br>elsif tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p class='large-font'>If none of the statements evaluate to true, then none of the puts statements are executed.</p>
       </article>
       
       <article>
         <h3>
           Second Solution
         </h3>
-        <p>
-          Our code is already better (and still has no bugs), but more refactoring can be done.
-          Notice that the line puts "Tweet your hear out!" is repeated? This is unnecessary. 
-          Let's cut it out by replace the entire if statement with the code below:
-        </p>
+        <p>Notice that the line puts "Tweet your hear out!" is unnecessarily repeated?</p>
+        <p>Let's cut it out by replacing the entire if statement with the code below:</p>
         <section>
           <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>elsif tweet.length <= 140<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
         <p>(see assignments/twitter_7.rb if needed)</p>
       </article>
       
-      <article>
+      <article id='conditional-instructions'>
         <h3>Less than or equal to with <=, Greater than or equal to with >=</h3>
-        <p>The <b><=</b> operator behaves the exact same way as the less than operator, but checks for equality as well.</p>
-        <p>As you may have guessed, checking for equality with greater than works exactly the same way, using the <b>>=</b> operator.</p>
+        <p class='large-font'>The <b><=</b> operator checks for equality as well.</p>
+        <p class='large-font'>Checking for equality with greater than works exactly the same way, using the <b>>=</b> operator.</p>
       </article>
       
       <article>
@@ -919,27 +960,32 @@ end
         </h3>
         <p>
           This is better, but look at the logic closely. Do we really even need to specify the second condition?
-          Can't we just prevent the user from tweeting if their tweet is over 140 characters, and let them tweet otherwise?
         </p>
-        <p>Yes we can! Replace your code again with the code below:</p>
+        <p>Replace your code again with the code below:</p>
         <section>
           <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>else<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
-        <p>(see assignments/twitter_8.rb if needed)</p>
-        <p>Run your code again, and it should function the exact same way!</p>        
+        <p>(see assignments/twitter_8.rb if needed)</p>        
       </article>
       
-      <article>
+      <article id='conditional-logic'>
         <h3>if .. else</h3>
         <section>
           <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>else<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
-        <p>
+        <p class='large-font'>
           Just like with if .. elsif, only one puts statement is ever executed. The difference here is that one of the
           puts statements is <b>always</b> executed. 
         </p>
-        <p>
-          The else is there are a catch-all. You can think of it like a last resort. 
+      </article>
+      
+      <article id='conditional-logic'>
+        <h3>if .. else</h3>
+        <section>
+          <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>else<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p class='large-font'>
+          The else is there are a <b>catch-all</b>. You can think of it like a last resort. 
           If none of the other options are true, then just execute the puts statement after the else.
         </p>
       </article>
@@ -981,17 +1027,18 @@ end
         </table>
       </article>
 
-      <!-- cheat sheet of this is a keyword, this is a variable, etc. etc. -->
-      
-      <article>
-        <h3>
-          Recap Slide
-        </h3>
-        <p>puts</p>
-        <p>gets</p>
-        <p>if .. elsif</p>
-        <p>if .. elsif .. else</p>
-        <p>if .. else</p>
+      <article id='recap-two'>
+        <h3>Recap Slide</h3>
+        <style>
+          #recap-two .large-font { margin: 50px 0px; text-align: center; }
+        </style>
+        <div class='build'>
+          <p class='large-font'>puts</p>
+          <p class='large-font'>gets</p>
+          <p class='large-font'>if .. elsif</p>
+          <p class='large-font'>if .. elsif .. else</p>
+          <p class='large-font'>if .. else</p>
+        </div>
       </article>
       
       <article>
