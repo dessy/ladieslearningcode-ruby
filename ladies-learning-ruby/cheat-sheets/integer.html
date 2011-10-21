@@ -10,14 +10,18 @@
     .heading {
       font-size: 40px;
       font-weight: bold;
-      padding: 0px 40px 0px 30px;
+      padding: 0px 40px 60px 30px;
       text-align: center;
     }
     .example {
       font-size: 20px;
       border: solid 1px black;
       border-radius: 20px;
-      padding: 20px;
+      padding: 20px 0px 20px 20px;
+    }
+    .try {
+      display: inline;
+      padding-right: 30px
     }
   </style>
 
@@ -26,71 +30,59 @@
     <tr>
       <td class='heading'>to_r</td>
       <td class='example'>
-        5.to_r
-        <br /><br />
-        0.5.to_r
-        <br /><br />
-        -8.3.to_r
+        <div class='try'>5.to_r</div>
+        <div class='try'>0.5.to_r</div>
+        <div class='try'>-8.3.to_r</div>
       </td>
     </tr>
     <tr>
       <td class='heading'>to_s</td>
       <td class='example'>
-        40.to_s
-        <br /><br />
-        -2.to_s
-        <br /><br />
-        0.2.to_s
+        <div class='try'>40.to_s</div>
+        <div class='try'>-2.to_s</div>
+        <div class='try'>0.2.to_s</div>
       </td>
     </tr>
     <tr>
       <td class='heading'>.abs</td>
       <td class='example'>
-        -100.abs
-        <br /><br />
-        -2 * 4.abs
-        <br /><br />
-        (-2 * 4).abs
+        <div class='try'>-100.abs</div>
+        <div class='try'>-2 * 4.abs</div>
+        <div class='try'>(-2 * 4).abs</div>
       </td>
     </tr>
     <tr>
       <td class='heading'>zero?</td>
       <td class='example'>
-        0.zero?
-        <br /><br />
-        1.zero?
-        <br /><br />
-        0.0.zero?
+        <div class='try'>0.zero?</div>
+        <div class='try'>1.zero?</div>
+        <div class='try'>0.0.zero?</div>
       </td>
     </tr>
     <tr>
       <td class='heading'>ceil</td>
       <td class='example'>
-        0.33.ceil
-        <br /><br />
-        101.ceil
-        <br /><br />
-        0.0001.ceil
+        <div class='try'>0.33.ceil</div>
+        <div class='try'>101.ceil</div>
+        <div class='try'>0.0001.ceil</div>
       </td>
     </tr>
     <tr>
       <td class='heading'>numerator</td>
       <td class='example'>
-        0.75.numerator
-        <br /><br />
-        1.75.numerator
-        <br /><br />
-        0.25.numerator
+        <div class='try'>0.75.numerator</div>
+        <div class='try'>1.75.numerator</div>
+        <div class='try'>0.25.numerator</div>
+        <div class='try'>0.33.numerator</div>
       </td>
     </tr>
     <tr>
       <td class='heading'>denominator</td>
       <td class='example'>
-        0.75.denominator
-        <br /><br />
-        1.75.denominator
-        <br /><br />
-        0.25.denominator
+        <div class='try'>0.75.denominator</div>
+        <div class='try'>1.75.denominator</div>
+        <div class='try'>0.25.denominator</div>
+        <div class='try'>0.33.denominator</div>
       </td>
     </tr>
   </table>
