@@ -45,3 +45,11 @@ plural_verb + " around. You see four walls that melt and breathe, and the room i
 adjective + " " + plural_noun + ", which " + present_tense_verb + " back and fourth, changing into all the colors of a " + 
 noun + ". The snowmen sing to you in many voices, saying, '" + 
 name + ", " + name + " go back to sleep.' So, you close your eyes, realizing that it was all just a dream."
+
+# SLIDE 61
+# conditional logic cheat sheet
+
+
+
+
+
