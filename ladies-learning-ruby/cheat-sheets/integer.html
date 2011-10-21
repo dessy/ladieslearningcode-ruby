@@ -21,76 +21,76 @@
     }
   </style>
 
-  <div class='title'>String</div>
+  <div class='title'>Integer</div>
   <table>
     <tr>
-      <td class='heading'>chop</td>
+      <td class='heading'>to_r</td>
       <td class='example'>
-        "ladies".chop
+        5.to_r
         <br /><br />
-        "a lady ".chop
+        0.5.to_r
         <br /><br />
-        "12345".chop
+        -8.3.to_r
       </td>
     </tr>
     <tr>
-      <td class='heading'>*</td>
+      <td class='heading'>to_s</td>
       <td class='example'>
-        "ladies" * 4
+        40.to_s
         <br /><br />
-        "a" * 2 * 3
+        -2.to_s
         <br /><br />
-        4 * "ladies"
+        0.2.to_s
       </td>
     </tr>
     <tr>
-      <td class='heading'>downcase</td>
+      <td class='heading'>.abs</td>
       <td class='example'>
-        "LADieS".downcase
+        -100.abs
         <br /><br />
-        "learning".downcase
+        -2 * 4.abs
         <br /><br />
-        "12345".downcase
+        (-2 * 4).abs
       </td>
     </tr>
     <tr>
-      <td class='heading'>empty?</td>
+      <td class='heading'>zero?</td>
       <td class='example'>
-        "".empty?
+        0.zero?
         <br /><br />
-        "empty".empty?
+        1.zero?
         <br /><br />
-        " ".empty?
+        0.0.zero?
       </td>
     </tr>
     <tr>
-      <td class='heading'>include?</td>
+      <td class='heading'>ceil</td>
       <td class='example'>
-        "ladieslearningcode".include? "learn"
+        0.33.ceil
         <br /><br />
-        "ladieslearningcode".include? "edoc"
+        101.ceil
         <br /><br />
-        "ladieslearningcode".include? ""
+        0.0001.ceil
       </td>
     </tr>
     <tr>
-      <td class='heading'>next</td>
+      <td class='heading'>numerator</td>
       <td class='example'>
-        "a".next
+        0.75.numerator
         <br /><br />
-        "Z".next
+        1.75.numerator
         <br /><br />
-        "aa".next
+        0.25.numerator
       </td>
     </tr>
     <tr>
-      <td class='heading'>delete</td>
+      <td class='heading'>denominator</td>
       <td class='example'>
-        "ladieslearningcode".delete "aeiou"
+        0.75.denominator
         <br /><br />
-        "ladieslearningcode".delete "lady"
+        1.75.denominator
         <br /><br />
-        "ladieslearningcode".delete ""
+        0.25.denominator
       </td>
     </tr>
   </table>
