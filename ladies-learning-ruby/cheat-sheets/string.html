@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <script src='../assets/default.js'></script>
+  </head>
+
+  <style>
+    .title {
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      width: 400px;
+      padding-bottom: 20px;
+    }
+    .heading {
+      font-size: 40px;
+      font-weight: bold;
+      padding: 0px 40px 0px 30px;
+      text-align: center;
+    }
+    .example {
+      font-size: 20px;
+      border: solid 1px black;
+      border-radius: 20px;
+      padding: 20px;
+    }
+  </style>
+
+  <div class='title'>String</div>
+  <table>
+    <tr>
+      <td class='heading'>chop</td>
+      <td class='example'>
+        "ladies".chop
+        <br /><br />
+        "a lady ".chop
+        <br /><br />
+        "12345".chop
+      </td>
+    </tr>
+    <tr>
+      <td class='heading'>*</td>
+      <td class='example'>
+        "ladies" * 4
+        <br /><br />
+        "a" * 2 * 3
+        <br /><br />
+        4 * "ladies"
+      </td>
+    </tr>
+    <tr>
+      <td class='heading'>downcase</td>
+      <td class='example'>
+        "LADieS".downcase
+        <br /><br />
+        "learning".downcase
+        <br /><br />
+        "12345".downcase
+      </td>
+    </tr>
+    <tr>
+      <td class='heading'>empty?</td>
+      <td class='example'>
+        "".empty?
+        <br /><br />
+        "empty".empty?
+        <br /><br />
+        " ".empty?
+      </td>
+    </tr>
+    <tr>
+      <td class='heading'>include?</td>
+      <td class='example'>
+        "ladieslearningcode".include? "learn"
+        <br /><br />
+        "ladieslearningcode".include? "edoc"
+        <br /><br />
+        "ladieslearningcode".include? ""
+      </td>
+    </tr>
+    <tr>
+      <td class='heading'>next</td>
+      <td class='example'>
+        "a".next
+        <br /><br />
+        "Z".next
+        <br /><br />
+        "aa".next
+      </td>
+    </tr>
+    <tr>
+      <td class='heading'>delete</td>
+      <td class='example'>
+        "ladieslearningcode".delete "aeiou"
+        <br /><br />
+        "ladieslearningcode".delete "lady"
+        <br /><br />
+        "ladieslearningcode".delete ""
+      </td>
+    </tr>
+  </table>
+</html>
