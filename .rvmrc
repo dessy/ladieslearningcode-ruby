@@ -8,7 +8,7 @@ environment_id="ruby-1.9.2-p290@llc"
 
 #
 # First we attempt to load the desired environment directly from the environment
-# file, this is very fast and efficicent compared to running through the entire
+# file, this is very fast and efficient compared to running through the entire
 # CLI and selector. If you want feedback on which environment was used then
 # insert the word 'use' after --create as this triggers verbose mode.
 #

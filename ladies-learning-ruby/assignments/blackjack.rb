@@ -21,7 +21,7 @@ player_sum = deck.delete_at(rand(deck.count - 1)) + deck.delete_at(rand(deck.cou
 
 move = "h"
 while move == "h"
-  # Tell the player their current sum, and then give them instrctions on what to do next.
+  # Tell the player their current sum, and then give them instructions on what to do next.
   puts "Your sum is #{player_sum}. Type h to hit, or anything else to stand"
   
   move = # TODO: Store the input from the player in the variable move. Don't forget to remove the \n.
@@ -48,9 +48,9 @@ while move == "h"
       break
     end
   else
-    # This code will execcute if the player decides to stand.
+    # This code will execute if the player decides to stand.
     
-    # This loop keeps dealing cards to the dealer and incresing the dealer_sum
+    # This loop keeps dealing cards to the dealer and increasing the dealer_sum
     # while the dealer sum is less than 17.
     while dealer_sum < 17
       dealer_sum = dealer_sum + deck.delete_at(rand(deck.count - 1))
