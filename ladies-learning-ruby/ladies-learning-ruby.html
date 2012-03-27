@@ -77,12 +77,15 @@
         <img src="assets/images/machine-language.jpg" width="600" height="411" border="1">
       </article>
 
-      <article>
+      <article id='middle-ground'>
         <h3>
           This is where a programming language comes in.
         </h3>
-        <p>A programming language is a language that is relatively easy for you to learn, but can also be understood by the computer.</p>
-        <p>It's the middle ground between English and the language that the computer understands.</p>
+        <style>
+          #middle-ground p { margin-top: 100px }
+        </style>
+        <p>A programming language is a language that is relatively <b>easy for you to learn</b>, but can also be <b>understood by the computer</b>.</p>
+        <p>It's the <b>middle ground</b> between English and the language that the computer understands.</p>
       </article>
       
       <article id='stupid-computer'>
@@ -95,19 +98,23 @@
         <p class='large-font'>Your computer can only do what you tell it to if you give it exact instructions.</p>
       </article>
       
-      <article>
+      <article id='stupid-computer'>
         <h3>People vs. Computers</h3>
-        <p>
+        <p class='large-font'>
           Suppose you had to teach a person how to make a peanut butter sandwich.
           You might give the person an easy to follow recipe.
         </p>
+      </article>
+      
+      <article>
+        <h3>People vs. Computers</h3>
         <p>1. Toast two slices of bread</p>
         <p>2. Spread peanut butter on one slice of bread</p>
         <p>3. Spread jam on the other slice of bread</p>
         <p>4. Put the two pieces of bread together</p>
         <p>5. Put the sandwich on a plate and serve it</p>
       </article>
-            
+      
       <article>
         <h3>People understand GENERAL instructions.</h3>
         <p>
@@ -230,6 +237,16 @@ end
         </section>
       </article>
 
+      <article id='ruby-robot'>
+        <style>
+          #ruby-robot img { margin: 50px 0 0 450px; }
+        </style>
+        <h3>
+          Meet Ruby Robot
+        </h3>
+        <img src="assets/images/robot.png">
+      </article>
+
       <article id='irb-intro'>
         <style>
           #irb-intro .instructions { margin-top: 100px; }
@@ -322,6 +339,20 @@ end
           <p class='large-font'>The word <b>"ladies"</b> is a <b>String</b>.
           <p>Integers and Strings are classes in Ruby. That's another programming word!</p>
         </div>
+      </article>
+
+      <article id='back-ruby-robot'>
+        <style>
+          #back-ruby-robot .large-font { margin: 80px 0 50px 0; }
+        </style>
+        <h3>
+          Back to Ruby Robot
+        </h3>
+        <p>Ruby Robot has pages and pages of instructions for what to do with different classes of objects.</p>
+        <p class='large-font'>When you ask Ruby Robot what <b>1 + 2</b> is:</p>
+        <p>It finds the instruction sheet for INTEGER.</p>
+        <p>Scans the instruction sheet for <b>+</b>.</p>
+        <p>Sees that when you ask for an INTEGER + INTEGER, you want it to add the two together.</p>
       </article>
 
       <article>
@@ -433,6 +464,17 @@ end
           <pre>=> "ladieslearningcode"</pre></section>
         <p>You've just <b>assigned</b> the String "ladieslearningcode to the <b>variable</b> llc.</p>
         <p>A programmer would say that the variable llc points to the object "ladieslearningcode".</p>
+      </article>
+      
+      <article id='back-ruby-robot'>
+        <style>
+          #back-ruby-robot .large-font { margin: 80px 0 50px 0; }
+        </style>
+        <h3>
+          Back to Ruby Robot
+        </h3>
+        <p class='large-font'>You gave Ruby Robot the string "<b>ladieslearningcode</b>", and asked it to put a sticky note with "<b>llc</b>" on that string.</p>
+        <p class='large-font'>Now, when you ask for "llc", Ruby Robot will know where to find your string, because it has labelled it.</p>
       </article>
       
       <article>
@@ -1049,7 +1091,7 @@ end
         </h3>
         <p>
           What if you want to be able to tell your program when to stop running? Create a new program with the following code, 
-          or use run the program in assignments/loop_1.rb:
+          or run the program in assignments/loop_1.rb:
         </p>
         <section>
           <pre>
@@ -1139,7 +1181,7 @@ puts "GO!"</pre>
       
       <article>
         <h3>Counting down</h3>
-        <p>Maybe we wants a program that simulates a countdown.</p>
+        <p>Maybe we want a program that simulates a countdown.</p>
         <p>Create a new program with the following code, or use run the program in assignments/loop_4.rb:</p>
         <section>
           <pre>
@@ -1384,11 +1426,76 @@ end</pre>
       </article>
       
       <article id='conditional-logic'>
-        <h3>
-          Puzzle 3 - Arrays
-        </h3>
+        <h3>Puzzle 3 - Arrays</h3>
         <p class='large-font'>What will be the output of puzzle 3?</p>
         <p class='large-font'>Remember to think about which methods modify the array, and which do not.</p>
+      </article>
+      
+      <article id='rails'>
+        <style>
+          #rails .large-font { margin-top: 70px }
+        </style>
+        <h3>Ruby on Rails</h3>
+        <p>Ruby became popular mostly because of Rails.</p>
+        <section class='build'>
+          <p class='large-font'>Ruby on Rails is a framework.</p>
+          <p class='large-font'>GREAT.</p>
+          <p class='large-font'>What's a framework?</p>
+        </section>
+      </article>
+      
+      <article id='rails'>
+        <style>
+          #rails .house { margin: 30px 0 0 140px }
+        </style>
+        <h3>Ruby on Rails</h3>        
+        <section class='build'>
+          <p class='large-font'>Imagine you're building a house.</p>
+          <img src='assets/images/house.jpg' class="house">
+        </section>
+      </article>
+      
+      <article id='rails'>
+        <style>
+          #rails .house { margin: 30px 0 0 140px }
+        </style>
+        <h3>Ruby on Rails</h3>        
+        <p class='large-font'>Many people before you have built houses.</p>
+        <p class='large-font'>Why do the boring work?</p>
+        <p class='large-font'>Rails gives you the foundation, the plumbing, the electrical work, and the structural walls.</p>
+      </article>
+      
+      <article id='rails'>
+        <style>
+          #rails img { display: block; margin: 0 auto; }
+                 table tr td { border: none; }
+        </style>
+        <h3>Ruby on Rails</h3>
+        <p>Rails was extracted from work done on Basecamp at 37signals. (2004)</p>
+        <table>
+          <tr>
+            <td><img src='assets/images/rails-basecamp.jpg'></td>
+            <td><img src='assets/images/rails-twitter.png'></td>
+          </tr>
+          <tr>
+            <td><img src='assets/images/rails-groupon.png'></td>
+            <td><img src='assets/images/rails-shopify.jpg'></td>
+          </tr>
+        </table>
+      </article>
+      
+      <article id='from-scratch'>
+        <style>
+          #from-scratch .large-font { margin-top: 70px }
+        </style>
+        <h3>A Program All Your Own</h3>
+        <p>Let's write a program from scratch.</p>
+        <p class='large-font'>For the biggest challenge:</p>
+        <p>Create a new document called <b>colours.rb</b> and write the program from scratch.</p>
+        <p class='large-font'>For a little bit of guidance:</p>
+        <p>Open the file <b>colours.rb</b> in the <b>assignments</b> folder.</p>
+        <br />
+        <p>Answers can be found in <b>assignments/answers/colours.rb</b></p>
       </article>
       
       <article id='instructions'>
@@ -1407,6 +1514,20 @@ end</pre>
             If the user did not say yes to any of the colours, it tells them that their favourite colour is not red, green, blue, or yellow.
           </p>
         </div>
+      </article>
+      
+      <article id='from-scratch'>
+        <style>
+          #from-scratch .large-font { margin-top: 70px }
+        </style>
+        <h3>An (Addictive) Program All Your Own</h3>
+        <p>Let's write something more complicated from scratch.</p>
+        <p class='large-font'>For the biggest challenge:</p>
+        <p>Create a new document called <b>blackjack.rb</b> and write the program from scratch.</p>
+        <p class='large-font'>For a little bit of guidance:</p>
+        <p>Open the file <b>blackjack.rb</b> in the <b>assignments</b> folder.</p>
+        <br />
+        <p>Answers can be found in <b>assignments/answers/blackjack.rb</b></p>
       </article>
       
       <article id='conditional-instructions'>
