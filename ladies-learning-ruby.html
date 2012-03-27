@@ -1,5 +1,19 @@
-<!DOCTYPE html>
+<!--
+  Google HTML5 slide template
 
+  Original slides by: 
+    Authors: Luke Mahé (code)
+             Marcin Wichary (code and design)
+           
+             Dominic Mazzoni (browser compatibility)
+             Charles Chen (ChromeVox support)
+
+    URL: http://code.google.com/p/html5slides/
+
+  Modifications by: Dessy Daskalov
+-->
+
+<!DOCTYPE html>
 <html>
   <head>
     <title>Ladies Learning Ruby</title>
@@ -52,9 +66,8 @@
       
       <article id='computer-wishes'>
         <style>
-          #computer-wishes 
-            h3 { padding-bottom: 10px; }
-            img { margin-left: 70px; }
+          #computer-wishes h3 { padding-bottom: 10px; }
+          #computer-wishes img { margin-left: 70px; }
         </style>
         <h3>
           1. Your computer speaks a different language.
@@ -88,20 +101,15 @@
           Suppose you had to teach a person how to make a peanut butter sandwich.
           You might give the person an easy to follow recipe.
         </p>
-        <!-- number these, 1, 2, etc. the others then become 1. a, 1. b, etc. -->
-        <!-- break it down and then assemble it -->
-        <!-- ruby already gives you a bit, libraries give you more -->
-        <ul>
-          <li>1. Toast two slices of bread</li>
-          <li>2. Spread peanut butter on one slice of bread</li>
-          <li>3. Spread jam on the other slice of bread</li>
-          <li>4. Put the two pieces of bread together</li>
-          <li>5. Put the sandwich on a plate and serve it</li>
-        </ul>
+        <p>1. Toast two slices of bread</p>
+        <p>2. Spread peanut butter on one slice of bread</p>
+        <p>3. Spread jam on the other slice of bread</p>
+        <p>4. Put the two pieces of bread together</p>
+        <p>5. Put the sandwich on a plate and serve it</p>
       </article>
             
       <article>
-        <h3>People understand GENERAL instructions</h3>
+        <h3>People understand GENERAL instructions.</h3>
         <p>
           We left out some parts of the process, but a person could figure out:
         </p>
@@ -111,61 +119,82 @@
         <p>etc, etc, etc (there are many little steps)</p>
       </article>
       
-      <article>
-        <h3>Computers understand EXACT instructions</h3>
-        <p>
+      <article id='computers-exact'>
+        <style>
+          #computers-exact p { margin: 150px 0px; };
+        </style>
+        <h3>Computers understand EXACT instructions.</h3>
+        <p class='large-font'>
           This same recipe for a computer would be much, much longer.
         </p>
       </article>
       
       <article>
-        <p>Firstly, a computer doesn't know what bread, peanut butter, or jam are, so you would have to define them.</p>
-        <p>Once a computer knows what all of the ingredients are, you would have to tell it where to find them.</p>
-      </article>
-      
-      <article>
-        <p>
-          For instance, you would have to tell it to take the bread off of the counter (after defining a counter!), 
-          and if the bread is in a bag (again, defining the bag!), to open the bag first. 
-        </p>
-        <p>          
-          Then you would have to go through the different
-          ways that a bag can be sealed: if the bad is twisted, then untwist it; if the bag has a plastic fastener, 
-          then take off the fastener; if the bad is tied, then untie it.
-        </p>
-        <p>You can quickly see how complicated the entire process becomes!</p>
+        <h3>1. Toast two slices of bread</h3>
+        <p>What is bread?</p>
+        <p>Where is it found?</p>
+        <p>How do I open the bag?</p>
+        <p>What is a slice?</p>
+        <p>How do I slice the bread?</p>
+        <p>How do I "toast"?</p>
+        <p>What is a toaster?</p>
+        <p>How do I use a toaster?</p>
+        <p>etc, etc, etc</p>
       </article>
 
       <article>
-        <h3>Back to programming languages</h3>
+        <h3>2. Spread peanut butter on one slice of bread</h3>
+        <p>What is peanut butter?</p>
+        <p>How do I "spread" peanut butter?</p>
+        <p>What is a butter knife?</p>
+        <p>Where is it found?</p>
+        <p>How do I open the knife drawer?</p>
+        <p>Which slice do I spread it on?</p>
+        <p>How much peanut butter do I spread?</p>
+        <p>etc, etc, etc</p>
+      </article>
+
+      <article id='programming-languages'>
+        <style>
+          #programming-languages p { margin-top: 80px; }
+          #programming-languages .mixed-font { line-height: 50px; }
+          #programming-languages b { font-size: 40px; }
+        </style>
+        <h3>Back to programming languages.</h3>
         <p>A programming language makes it easier for you to give the computer instructions.</p>
-        <p>
-          It's made up of simple elements, and by combining those elements together, 
-          a programmer can write a set of instructions that the computer then breaks down and interprets as its own language.
+        <p class='mixed-font'>
+          It's made up of <b>simple elements</b>, that when <b>combined together</b>, 
+          are used to write a set of <b>instructions</b> that the computer then breaks down and interprets as its own language.
         </p>
       </article>
 
-      <article>
+      <article id='learned-programming'>
+        <style>
+          #learned-programming p { margin-top: 100px; }
+        </style>
         <h3>
           You've just learned what programming is!
         </h3>
-        <p>Programming is writing out exact instructions that your computer can follow to do things.</p>
+        <p class='large-font'>Programming is writing out <b>exact instructions</b> that your computer can follow to do things.</p>
       </article>
       
-      <article>
+      <article id='ruby-rocks'>
+        <style>
+          #ruby-rocks .large-font { margin: 50px; }
+        </style>
         <h3>
           Why Ruby Rocks!
         </h3>
-        <p>Ruby was created in 1993 by Yukihiro Matsumoto, from Japan.</p>
-        <p> 
+        <p>Created in 1993 by Yukihiro Matsumoto, from Japan.</p>
+        <p class='large-font'> 
           "I hope to see Ruby help every programmer in the world to be productive, and to enjoy programming, and to be happy. 
-          That is the primary purpose of Ruby language." - Yukihiro Matsumoto, 2008
+          That is the primary purpose of the Ruby language."
         </p>
-        <p>That's exactly how the language is known today by developers. Ruby is fun, it's easy to learn, and the syntax is very forgiving.</p>
+        <p>Ruby is <b>fun</b>, it's <b>easy to learn</b>, and the <b>syntax is very forgiving</b>.</p>
       </article>
       
       <article>
-        <p>This is some code in Java:</p>
+        <p class='large-font'>This is some code in Java:</p>
         <section>
           <pre>
 class Person {
@@ -191,7 +220,7 @@ class Person {
       </article>
       
       <article>
-        <p>The equivalent code in Ruby looks like this:</p>
+        <p class='large-font'>The equivalent code in Ruby looks like this:</p>
         <section>
           <pre>
 class Person
@@ -201,29 +230,36 @@ end
         </section>
       </article>
 
-      <article>
+      <article id='irb-intro'>
+        <style>
+          #irb-intro .instructions { margin-top: 100px; }
+        </style>
         <h3>
           Time to see Ruby in action!
         </h3>
-        <p>We're going to open IRB, our Interactive Ruby Shell.</p>
-        <p>IRB is like text messaging with Ruby. You type a message to Ruby, and Ruby responds to your message.</p>
-        <p>Often you'll be asking Ruby to do something, and it will respond with the result</p>
-        <p><b>OS X</b></p>
-        <section>
-          <pre>Applications -> Utilities -> Terminal</pre>
-        </section>
-        <p />
-        <p><b>Windows</b> (C:\windows\system32\cmd.exe)</p>
-        <section>
-          <pre>Start -> All Programs -> Accessories -> Command Prompt</pre>
-        </section>
+        <p>IRB is like text messaging with Ruby.</p>
+        <p>You'll ask Ruby to do something, and it will respond.</p>
+        <div class='instructions'>
+          <p><b>OS X</b></p>
+          <section>
+            <pre>Applications -> Utilities -> Terminal</pre>
+          </section>
+          <p />
+          <p><b>Windows</b> (C:\windows\system32\cmd.exe)</p>
+          <section>
+            <pre>Start -> All Programs -> Accessories -> Command Prompt</pre>
+          </section>
+        </div>
       </article>
       
-      <article>
+      <article id='ask-ruby'>
+        <style>
+          #ask-ruby .large-font { margin-top: 100px; }
+        </style>
         <section class='build'>
           <pre>irb</pre>
           <pre>ruby-1.9.2-p290 :001 > </pre>
-          <p>Let's ask Ruby to do something.</p>
+          <p class='large-font'>Let's ask Ruby to do something.</p>
         </section>
       </article>
       
@@ -233,85 +269,105 @@ end
           <pre>=> 2</pre>
           <pre>> 462 * 86</pre>
           <pre>=> 39732</pre>
-          <p>Ruby can do math, and it can do it much quicker than a person can.</p>
+          <p class='large-font'>Ruby can do math, and it can do it much quicker than a person can.</p>
         </section>
       </article>
 
-      <!-- BIGGER CODE SNIPPETS!!! -->
-      <article>
+      <article id='ruby-knows'>
+        <style>
+          #ruby-knows .large-font { margin-top: 100px; }
+        </style>
         <section class='build'>
           <pre>> 1 + 2 + 3<br>=> 6</pre>
           <pre>> "ladies" + "learning" + "code"</pre>
           <pre>=> "ladieslearningcode"</pre>
-          <p>
-            How did Ruby know to add the numbers together, and to concatenate all of the words into one long word?
-          </p>
-          <p>
-            Ruby knows the difference between a number and a word.
-          </p>
+          <p class='large-font'>Ruby knows the difference between a number and a word.</p>
         </section>
       </article>
 
-      <article>
+      <article id='integer-string'>
+        <style>
+          #integer-string .ruby-class { margin: 100px 0px; }
+        </style>
         <h3>
           Numbers and Words, Integers and Strings
         </h3>
         <p>In Ruby ...</p>
-        <p>Numbers without decimals are called integers. We just did some math with some integers.</p>
-        <p>Letters, words, and sentences are called strings. We tell Ruby that we are intending to use a string by wrapping it in quotes.</p>
+        <p class='ruby-class'>Numbers without decimals are called <b>INTEGERS</b>. We just did some math with some integers.</p>
+        <p class='ruby-class'>Letters, words, and sentences are called <b>STRINGS</b>. We tell Ruby that we are intending to use a string by wrapping it in quotes.</p>
       </article>
 
-      <article>
-        <h3>Classes</h3>
-        <p>We call Integers and Strings Classes. That's a programming word!</p>
-        <p>Classes are like categories.</p>
-        <p>We just worked with the String "ladies".</p>
-        <p>We say that "ladies" is an <b>instance</b> of the class String.</p>
-        <p>In the same way, any other particular word or sentence is an instance of the class String.</p>
-        <p>Instances of a class are like nouns in English.</p>
-        <p>Let's look at some examples.</p>
-      </article>
-
-      <article>
-        <h3>SimpsonsCharacter</h3>
-        <div style='border:solid 2px black;padding:17px 0px 10px 80px'>
-          <img src="images/simpsons.png" width="600" height="411" border="1">
+      <article id='objects-objects'>
+        <style>
+          #objects-objects .large-font { margin: 150px 0px; }
+        </style>
+        <h3>
+          Objects, Objects, Everywhere!
+        </h3>
+        <p>You've already met Objects. That's a programming word!</p>
+        <div class='build'>
+          <p class='large-font'>Everything in Ruby is an Object.</p>
         </div>
-        <p>SimpsonsCharacter is the class (category), and Lisa Simpson is the instance (noun) of the class SimpsonsCharacter.</p>
+      </article>
+
+      <article id='classes-galore'>
+        <style>
+          #classes-galore .build { margin-top: 40px; }
+          #classes-galore .large-font { margin: 70px 0px; }
+        </style>
+        <h3>Classes</h3>
+        <div class='build'>
+          <p>Ruby is extremely picky and needs to classify everything before it knows what to do with it.<br>Ruby knows that ...</p>
+          <p class='large-font'>The number <b>1</b> is an <b>Integer</b>.
+          <p class='large-font'>The word <b>"ladies"</b> is a <b>String</b>.
+          <p>Integers and Strings are classes in Ruby. That's another programming word!</p>
+        </div>
       </article>
 
       <article>
         <h3>City</h3>
-        <div style='border:solid 2px black;padding:17px 0px 10px 80px'>
+        <div class='class-diagram'>
           <img src="images/toronto.png">
           <img src="images/london.jpg">
           <br>
           <img src="images/new-york.jpg">
           <img src="images/paris.jpg">
         </div>
-        <p>City is the class (category), and Toronto is the instance (noun) of the class City.</p>
       </article>
 
-      <article>
+      <article id='city-instance'>
+        <style>
+          #city-instance p { margin: 70px 0px; }
+        </style>
+        <div class='build'>
+          <p class='large-font'>Toronto is an instance of the class City.</p>
+          <p class='large-font'>London is an instance of the class City.</p>
+          <p class='large-font'>New York is an instance of the class City.</p>
+          <p class='large-font'>Paris is an instance of the class City.</p>
+        </div>
+      </article>
+
+      <article id='string-class'>
+        <style>
+          #string-class div { padding: 20px; }
+        </style>
         <h3>String</h3>
-        <div style='border:solid 2px black;padding:20px'>
+        <div class='class-diagram'>
           "ladies"<br><br>
           "ladieslearningcode"<br><br>
-          "Today you are You, that is truer than true. There is no one alive who is Youer than You."
+          "The dog jumped over the fence."
         </div>
-        <p>String is the class (category), and "ladies" is the instance (noun) of the class String.</p>
       </article>
-
-      <article>
-        <h3>
-          Objects, Objects, Everywhere!
-        </h3>
-        <p>You've already met Objects. That's another programming word!</p>
-        <p>Everything is Ruby is an Object.</p>
-        <p>Classes themselves are Objects, and instances of those classes are also Objects.</p>
-        <p>The class SimpsonsCharacter is an Object, and Homer Simpson is also an Object.</p>
-        <p>The class City is an Object, and Toronto is also an Object.</p>
-        <p>The class String is an Object, and "ladies" is also an Object.</p>
+      
+      <article id='string-instance'>
+        <style>
+          #string-instance p { margin: 70px 0px; }
+        </style>
+        <div class='build'>
+          <p class='large-font'>"ladies" is an instance of the class String.</p>
+          <p class='large-font'>"ladieslearningcode" is an instance of the class String.</p>
+          <p class='large-font'>"The dog jumped over the fence." is an instance of the class String.</p>
+        </div>
       </article>
 
       <article>
@@ -346,32 +402,39 @@ end
         </section>
       </article>
 
-      <article>
+      <article id='ruby-method'>
+        <style>
+          #ruby-method .large-font { margin: 60px 0px; }
+        </style>
         <h3>
           Methods
         </h3>
-        <p>next, odd?, and even? are all methods that you can call on an Integer.</p>
-        <p>capitalize, upcase, and reverse are all methods that you can call on a String.</p>
-        <p>When you call a method, you're telling the String "ladieslearningcode" to do something.</p>
-        <p>Methods are actions. You can compare methods in Ruby to verbs in English.</p>
-        <p>In English, you would tell Lisa Simpson to jump. In Ruby, you would call the jump method on Lisa.</p>
+        <div class='build'>
+          <p class='large-font'><b>next</b>, <b>odd?</b>, and <b>even?</b> are all methods that you can call on an Integer.</p>
+          <p class='large-font'><b>capitalize</b>, <b>upcase</b>, and <b>reverse</b> are all methods that you can call on a String.</p>
+          <p class='large-font'>Methods are actions.</p>
+        </div>
       </article>
       
-      <!-- long ass llc hash tag -->
-      <!-- functions like a nickname -->
+      <article id='class-methods'>
+        <style>
+          #class-methods .large-font { margin: 200px 0px; }
+        </style>
+        <p class='large-font'>Classes come packaged with methods.</p>
+      </article>
+      
       <article>
         <h3>
           I'm lazy! I don't want to do all of this typing!
         </h3>
-        <p>When working with the String "ladieslearningcode", it was annoying to have to type it out every single time.</p>
-        <p>What if we could type in "ladieslearningcode" just once, and store it in our computer's memory for later use? We can!</p>
-        <section><pre>> llc = "ladieslearningcode"<br>=> "ladieslearningcode"</pre></section>
+        <p>What if we could type in "ladieslearningcode" just once, and store it for later use? We can!</p>
+        <section>
+          <pre>> llc = "ladieslearningcode"</pre>
+          <pre>=> "ladieslearningcode"</pre></section>
         <p>You've just <b>assigned</b> the String "ladieslearningcode to the <b>variable</b> llc.</p>
         <p>A programmer would say that the variable llc points to the object "ladieslearningcode".</p>
       </article>
       
-      <!-- temporary, equals sign means assignment, llc alone just means get it -->
-      <!-- explain why .upcase doesn't change the value of the variable itself -->
       <article>
         <h3>
           Variables Can (And Often Do!) Vary
@@ -433,13 +496,22 @@ end
       
       <article>
         <h3>Modifying the value with a method</h3>
-        <p>Try asking for the value of llc now.</p>
         <section class='build'>
+          <pre>> llc.reverse</pre><pre>=> "edocgninraelseidal"</pre>
+          <p>Try asking for the value of llc now.</p>
           <pre>> llc</pre><pre>=> "ladieslearningcode"</pre>
-          <p>But wait, why didn't it change to "edocgninraelseidal"?</p>
+        </section>
+      </article>
+      
+      <article id='wait-why'>
+        <style>
+          #wait-why p { margin: 50px 0px; }
+        </style>
+        <h3>Wait. Why didn't it change?</h3>
+        <section class='build'>
+          <p class='large-font'>llc is still pointing to "ladieslearningcode". You didn't tell it to point to a different string.</p>
           <div>llc <img src='images/arrow.png'> "ladieslearningcode"</div>
-          <p>llc is still pointing to "ladieslearningcode". You didn't tell it to point to a different string.</p>
-          <p>If you want the value to change, you have to set it to something else.</p>
+          <p class='large-font'>If you want the value to change, you have to set it to something else.</p>
         </section>
       </article>
       
@@ -447,7 +519,7 @@ end
         <section class='build'>
           <pre>> llc = llc.reverse</pre><pre>=> "edocgninraelseidal"</pre>
           <pre>> llc</pre><pre>=> "edocgninraelseidal"</pre>
-          <p>If you want the value of a variable to change, you have to explicitly tell it to change.</p>
+          <p class='large-font'>If you want the value of a variable to change, you have to explicitly tell it to change.</p>
         </section>
       </article>
       
@@ -455,27 +527,24 @@ end
         <h3>
           Let's Try One More
         </h3>
-        <pre>> llc.length</pre>
-        <pre>=> 18</pre>
-        
-        <p>
-          If you're familiar with Twitter, you're probably starting to get a sense of how Twitter knows 
-          how many characters you've typed in.
-        </p>
+        <div class='build'>
+          <pre>> llc.length</pre>
+          <pre>=> 18</pre>
+          <p class='large-font'>
+            You're probably starting to get a sense of how Twitter knows 
+            how many characters you've typed in.
+          </p>
+        </div>
       </article>
       
       <article>
-        <p>Let's write and manipulate a few tweets</p>
+        <h3>Doing like Twitter does.</h3>
         <section class='build'>
           <pre>> tweet = "I'm writing my first program at the @llcodedotcom<br>Intro to Ruby workshop!"</pre>
           <pre>=> "I'm writing my first program at the @llcodedotcom <br>Intro to Ruby workshop!"</pre>
           <pre>> tweet.length</pre>
           <pre>=> 73</pre>
-          <p>
-            So far we've been working only in IRB, but our code is getting more complicated and we 
-            want to be able to run it again without having to type it all out. We want to save our code 
-            somewhere so that we can run it again and again. This is called a program.
-          </p>
+          <p class='large-font'>We now know enough to write a program.</p>
         </section>
       </article>
       
@@ -493,55 +562,65 @@ end
         <section>
           <pre>ruby twitter.rb</pre>
         </section>
-        <p>Wait, what? Why didn't it show me the length of my string?</p>
+        <div class='build'><p>Wait, what? Why didn't it show me the length of my string?</p></div>
       </article>
       
-      <article>
+      <article id='ruby-output'>
+        <style>
+          #ruby-output .large-font { margin: 50px 0px; }
+        </style>
         <h3>
           Outputting Text to the Screen
         </h3>
-        <p>
-          In IRB, we were used to seeing the return value of every statement we executed. 
-          Remember, IRB is like back and forth text messaging.
-        </p>
-        <p>
-          When you're writing a program and running it, you have to explicitly tell the program when you want it to output something.
-        </p>
-        <p>Modify your program with the code below, and notice the result when you run it again.</p>
+        <p class='large-font'>IRB is like back-and-forth text messaging.</p>
+        <p class='large-font'>A program has to be told when to output something</p>
+        <p>Modify your program:</p>
         <section>
           <pre>tweet = "I'm writing my first program at the @llcodedotcom<br>Intro to Ruby workshop!"<br>puts tweet.length</pre>
         </section>
       </article>
       
       <!-- just words, highlight in a different colour before -->
-      <article>
+      <article id='recap-one'>
+        <style>
+          #recap-one .large-font { margin: 50px 0px; text-align: center; }
+        </style>
         <h3>
           Recap Slide
         </h3>
-        <p>Integer</p>
-        <p>String</p>
-        <p>Class</p>
-        <p>Object</p>
-        <p>Variable</p>
+        <div class='build'>
+          <p class='large-font'>Integer</p>
+          <p class='large-font'>String</p>
+          <p class='large-font'>Class</p>
+          <p class='large-font'>Object</p>
+          <p class='large-font'>Variable</p>
+        </div>
       </article>
       
-      <!-- tell them to try it in the console, tell mentors to comment the thing -->
-      <!-- give them the answer -->
-      <article>
+      <article id='puzzle-one'>
+        <style>
+          #puzzle-one .large-font { margin: 100px 0px; }
+        </style>
         <h3>
           Puzzle One - Variables
         </h3>
-        <p>Open puzzle_1.rb in the puzzles folder, and write down the output you expect to see if you were to run this script.</p>
-        <p>If you're not sure of something, remember that you can type <b>irb</b> again and try it out.</p>
+        <p class='large-font'>Open puzzle_1.rb in the puzzles folder, and write down the output you expect to see if you were to run this script.</p>
+        <p class='large-font'>If you're not sure of something, remember that you can type <b>irb</b> again and try it out.</p>
       </article>
       
-      <article>
+      <article id='real-twitter'>
+        <style>
+          #real-twitter .large-font { margin: 60px 0px; }
+        </style>
         <h3>
           Getting Input From the User
         </h3>
-        <p>The real Twitter asks you to type something, and then tells you how many characters you're working with.</p>
-        <p>So far, we've just been putting our tweet directly into the program.</p>
-        <p>As a programmer working on developing web applications like Twitter, you very often need to get something from the user.</p>
+        <p>The real Twitter...</p>
+        <div class='build'>
+          <p class='large-font'>Asks you to type something.</p>
+          <p class='large-font'>Tells you how many characters you're working with.</p>
+          <p>So far, we've just been putting our tweet directly into the program.</p>
+        </div>
       </article>
       
       <article>
@@ -549,11 +628,12 @@ end
           Asking for Input
         </h3>
         <p>The <b>puts</b> method is used for output, and the <b>gets</b> method is used for input. Try this:</p>
+        <p>The gets method warns Ruby that you're about to speak.</p>
         <section class='build'>
-          <pre>> tweet = gets</pre><pre>I'm learning Ruby with #ladieslearningcode</pre><pre>=> "I'm learning Ruby with #ladieslearningcode\n"</pre>
+          <pre>> tweet = gets</pre>
+          <pre class='all-string'>I'm learning Ruby with #ladieslearningcode</pre><pre>=> "I'm learning Ruby with #ladieslearningcode\n"</pre>
           <p>
-            The gets method warns Ruby that you're about to speak. You can type anything you want, and it will store that in the variable tweet.
-            But wait, we didn't type \n in our tweet. What is that?
+            Wait, we didn't type \n in our tweet. What is that?
           </p>
         </section>
       </article>
@@ -567,11 +647,12 @@ end
           To get rid of it, do this:
         </p>
         <section class='build'>
-          <pre>> tweet = gets.chomp</pre><pre>I'm learning Ruby with #ladieslearningcode</pre><pre>=> "I'm learning Ruby with #ladieslearningcode"</pre>
+          <pre>> tweet = gets.chomp</pre>
+          <pre class='all-string'>I'm learning Ruby with #ladieslearningcode</pre>
+          <pre>=> "I'm learning Ruby with #ladieslearningcode"</pre>
         </section>
       </article>
       
-      <!-- reminder that in irb, you always get responses, like in Twitter, but in your program, you have to tell it when you want it to voice its opinion -->
       <article>
         <h3>
           Asking for Input
@@ -579,14 +660,17 @@ end
         <p>Now try this:</p>
         <section class='build'>
           <pre>> tweet = gets.chomp</pre>
-          <pre>I'm a lady learning code with @llcodedotcom #ladieslearningcode</pre>
+          <pre class='all-string'>I'm a lady learning code with @llcodedotcom #ladieslearningcode</pre>
           <pre>=> "I'm a lady learning code with @llcodedotcom #ladieslearningcode"</pre>
           <pre>> puts tweet</pre>
-          <pre>I'm a lady learning code with @llcodedotcom #ladieslearningcode<br>=> nil</pre>
+          <pre class='all-string'>I'm a lady learning code with @llcodedotcom #ladieslearningcode<br>=> nil</pre>
         </section>
       </article>
       
-      <article>
+      <article id='nil-nothing'>
+        <style>
+          #nil-nothing p { margin: 80px 0px; }
+        </style>
         <h3>What's nil? It's nothing, don't worry.</h3>
         <p>You asked Ruby to output your tweet, and Ruby did just that.</p>
         <p>
@@ -595,57 +679,80 @@ end
         </p>
         <p>nil is also an Object, and it just represents nothing.</p>
       </article>
-      
-       <!-- slide here that says 'WHOA! what's niL? It's nothing, don't worry -->
-      
-      <article>
+
+      <article id='ask-for-tweet'>
+        <style>
+          #ask-for-tweet .build { margin-top: 60px; }
+        </style>
         <h3>
           Back to your Twitter Program
         </h3>
         <p>Working with your group, modify your Twitter program to do the following:</p>
-        <p>Ask (politely!) for a tweet from the user.</p>
-        <p>Store the tweet in a variable, without \n</p>
-        <p>Output the tweet the user gave.</p>
-        <p>Output the number of characters in the tweet.</p>
-        <p>Output how many <b>more</b> characters the user can add until they hit 140 characters.</p>
-        <p>(answers in assignments/twitter_3.rb)</p>
+        <div class='build'>
+          <p>1. Ask (politely!) for a tweet from the user.</p>
+          <p>2. Store the tweet in a variable, without \n</p>
+          <p>3. Output the tweet the user gave.</p>
+          <p>4. Output the number of characters in the tweet.</p>
+          <p>5. Output how many <b>more</b> characters the user can add until they hit 140 characters.</p>
+          <p>(answers in assignments/twitter_3.rb)</p>
+        </div>
       </article>
       
-      <article>
+      <article id='conditional-twitter-1'>
+        <style>
+          #conditional-twitter-1 .large-font { margin-top: 100px; }
+        </style>
         <h3>
           Giving Output Based on Input
         </h3>
-        <p>
-          A lot of a programmer's job, especially when working on web applications, is doing something 
-          based on the input the user provided.
+        <p>Twitter...</p>
+        <p class='large-font'>Lets you send your tweet if it is 140 characters or less</p>
+        <p class='large-font'>Tells you that your tweet is too long to send otherwise.</p>
+      </article>
+      
+      <article id='conditional-twitter-2'>
+        <style>
+          #conditional-twitter-2 .large-font { margin-top: 100px; }
+        </style>
+        <h3>Giving Output Based on Input</h3>
+        <p class='large-font'>
+          So far we know how to determine the length of the user's tweet. 
         </p>
-        <p>
-          Twitter lets you send your tweet if it is 140 characters or less, 
-          and tells you that your tweet is too long to send otherwise.
-        </p>
-        <p>
-          So far we know how to determine the length of the user's tweet, but we don't know how to tell them 
+        <p class='large-font'>
+          We don't know how to tell them 
           whether they can or cannot send their tweet, depending on it's length.
         </p>
       </article>
       
-      <article>
+      <article id='conditional-logic'>
+        <style>
+          #conditional-logic .large-font { margin-top: 100px; }
+        </style>
+        <h3>Conditional Logic</h3>
+        <p class='large-font'>Programming is writing out sets of simple instructions for the computer to follow.</p>
+        <p class='large-font'>Let's break down out tweet logic into simple instructions.</p>
+      </article>
+      
+      <article id='conditional-instructions'>
+        <style>
+          #conditional-instructions .large-font { margin-top: 80px; }
+        </style>
         <h3>
           Conditional Logic
         </h3>
-        <p>
-          Programming is writing out sets of simple instructions for the computer to follow. 
-          Let's break down out tweet logic into simple instructions. Here is what we want our program to do:
-        </p>
-        <p>if the tweet is greater than 140 characters, tell the user that they cannot send their tweet</p>
-        <p>if the tweet is less than or equal to 140 characters, tell the user that they can send their tweet</p>
+        <p>We want our program to ...</p>
+        <p class='large-font'>if the tweet is greater than 140 characters, tell the user that they cannot send their tweet</p>
+        <p class='large-font'>if the tweet is less than or equal to 140 characters, tell the user that they can send their tweet</p>
       </article>
       
-      <article>
+      <article id='greater-than'>
+        <style>
+          #greater-than .large-font { margin: 100px 0px; }
+        </style>
         <h3>
           Conditional Logic: Greater Than
         </h3>
-        <p>The mathematical symbol for <b>greater than</b> is <b>></b></p>
+        <p class='large-font'>The math symbol for <b>greater than</b> is <b>></b></p>
         <p>Try the code below in IRB:</p>
         <section class='build'>
           <pre>> 200 > 140</pre><pre>=> true</pre>
@@ -656,8 +763,7 @@ end
         <h3>
           Conditional Logic: Greater Than
         </h3>
-        <p>The mathematical symbol for <b>greater than</b> is <b>></b></p>
-        <p>Try the code below in IRB:</p>
+        <p>Now try:</p>
         <section class='build'>
           <pre>> number_of_characters = 200</pre><pre>=> 200</pre>
           <pre>> number_of_characters > 140</pre><pre>=> true</pre>
@@ -668,37 +774,40 @@ end
         <h3>
           Conditional Logic: Greater Than
         </h3>
-        <p>The mathematical symbol for <b>greater than</b> is <b>></b></p>
-        <p>Try the code below in IRB:</p>
+        <p>Now try:</p>
         <section class='build'>
           <pre>> number_of_characters = 80</pre><pre>=> 80</pre>
           <pre>> number_of_characters > 140</pre><pre>=> false</pre>
         </section>
       </article>
       
-      <article>
+      <article id='less-than'>
+        <style>
+          #less-than .large-font { margin: 50px 0px; }
+        </style>
         <h3>
           Conditional Logic: Less Than
         </h3>
-        <p>The mathematical symbol for <b>less than</b> is <b><</b></p>
-        <p>Try the code below in irb (omitting output for now)</p>
+        <p class='large-font'>The math symbol for <b>less than</b> is <b><</b></p>
+        <p>Try the code below in irb</p>
         <section class='build'>
           <pre>> llc = "ladieslearningcode"</pre><pre>=> "ladieslearningcode"</pre>
           <pre>> llc.length < 140</pre><pre>=> true</pre>
         </section>
       </article>
       
-      <article>
+      <article id='conditional-logic'>
         <h3>
           Conditional Logic in Our Simple Twitter
         </h3>
-        <p>
-          Let's simplify our if statements from before using our new knowledge.
-          Remember that we're storing the user's tweet in the variable tweet.
-        </p>
+        <p class='large-font'>Let's simplify our if statements.</p>
+        <p class='large-font'>Remember that we're storing the user's tweet in the variable tweet.</p>
       </article>
       
-      <article>
+      <article id='conditional-simplify'>
+        <style>
+          #conditional-simplify p { margin: 50px 0px; }
+        </style>
         <h3>
           Conditional Logic in Our Simple Twitter
         </h3>
@@ -730,81 +839,100 @@ end
         </p>
       </article>
 
-      <article>
+      <article id='conditional-instructions'>
         <h3>
           Your First Bug!
         </h3>
-        <p>This is really a bug, since we're not actually taking into account all possible tweet lengths.</p>
-        <p>Most programming problems can be solved many different ways, and this bug is no exception.</p>
-        <p>
-          We're going to look at three different solutions, and learn more about if statements as 
-          well as comparing objects along the way.
+        <p class='large-font'>We're not actually taking into account all possible tweet lengths.</p>
+        <p class='large-font'>Programming problems can be solved many different ways.</p>
+        <p class='large-font'>We'll look at three different solutions.</p>
+      </article>
+
+      <article id='conditional-logic'>
+        <h3>
+          First (Worst) Solution
+        </h3>
+        <p class='large-font'>Since we're only missing one case, the case where the tweet is exactly 140 characters, we can just add another if statement.</p>
+      </article>
+      
+      <article>
+        <h3>
+          First (Worst) Solution
+        </h3>
+        <p>Add this last if statement to the bottom of your file: (see assignments/twitter_5.rb if needed)</p>
+        <section>
+          <pre>if tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p class='large-font'>
+          The == operator checks that the value of the objects on either side of it are equal. 
+        </p>
+      </article>
+      
+      <article id='conditional-logic'>
+        <h3>
+          Refactoring Our Code
+        </h3>
+        <p class='large-font'>
+          Programmers are always refactoring (re-structuring, re-organizing) their code to make it cleaner and more readable.
+          Right now is a great time to do that. 
         </p>
       </article>
 
       <article>
         <h3>
-          First (Worst) Solution
-        </h3>
-        <p>Since we're only missing one case, the case where the tweet is exactly 140 characters, we can just add another if statement.</p>
-        <p>Add this last if statement to the bottom of your file: (see assignments/twitter_5.rb if needed)</p>
-        <section>
-          <pre>if tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
-        </section>
-        <p>
-          The == operator checks that the value of the objects on either side of it are equal. 
-          Run your script again and notice that it catches the last case where a tweet is 140 characters long.
-        </p>
-      </article>
-      
-      <!-- evaluated in order, the first one wins -->
-      <article>
-        <h3>
           Refactoring Our Code
         </h3>
-        <p>
-          Programmers are always refactoring (re-structuring, re-organizing) their code to make it cleaner and more readable.
-          Right now is a great time to do that. 
-        </p>
         <p>Three if statements are unnecessary. We can actually combine all of these if statements into one, like so:</p>
         <section>
           <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>elsif tweet.length < 140<br>  puts "Tweet your heart out!"<br>elsif tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
         <p>(see assignments/twitter_6.rb if needed)</p>
       </article>
+
       
-      <article>
+      <article id='conditional-logic'>
         <h3>if .. elsif</h3>
         <section>
           <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>elsif tweet.length < 140<br>  puts "Tweet your heart out!"<br>elsif tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
-        <p>In the above code, if the first statement doesn't evaluate to true, then the next one is attempted, and so on.</p>
-        <p>
+        <p class='large-font'>In the above code, if the first statement doesn't evaluate to true, then the next one is attempted, and so on.</p>
+      </article>
+
+      <article id='conditional-logic'>
+        <h3>if .. elsif</h3>
+        <section>
+          <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>elsif tweet.length < 140<br>  puts "Tweet your heart out!"<br>elsif tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p class='large-font'>
           Only one puts statement is ever executed.
           The statements are evaluated in the order they are written, so the first one to evaluate to true is the only one executed.
         </p>
-        <p>If none of the statements evaluate to true, then none of the puts statements are executed.</p>
+      </article>
+      
+      <article id='conditional-logic'>
+        <h3>if .. elsif</h3>
+        <section>
+          <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>elsif tweet.length < 140<br>  puts "Tweet your heart out!"<br>elsif tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p class='large-font'>If none of the statements evaluate to true, then none of the puts statements are executed.</p>
       </article>
       
       <article>
         <h3>
           Second Solution
         </h3>
-        <p>
-          Our code is already better (and still has no bugs), but more refactoring can be done.
-          Notice that the line puts "Tweet your hear out!" is repeated? This is unnecessary. 
-          Let's cut it out by replace the entire if statement with the code below:
-        </p>
+        <p>Notice that the line puts "Tweet your hear out!" is unnecessarily repeated?</p>
+        <p>Let's cut it out by replacing the entire if statement with the code below:</p>
         <section>
           <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>elsif tweet.length <= 140<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
         <p>(see assignments/twitter_7.rb if needed)</p>
       </article>
       
-      <article>
+      <article id='conditional-instructions'>
         <h3>Less than or equal to with <=, Greater than or equal to with >=</h3>
-        <p>The <b><=</b> operator behaves the exact same way as the less than operator, but checks for equality as well.</p>
-        <p>As you may have guessed, checking for equality with greater than works exactly the same way, using the <b>>=</b> operator.</p>
+        <p class='large-font'>The <b><=</b> operator checks for equality as well.</p>
+        <p class='large-font'>Checking for equality with greater than works exactly the same way, using the <b>>=</b> operator.</p>
       </article>
       
       <article>
@@ -813,27 +941,32 @@ end
         </h3>
         <p>
           This is better, but look at the logic closely. Do we really even need to specify the second condition?
-          Can't we just prevent the user from tweeting if their tweet is over 140 characters, and let them tweet otherwise?
         </p>
-        <p>Yes we can! Replace your code again with the code below:</p>
+        <p>Replace your code again with the code below:</p>
         <section>
           <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>else<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
-        <p>(see assignments/twitter_8.rb if needed)</p>
-        <p>Run your code again, and it should function the exact same way!</p>        
+        <p>(see assignments/twitter_8.rb if needed)</p>        
       </article>
       
-      <article>
+      <article id='conditional-logic'>
         <h3>if .. else</h3>
         <section>
           <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>else<br>  puts "Tweet your heart out!"<br>end</pre>
         </section>
-        <p>
+        <p class='large-font'>
           Just like with if .. elsif, only one puts statement is ever executed. The difference here is that one of the
           puts statements is <b>always</b> executed. 
         </p>
-        <p>
-          The else is there are a catch-all. You can think of it like a last resort. 
+      </article>
+      
+      <article id='conditional-logic'>
+        <h3>if .. else</h3>
+        <section>
+          <pre>if tweet.length > 140<br>  puts "Your tweet is too long!"<br>else<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p class='large-font'>
+          The else is there are a <b>catch-all</b>. You can think of it like a last resort. 
           If none of the other options are true, then just execute the puts statement after the else.
         </p>
       </article>
@@ -875,36 +1008,39 @@ end
         </table>
       </article>
 
-      <!-- cheat sheet of this is a keyword, this is a variable, etc. etc. -->
-      
-      <article>
-        <h3>
-          Recap Slide
-        </h3>
-        <p>puts</p>
-        <p>gets</p>
-        <p>if .. elsif</p>
-        <p>if .. elsif .. else</p>
-        <p>if .. else</p>
+      <article id='recap-two'>
+        <h3>Recap Slide</h3>
+        <style>
+          #recap-two .large-font { margin: 50px 0px; text-align: center; }
+        </style>
+        <div class='build'>
+          <p class='large-font'>puts</p>
+          <p class='large-font'>gets</p>
+          <p class='large-font'>if .. elsif</p>
+          <p class='large-font'>if .. elsif .. else</p>
+          <p class='large-font'>if .. else</p>
+        </div>
       </article>
       
-      <article>
+      <article id='conditional-logic'>
         <h3>
           Puzzle Two - Conditionals
         </h3>
-        <p>
-          Look at the program in puzzle_2.rb. The program asks the user for the month of their birthday, 
+        <p class='large-font'>Look at the program in puzzle_2.rb.</p>
+        <p class='large-font'>The program asks the user for the month of their birthday, 
           and then outputs a message about the season the user celebrates their birthday in. 
         </p>
-        <p>Which months does this program consider to be spring, summer, winter, and fall?</p>
-        <p>
-          Can you simplify the logic to make the program as few lines of code as possible? 
-          Try simplifying the program one step at a time, and run it each time to make sure it behaves like you expect it to.
+      </article>
+
+      <article id='conditional-instructions'>
+        <h3>
+          Puzzle Two - Conditionals
+        </h3>
+        <p class='large-font'>Which months does this program consider to be spring, summer, winter, and fall?</p>
+        <p class='large-font'>
+          Simplify the logic to make the program as few lines of code as possible? 
         </p>
-        <p>
-          If you start your if statement on the same line as the original puzzle (line 6), you should be able to shorten 
-          the entire program to 20 lines of much easier to read code!
-        </p>
+        <p class='large-font'>Goal: 20 lines!</p>
       </article>
       
       <article>
@@ -928,13 +1064,11 @@ end</pre>
         <p>This is called a while loop. The program will run while the user inputs anything other than "bye!"</p>
       </article>
       
-      <article>
+      <article id='conditional-logic'>
         <h3>
           What if we know exactly how many times the program needs to do that same thing?
         </h3>
-        <p>
-          Again, there are several ways to do this
-        </p>
+        <p class='large-font'>Again, there are several ways to do this.</p>
       </article>
       
       <article>
@@ -948,10 +1082,19 @@ end</pre>
 end</pre>
         </section>
         <p>This program will output "Hip-Hip-Hooray!" exactly 3 times.</p>
-        <p>
-          The <b>sleep 1</b> tells the program to wait 1 second after outputting each statement.
-          Try taking it out to see what happens. Not as exciting. 
-        </p>
+      </article>
+      
+      <article>
+        <h3>Tell me exactly how many times</h3>
+        <section>
+          <pre>
+3.times do
+  puts "Hip-Hop-Hooray!"
+  sleep 1
+end</pre>
+        </section>
+        <p>The <b>sleep 1</b> tells the program to wait 1 second after outputting each statement.</p>
+        <p>Try taking it out to see what happens. Not as exciting.</p>
       </article>
       
       <article>
@@ -966,7 +1109,20 @@ puts "Okay, on the count of 5 ..."
 end
 puts "GO!"</pre>
         </section>
-        <p>This program moves through each Integer from 1 to 5, and outputs the Integer, again sleeping for 1 second in between.</p>
+      </article>
+      
+      <article>
+        <h3>Count from 1 to 5</h3>
+        <section>
+          <pre>
+puts "Okay, on the count of 5 ..."
+[1, 2, 3, 4, 5].each do |i|
+  puts i
+  sleep 1
+end
+puts "GO!"</pre>
+        </section>
+        <p>This program loops through each Integer from 1 to 5, and outputs the Integer, again sleeping for 1 second in between.</p>
         <div style='padding:20px 0px 0px 240px;'>
           <img src='images/curved-arrow.gif'>
           <img src='images/curved-arrow.gif'>
@@ -983,10 +1139,21 @@ puts "GO!"</pre>
       
       <article>
         <h3>Counting down</h3>
-        <p>
-          Maybe we wants a program that simulates a countdown. 
-          Create a new program with the following code, or use run the program in assignments/loop_4.rb:
-        </p>
+        <p>Maybe we wants a program that simulates a countdown.</p>
+        <p>Create a new program with the following code, or use run the program in assignments/loop_4.rb:</p>
+        <section>
+          <pre>
+99.downto(1).each do |i|
+  puts "#{i} bottles of beer on the wall, #{i} bottles of beer.
+        Take one down, pass it around, 
+        and now there are #{i - 1} bottles of beer on the wall!"
+  sleep 0.5
+end</pre>
+        </section>
+      </article>
+
+      <article>
+        <h3>Counting down</h3>
         <section>
           <pre>
 99.downto(1).each do |i|
@@ -1022,10 +1189,32 @@ end</pre>
       and now there are #{i - 1} bottles of beer on the wall!"
           </pre>
         </section>
-        <p>
-          If you want to output any variable within a String, you can use the syntax <b>#{my_variable}</b> inside of the String, 
+        <p class='large-font'>
+          You can use the syntax <b>#{my_variable}</b> inside of the String, 
           and Ruby will treat the variable exactly like a String.
         </p>
+      </article>
+
+      <article>
+        <h3>String Interpolation</h3>
+        <section class='build'>
+          <pre>> lesson = "Ruby"</pre>
+          <pre>=> "Ruby"</pre>
+          
+          <pre>> tweet = "I am learning all about #{lesson} at the <br />#ladieslearningcode workshop"</pre>
+          <pre>=> "I am learning all about Ruby at the <br />#ladieslearningcode workshop"</pre>
+        </section>
+      </article>
+
+      <article>
+        <h3>String Interpolation</h3>
+        <section class='build'>
+          <pre>> lesson = "String Interpolation"</pre>
+          <pre>=> "String Interpolation"</pre>
+          
+          <pre>> tweet = "I am learning all about #{lesson} at the <br />#ladieslearningcode workshop"</pre>
+          <pre>=> "I am learning all about String Interpolation at the <br />#ladieslearningcode workshop"</pre>
+        </section>
       </article>
 
       <article>
@@ -1060,11 +1249,11 @@ puts "With a bonus number 32!"</pre>
           48&nbsp;&nbsp;]</div>
       </article>
       
-      <article>
+      <article id='conditional-instructions'>
         <h3>Leaving early</h3>
-        <p>What if we want to be able to leave a loop early, before we have finished looping?</p>
-        <p>We need a way to tell Ruby to stop looping. We do that using the command <b>break</b>.</p>
-        <p>The command <b>break</b> tells the loop to stop where it is, and continue running the code after the loop.</p>
+        <p class='large-font'>What if we want to be able to leave a loop early, before we have finished looping?</p>
+        <p class='large-font'>We need a way to tell Ruby to stop looping. We do that using the command <b>break</b>.</p>
+        <p class='large-font'><b>break</b> tells the loop to stop where it is.</p>
       </article>
       
       <article>
@@ -1090,30 +1279,32 @@ end</pre>
         </section>
       </article>
       
-      <article>
+      <article id='conditional-instructions'>
         <h3>Loops + Arrays = <3</h3>
         <p>
           Every time you were looping, regardless or whether you were counting using <b>[1, 2, 3, 4, 5]</b>, or 
           just looping over <b>[7, 13, 14, 16, 14, 48]</b>, you were using <b>arrays</b>.
         </p>
-        <p>
-          An array is simply a collection of objects. Loops are used to move from one element of an array to another.
+        <p class='large-font'>
+          An <b>array</b> is simply a <b>collection of objects</b>. Loops are used to move from one element of an array to another.
         </p>
       </article>
       
-      <article>
+      <article id='string-class'>
+        <style>
+          #string-class div { padding: 20px; }
+        </style>
         <h3>Array</h3>
-        <div style='border:solid 2px black;padding:20px'>
+        <div class='class-diagram'>
           [1, 2, 3, 4, 5]<br><br>
           [7, 13, 14, 16, 14, 48]<br><br>
           ["ladies", "learning", "code"]
         </div>
-        <p>Array is the class (category), and [1, 2, 3, 4, 5] is the instance (noun) of the class Array.</p>
       </article>
       
       <article>
         <h3>
-          There are many methods on Array, as well
+          There are many methods on Array, as well.
         </h3>
         <p>
           Back in IRB, let's create an array of winning lottery numbers and store it in the variable lottery.
@@ -1192,44 +1383,53 @@ end</pre>
         </section>
       </article>
       
-      <article>
+      <article id='conditional-logic'>
         <h3>
           Puzzle 3 - Arrays
         </h3>
-        <p>What will be the output of puzzle 3?</p>
-        <p>Remember to think about which methods modify the array, and which do not.</p>
+        <p class='large-font'>What will be the output of puzzle 3?</p>
+        <p class='large-font'>Remember to think about which methods modify the array, and which do not.</p>
       </article>
       
-      <article>
+      <article id='instructions'>
+        <style>
+          #instructions .build { margin-top: 30px }
+        </style>
         <h3>Favourite Colour</h3>
         <p>Write a program that does the following:</p>
-        <p>1. Loops through an array of the colours red, green, blue, and yellow.</p>
-        <p>2. For each colour, asks the user if it is their favourite.</p>
-        <p>3. If the user types yes, then a variable called favourite_colour is set to that colour.</p>
-        <p>4. If the user types anything else, the loop continues.</p>
-        <p>
-          5. Once the loop is complete, if the user said yes to a colour, the program outputs their favourite colour to them.
-          If the user did not say yes to any of the colours, it tells them that their favourite colour is not red, green, blue, or yellow.
-        </p>
+        <div class='build'>
+          <p>1. Loops through an array of the colours red, green, blue, and yellow.</p>
+          <p>2. For each colour, asks the user if it is their favourite.</p>
+          <p>3. If the user types yes, then a variable called favourite_colour is set to that colour.</p>
+          <p>4. If the user types anything else, the loop continues.</p>
+          <p>
+            5. Once the loop is complete, if the user said yes to a colour, the program outputs their favourite colour to them.
+            If the user did not say yes to any of the colours, it tells them that their favourite colour is not red, green, blue, or yellow.
+          </p>
+        </div>
       </article>
       
-      <article>
+      <article id='conditional-instructions'>
         <h3>Blackjack Game</h3>
         <p>We're going to create a Blackjack game with some simplified rules.</p>
-        <p>At the start of the game, the player and the dealer each get 2 cards.</p>
-        <p>
-          The player is told the sum of their two cards, and then has the opportunity to type h
-          if they want to hit, or anything else if they want to stand.
-        </p>
+        <div class='build'>
+          <p class='large-font'>At the start of the game, the player and the dealer each get 2 cards.</p>
+          <p class='large-font'>
+            The player is told the sum of their two cards, and then has the opportunity to type h
+            if they want to hit, or anything else if they want to stand.
+          </p>
+        </div>
       </article>
       
-      <article>
+      <article id='instructions'>
         <h3>Blackjack Game</h3>
-        <p>The player continues to receive cards, and their sum continues to go up, until:</p>
-        <p>1. They no longer want to hit.</p>
-        <p>2. Their sum exceeds 21, in which case they lose.</p>
-        <p>3. Their sum amounts to exactly 21, in which case they win.</p>
-        <p>The player is told their current sum before every opportunity to hit.</p>
+        <div class='build'>
+          <p class='large-font'>The player continues to receive cards, and their sum continues to go up, until:</p>
+          <p>1. They no longer want to hit.</p>
+          <p>2. Their sum exceeds 21, in which case they lose.</p>
+          <p>3. Their sum amounts to exactly 21, in which case they win.</p>
+          <p class='large-font'>The player is told their current sum before every opportunity to hit.</p>
+        </div>
       </article>
 
       <article>
@@ -1243,6 +1443,27 @@ end</pre>
         <p>Otherwise if the player's sum is greater than the dealer's sum, then the player wins.</p>
         <p>Otherwise if the player's sum is equal to the dealer's sum, then there is a tie.</p>
         <p>In all other cases, the player loses.</p>
+      </article>
+      
+      <article id='credits-book'>
+        <style>
+          #credits-book img { margin: 30px 0px 0px 100px; }
+        </style>
+        <h3>Credits</h3>
+        <p>Inspired by Chris Pine's <b>Learn to Program</b></p>
+        <img src='images/learn-to-program.jpg'>
+      </article>
+      
+      <article id='credits-twg'>
+        <style>
+          #credits-twg .large-font { line-height: 80px; margin: 100px; text-align: center; }
+        </style>
+        <p class='large-font'>
+          Big, big thank you to <br /><a href='http://www.theworkinggroup.ca'>The Working Group</a>, 
+          to <a href='http://twitter.com/jack_neto'>Jack</a>, <a href='http://twitter.com/tadmanter'>Scott</a>, 
+          and <a href='http://twitter.com/bgilham'>Brian</a>, for helping out with this workshop, 
+          and to <a href='http://ladieslearningcode.com/'>Ladies Learning Code</a>!
+        </p>
       </article>
       
     </section>
