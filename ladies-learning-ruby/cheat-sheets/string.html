@@ -8,9 +8,9 @@
       padding-bottom: 20px;
     }
     .heading {
-      font-size: 40px;
+      font-size: 30px;
       font-weight: bold;
-      padding: 0px 40px 0px 30px;
+      padding: 0px 30px 0px 30px;
       text-align: center;
     }
     .example {
@@ -19,6 +19,10 @@
       border-radius: 20px;
       padding: 20px;
     }
+    .try {
+      display: inline;
+      padding-right: 30px
+    }
   </style>
 
   <div class='title'>String</div>
@@ -26,41 +30,34 @@
     <tr>
       <td class='heading'>chop</td>
       <td class='example'>
-        "ladies".chop
-        <br /><br />
-        "a lady ".chop
-        <br /><br />
-        "12345".chop
+        <div class='try'>"ladies".chop</div>
+        <div class='try'>"a lady ".chop</div>
+        <div class='try'>"12345".chop</div>
       </td>
     </tr>
     <tr>
       <td class='heading'>*</td>
       <td class='example'>
-        "ladies" * 4
-        <br /><br />
-        "a" * 2 * 3
-        <br /><br />
-        4 * "ladies"
+        <div class='try'>"ladies" * 4</div>
+        <div class='try'>"a" * 2 * 3</div>
+        <div class='try'>4 * "ladies"</div>
       </td>
     </tr>
     <tr>
       <td class='heading'>downcase</td>
       <td class='example'>
-        "LADieS".downcase
-        <br /><br />
-        "learning".downcase
-        <br /><br />
-        "12345".downcase
+        <div class='try'>"LADieS".downcase</div>
+        <div class='try'>"learning".downcase</div>
+        <div class='try'>"12345".downcase</div>
+        <div class='try'>"ALL CAPS".downcase</div>
       </td>
     </tr>
     <tr>
       <td class='heading'>empty?</td>
       <td class='example'>
-        "".empty?
-        <br /><br />
-        "empty".empty?
-        <br /><br />
-        " ".empty?
+        <div class='try'>"".empty?</div>
+        <div class='try'>"empty".empty?</div>
+        <div class='try'>" ".empty?</div>
       </td>
     </tr>
     <tr>
@@ -76,11 +73,9 @@
     <tr>
       <td class='heading'>next</td>
       <td class='example'>
-        "a".next
-        <br /><br />
-        "Z".next
-        <br /><br />
-        "aa".next
+        <div class='try'>"a".next</div>
+        <div class='try'>"Z".next</div>
+        <div class='try'>"aa".next</div>
       </td>
     </tr>
     <tr>
