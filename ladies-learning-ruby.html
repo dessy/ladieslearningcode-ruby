@@ -77,12 +77,15 @@
         <img src="images/machine-language.jpg" width="600" height="411" border="1">
       </article>
 
-      <article>
+      <article id='middle-ground'>
         <h3>
           This is where a programming language comes in.
         </h3>
-        <p>A programming language is a language that is relatively easy for you to learn, but can also be understood by the computer.</p>
-        <p>It's the middle ground between English and the language that the computer understands.</p>
+        <style>
+          #middle-ground p { margin-top: 100px }
+        </style>
+        <p>A programming language is a language that is relatively <b>easy for you to learn</b>, but can also be <b>understood by the computer</b>.</p>
+        <p>It's the <b>middle ground</b> between English and the language that the computer understands.</p>
       </article>
       
       <article id='stupid-computer'>
@@ -95,19 +98,23 @@
         <p class='large-font'>Your computer can only do what you tell it to if you give it exact instructions.</p>
       </article>
       
-      <article>
+      <article id='stupid-computer'>
         <h3>People vs. Computers</h3>
-        <p>
+        <p class='large-font'>
           Suppose you had to teach a person how to make a peanut butter sandwich.
           You might give the person an easy to follow recipe.
         </p>
+      </article>
+      
+      <article>
+        <h3>People vs. Computers</h3>
         <p>1. Toast two slices of bread</p>
         <p>2. Spread peanut butter on one slice of bread</p>
         <p>3. Spread jam on the other slice of bread</p>
         <p>4. Put the two pieces of bread together</p>
         <p>5. Put the sandwich on a plate and serve it</p>
       </article>
-            
+      
       <article>
         <h3>People understand GENERAL instructions.</h3>
         <p>
@@ -230,6 +237,16 @@ end
         </section>
       </article>
 
+      <article id='ruby-robot'>
+        <style>
+          #ruby-robot img { margin: 50px 0 0 450px; }
+        </style>
+        <h3>
+          Meet Ruby Robot
+        </h3>
+        <img src="images/robot.png">
+      </article>
+
       <article id='irb-intro'>
         <style>
           #irb-intro .instructions { margin-top: 100px; }
@@ -322,6 +339,20 @@ end
           <p class='large-font'>The word <b>"ladies"</b> is a <b>String</b>.
           <p>Integers and Strings are classes in Ruby. That's another programming word!</p>
         </div>
+      </article>
+
+      <article id='back-ruby-robot'>
+        <style>
+          #back-ruby-robot .large-font { margin: 80px 0 50px 0; }
+        </style>
+        <h3>
+          Back to Ruby Robot
+        </h3>
+        <p>Ruby Robot has pages and pages of instructions for what to do with different classes of objects.</p>
+        <p class='large-font'>When you ask Ruby Robot what <b>1 + 2</b> is:</p>
+        <p>It finds the instruction sheet for INTEGER.</p>
+        <p>Scans the instruction sheet for <b>+</b>.</p>
+        <p>Sees that when you ask for an INTEGER + INTEGER, you want it to add the two together.</p>
       </article>
 
       <article>
@@ -433,6 +464,17 @@ end
           <pre>=> "ladieslearningcode"</pre></section>
         <p>You've just <b>assigned</b> the String "ladieslearningcode to the <b>variable</b> llc.</p>
         <p>A programmer would say that the variable llc points to the object "ladieslearningcode".</p>
+      </article>
+      
+      <article id='back-ruby-robot'>
+        <style>
+          #back-ruby-robot .large-font { margin: 80px 0 50px 0; }
+        </style>
+        <h3>
+          Back to Ruby Robot
+        </h3>
+        <p class='large-font'>You gave Ruby Robot the string "<b>ladieslearningcode</b>", and asked it to put a sticky note with "<b>llc</b>" on that string.</p>
+        <p class='large-font'>Now, when you ask for "llc", Ruby Robot will know where to find your string, because it has labelled it.</p>
       </article>
       
       <article>
