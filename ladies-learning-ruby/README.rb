@@ -43,7 +43,7 @@ animal + ". Your eyes open, and you wonder where you are. The " +
 animal + " smiles at you from the ceiling and " + 
 plural_verb + " around. You see four walls that melt and breathe, and the room is spinning. In the middle of the movement you see " + 
 adjective + " " + plural_noun + ", which " + present_tense_verb + " back and fourth, changing into all the colours of a " + 
-noun + ". The snowmen sing to you in many voices, saying, '" + 
+noun + ". The " + plural_noun + " sing to you in many voices, saying, '" + 
 name + ", " + name + " go back to sleep.' So, you close your eyes, realizing that it was all just a dream."
 
 # SLIDE 61
