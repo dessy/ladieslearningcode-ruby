@@ -43,7 +43,7 @@ Running ruby
 - You should see ruby 1.9.2p290 followed by other information
 - Type irb to enter the ruby console
 - Type 1 + 2
-- See the result 2 printed to the screen
+- See the result 3 printed to the screen
 - Type 2 * 5
 - You can see the Ruby can perform calculations
 - You've just met your first data type! An integer. 
