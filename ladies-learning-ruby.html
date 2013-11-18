@@ -273,7 +273,7 @@ end
         <style>
           #ask-ruby .large-font { margin-top: 100px; }
         </style>
-        <section class='build'>
+        <section>
           <pre>irb</pre>
           <pre>ruby-1.9.2-p290 :001 > </pre>
           <p class='large-font'>Let's ask Ruby to do something.</p>
@@ -281,7 +281,7 @@ end
       </article>
       
       <article>
-        <section class='build'>
+        <section>
           <pre>> 1 + 1</pre>
           <pre>=> 2</pre>
           <pre>> 462 * 86</pre>
@@ -294,7 +294,7 @@ end
         <style>
           #ruby-knows .large-font { margin-top: 100px; }
         </style>
-        <section class='build'>
+        <section>
           <pre>> 1 + 2 + 3<br>=> 6</pre>
           <pre>> "ladies" + "learning" + "code"</pre>
           <pre>=> "ladieslearningcode"</pre>
@@ -333,7 +333,7 @@ end
           #classes-galore .large-font { margin: 70px 0px; }
         </style>
         <h3>Classes</h3>
-        <div class='build'>
+        <div>
           <p>Ruby is extremely picky and needs to classify everything before it knows what to do with it.<br>Ruby knows that ...</p>
           <p class='large-font'>The number <b>1</b> is an <b>Integer</b>.
           <p class='large-font'>The word <b>"ladies"</b> is a <b>String</b>.
@@ -405,8 +405,8 @@ end
         <h3>
           Playing with Integers
         </h3>
+        <pre>> 99.next</pre>
         <section class='build'>
-          <pre>> 99.next</pre>
           <pre>=> 100</pre>
 
           <pre>> 99.odd?</pre>
@@ -421,8 +421,8 @@ end
         <h3>
           Simple String Manipulation
         </h3>
+        <pre>> "ladieslearningcode".capitalize</pre>
         <section class='build'>
-          <pre>> "ladieslearningcode".capitalize</pre>
           <pre>=> "Ladieslearningcode"</pre>
 
           <pre>> "ladieslearningcode".upcase</pre>
@@ -440,7 +440,7 @@ end
         <h3>
           Methods
         </h3>
-        <div class='build'>
+        <div>
           <p class='large-font'><b>next</b>, <b>odd?</b>, and <b>even?</b> are all methods that you can call on an Integer.</p>
           <p class='large-font'><b>capitalize</b>, <b>upcase</b>, and <b>reverse</b> are all methods that you can call on a String.</p>
           <p class='large-font'>Methods are actions.</p>
@@ -482,9 +482,10 @@ end
           Variables Can (And Often Do!) Vary
         </h3>
         <p>A variable is called just that because the object it points to can change.</p>
+        <pre>> llc = "a lady learning code"</pre><pre>=> "a lady learning code"</pre>
+        <div>llc <img src='images/arrow.png'> "a lady learning code"</div>
+        <br />
         <section class='build'>
-          <pre>> llc = "a lady learning code"</pre><pre>=> "a lady learning code"</pre>
-          <div>llc <img src='images/arrow.png'> "a lady learning code"</div>
           <p>Now let's ask for the value of llc.</p>
           <pre>> llc</pre><pre>=> "a lady learning code"</pre>
         </section>
@@ -492,9 +493,10 @@ end
       
       <article>
         <p>Let's try some more</p>
+        <pre>> llc = 99</pre><pre>=> 99</pre>
+        <div>llc <img src='images/arrow.png'> 99</div>
+        <br />
         <section class='build'>
-          <pre>> llc = 99</pre><pre>=> 99</pre>
-          <div>llc <img src='images/arrow.png'> 99</div>
           <p>Let's ask for the value of llc once again.</p>
           <pre>> llc</pre><pre>=> 99</pre>
         </section>
@@ -503,7 +505,7 @@ end
       <article>
         <h3>The More the Merrier</h3>
         <p>Let's introduce another variable.</p>
-        <section class='build'>
+        <section>
           <pre>> copy_cat = llc</pre><pre>=> 99</pre>
           <div>llc <img src='images/arrow.png'> 99 <img src='images/back-arrow.png'> copy_cat</div>
         </section>
@@ -569,7 +571,7 @@ end
         <h3>
           Let's Try One More
         </h3>
-        <div class='build'>
+        <div>
           <pre>> llc.length</pre>
           <pre>=> 18</pre>
           <p class='large-font'>
@@ -595,16 +597,15 @@ end
           Writing Our First Program
         </h3>
         <p>
-          Open any text editor, add the same code, and save it as twitter.rb in your llc directory.
+          From your text editor, open the file twitter.rb in your llc directory and add the following:
         </p>
         <section>
-          <pre>tweet = "I'm writing my first program at the @llcodedotcom<br>Intro to Ruby workshop!"<br>tweet.length</pre>
+          <pre>tweet = "I'm writing my first program at the @llcodedotcom<br>Intro to Ruby workshop!"<br>puts tweet.length</pre>
         </section>
         <p>To run your program, type <b>quit</b> to exit from IRB, and then type:</p>
         <section>
           <pre>ruby twitter.rb</pre>
         </section>
-        <div class='build'><p>Wait, what? Why didn't it show me the length of my string?</p></div>
       </article>
       
       <article id='ruby-output'>
@@ -615,11 +616,8 @@ end
           Outputting Text to the Screen
         </h3>
         <p class='large-font'>IRB is like back-and-forth text messaging.</p>
-        <p class='large-font'>A program has to be told when to output something</p>
-        <p>Modify your program:</p>
-        <section>
-          <pre>tweet = "I'm writing my first program at the @llcodedotcom<br>Intro to Ruby workshop!"<br>puts tweet.length</pre>
-        </section>
+        <p class='large-font'>A program has to be told when to output something with <b>puts</b>.</p>
+        <p class='large-font'>Let's try a few more examples together.</p>
       </article>
       
       <!-- just words, highlight in a different colour before -->
@@ -658,7 +656,7 @@ end
           Getting Input From the User
         </h3>
         <p>The real Twitter...</p>
-        <div class='build'>
+        <div>
           <p class='large-font'>Asks you to type something.</p>
           <p class='large-font'>Tells you how many characters you're working with.</p>
           <p>So far, we've just been putting our tweet directly into the program.</p>
@@ -796,7 +794,7 @@ end
         </h3>
         <p class='large-font'>The math symbol for <b>greater than</b> is <b>></b></p>
         <p>Try the code below in IRB:</p>
-        <section class='build'>
+        <section>
           <pre>> 200 > 140</pre><pre>=> true</pre>
         </section>
       </article>
@@ -806,8 +804,9 @@ end
           Conditional Logic: Greater Than
         </h3>
         <p>Now try:</p>
+        <pre>> number_of_characters = 200</pre><pre>=> 200</pre>
+        <br />
         <section class='build'>
-          <pre>> number_of_characters = 200</pre><pre>=> 200</pre>
           <pre>> number_of_characters > 140</pre><pre>=> true</pre>
         </section>
       </article>
@@ -817,8 +816,8 @@ end
           Conditional Logic: Greater Than
         </h3>
         <p>Now try:</p>
+        <pre>> number_of_characters = 80</pre><pre>=> 80</pre>
         <section class='build'>
-          <pre>> number_of_characters = 80</pre><pre>=> 80</pre>
           <pre>> number_of_characters > 140</pre><pre>=> false</pre>
         </section>
       </article>
@@ -832,8 +831,8 @@ end
         </h3>
         <p class='large-font'>The math symbol for <b>less than</b> is <b><</b></p>
         <p>Try the code below in irb</p>
+        <pre>> llc = "ladieslearningcode"</pre><pre>=> "ladieslearningcode"</pre>
         <section class='build'>
-          <pre>> llc = "ladieslearningcode"</pre><pre>=> "ladieslearningcode"</pre>
           <pre>> llc.length < 140</pre><pre>=> true</pre>
         </section>
       </article>
