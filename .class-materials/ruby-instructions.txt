@@ -1,0 +1,85 @@
+INTEGER
++ - add together
+next - give the next number
+even? - is the number even?
+odd? - is the number odd?
+round - rounds up or down to nearest integer 
+to_s - converts to a string
+abs - absolute value
+zero? - is it 0?
+ceil - rounds up to the nearest integer
+* - multiply two integers together
+puts - displays the integer
+> - greater than
+< - less than
+== - are they equal?
+<= - less than OR equal
+>= - greater than or equal
+!= - not equal
+
+
+
+STRING
++ - put the strings together
+capitalize - capitalize first letter of string
+upcase - make all letters capital
+reverse - reverse all of the letter
+chop - take off last letter of string
+* - if followed by integer, repeat that many times
+downcase - make everything lowercase
+empty? - is the string empty?
+include? - does the string include another string?
+next - next letter in sequence
+delete - deletes all individual letters in string
+length - count the number of letters
+puts - displays the string
+gets - takes a string from us including the enter key
+gets.chomp - takes a string without the enter key
+
+
+
+ARRAY
+each - go through each element
+join(", ") - turn to string w/ comma, return original
+reverse - reverse elements, return original
+[x] - element at x, return original
+uniq - remove duplicates, return original
+delete_at(x) - remove element at x, return new array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

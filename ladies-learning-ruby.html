@@ -42,6 +42,21 @@
         </p>
       </article>
 
+      <article id='ruby-rocks'>
+        <style>
+          #ruby-rocks .large-font { margin: 50px; }
+        </style>
+        <h3>
+          Why Ruby Rocks!
+        </h3>
+        <p>Created in 1993 by Yukihiro Matsumoto, from Japan.</p>
+        <p class='large-font'> 
+          "I hope to see Ruby help every programmer in the world to be productive, and to enjoy programming, and to be happy. 
+          That is the primary purpose of the Ruby language."
+        </p>
+        <p>Ruby is <b>fun</b>, it's <b>easy to learn</b>, and the <b>syntax is very forgiving</b>.</p>
+      </article>
+
       <article id="what-is-ruby">
         <style>
           #what-is-ruby p { margin: 100px 0px; font-size: 40px; line-height: 50px; };
@@ -314,19 +329,6 @@ end
         <p class='ruby-class'>Letters, words, and sentences are called <b>STRINGS</b>. We tell Ruby that we are intending to use a string by wrapping it in quotes.</p>
       </article>
 
-      <article id='objects-objects'>
-        <style>
-          #objects-objects .large-font { margin: 150px 0px; }
-        </style>
-        <h3>
-          Objects, Objects, Everywhere!
-        </h3>
-        <p>You've already met Objects. That's a programming word!</p>
-        <div class='build'>
-          <p class='large-font'>Everything in Ruby is an Object.</p>
-        </div>
-      </article>
-
       <article id='classes-galore'>
         <style>
           #classes-galore .build { margin-top: 40px; }
@@ -353,52 +355,6 @@ end
         <p>It finds the instruction sheet for INTEGER.</p>
         <p>Scans the instruction sheet for <b>+</b>.</p>
         <p>Sees that when you ask for an INTEGER + INTEGER, you want it to add the two together.</p>
-      </article>
-
-      <article>
-        <h3>City</h3>
-        <div class='class-diagram'>
-          <img src="images/toronto.png">
-          <img src="images/london.jpg">
-          <br>
-          <img src="images/new-york.jpg">
-          <img src="images/paris.jpg">
-        </div>
-      </article>
-
-      <article id='city-instance'>
-        <style>
-          #city-instance p { margin: 70px 0px; }
-        </style>
-        <div class='build'>
-          <p class='large-font'>Toronto is an instance of the class City.</p>
-          <p class='large-font'>London is an instance of the class City.</p>
-          <p class='large-font'>New York is an instance of the class City.</p>
-          <p class='large-font'>Paris is an instance of the class City.</p>
-        </div>
-      </article>
-
-      <article id='string-class'>
-        <style>
-          #string-class div { padding: 20px; }
-        </style>
-        <h3>String</h3>
-        <div class='class-diagram'>
-          "ladies"<br><br>
-          "ladieslearningcode"<br><br>
-          "The dog jumped over the fence."
-        </div>
-      </article>
-      
-      <article id='string-instance'>
-        <style>
-          #string-instance p { margin: 70px 0px; }
-        </style>
-        <div class='build'>
-          <p class='large-font'>"ladies" is an instance of the class String.</p>
-          <p class='large-font'>"ladieslearningcode" is an instance of the class String.</p>
-          <p class='large-font'>"The dog jumped over the fence." is an instance of the class String.</p>
-        </div>
       </article>
 
       <article>
@@ -485,9 +441,10 @@ end
         <pre>> llc = "a lady learning code"</pre><pre>=> "a lady learning code"</pre>
         <div>llc <img src='images/arrow.png'> "a lady learning code"</div>
         <br />
+        <p>Now let's ask for the value of llc.</p>
+        <pre>> llc</pre>
         <section class='build'>
-          <p>Now let's ask for the value of llc.</p>
-          <pre>> llc</pre><pre>=> "a lady learning code"</pre>
+          <pre>=> "a lady learning code"</pre>
         </section>
       </article>
       
@@ -496,9 +453,10 @@ end
         <pre>> llc = 99</pre><pre>=> 99</pre>
         <div>llc <img src='images/arrow.png'> 99</div>
         <br />
+        <p>Let's ask for the value of llc once again.</p>
+        <pre>> llc</pre>
         <section class='build'>
-          <p>Let's ask for the value of llc once again.</p>
-          <pre>> llc</pre><pre>=> 99</pre>
+          <pre>=> 99</pre>
         </section>
       </article>
       
@@ -540,10 +498,11 @@ end
       
       <article>
         <h3>Modifying the value with a method</h3>
+        <pre>> llc.reverse</pre><pre>=> "edocgninraelseidal"</pre>
+        <p>Try asking for the value of llc now.</p>
+        <pre>> llc</pre>
         <section class='build'>
-          <pre>> llc.reverse</pre><pre>=> "edocgninraelseidal"</pre>
-          <p>Try asking for the value of llc now.</p>
-          <pre>> llc</pre><pre>=> "ladieslearningcode"</pre>
+          <pre>=> "ladieslearningcode"</pre>
         </section>
       </article>
       
@@ -552,7 +511,7 @@ end
           #wait-why p { margin: 50px 0px; }
         </style>
         <h3>Wait. Why didn't it change?</h3>
-        <section class='build'>
+        <section>
           <p class='large-font'>llc is still pointing to "ladieslearningcode". You didn't tell it to point to a different string.</p>
           <div>llc <img src='images/arrow.png'> "ladieslearningcode"</div>
           <p class='large-font'>If you want the value to change, you have to set it to something else.</p>
@@ -560,9 +519,10 @@ end
       </article>
       
       <article>
+        <pre>> llc = llc.reverse</pre><pre>=> "edocgninraelseidal"</pre>
+        <pre>> llc</pre>
         <section class='build'>
-          <pre>> llc = llc.reverse</pre><pre>=> "edocgninraelseidal"</pre>
-          <pre>> llc</pre><pre>=> "edocgninraelseidal"</pre>
+          <pre>=> "edocgninraelseidal"</pre>
           <p class='large-font'>If you want the value of a variable to change, you have to explicitly tell it to change.</p>
         </section>
       </article>
@@ -583,10 +543,10 @@ end
       
       <article>
         <h3>Doing like Twitter does.</h3>
+        <pre>> tweet = "I'm writing my first program at the @llcodedotcom<br>Intro to Ruby workshop!"</pre>
+        <pre>=> "I'm writing my first program at the @llcodedotcom <br>Intro to Ruby workshop!"</pre>
+        <pre>> tweet.length</pre>
         <section class='build'>
-          <pre>> tweet = "I'm writing my first program at the @llcodedotcom<br>Intro to Ruby workshop!"</pre>
-          <pre>=> "I'm writing my first program at the @llcodedotcom <br>Intro to Ruby workshop!"</pre>
-          <pre>> tweet.length</pre>
           <pre>=> 73</pre>
           <p class='large-font'>We now know enough to write a program.</p>
         </section>
@@ -669,9 +629,9 @@ end
         </h3>
         <p>The <b>puts</b> method is used for output, and the <b>gets</b> method is used for input. Try this:</p>
         <p>The gets method warns Ruby that you're about to speak.</p>
+        <pre>> tweet = gets</pre>
+        <pre class='all-string'>I'm learning Ruby with #ladieslearningcode</pre><pre>=> "I'm learning Ruby with #ladieslearningcode\n"</pre>
         <section class='build'>
-          <pre>> tweet = gets</pre>
-          <pre class='all-string'>I'm learning Ruby with #ladieslearningcode</pre><pre>=> "I'm learning Ruby with #ladieslearningcode\n"</pre>
           <p>
             Wait, we didn't type \n in our tweet. What is that?
           </p>
@@ -686,7 +646,7 @@ end
           The \n is there because you hit the enter button after you typed your tweet. It represents a new line, and counts as exactly one character.
           To get rid of it, do this:
         </p>
-        <section class='build'>
+        <section>
           <pre>> tweet = gets.chomp</pre>
           <pre class='all-string'>I'm learning Ruby with #ladieslearningcode</pre>
           <pre>=> "I'm learning Ruby with #ladieslearningcode"</pre>
@@ -698,26 +658,13 @@ end
           Asking for Input
         </h3>
         <p>Now try this:</p>
+        <pre>> tweet = gets.chomp</pre>
+        <pre class='all-string'>I'm a lady learning code with @llcodedotcom #ladieslearningcode</pre>
+        <pre>=> "I'm a lady learning code with @llcodedotcom #ladieslearningcode"</pre>
+        <pre>> puts tweet</pre>
         <section class='build'>
-          <pre>> tweet = gets.chomp</pre>
-          <pre class='all-string'>I'm a lady learning code with @llcodedotcom #ladieslearningcode</pre>
-          <pre>=> "I'm a lady learning code with @llcodedotcom #ladieslearningcode"</pre>
-          <pre>> puts tweet</pre>
           <pre class='all-string'>I'm a lady learning code with @llcodedotcom #ladieslearningcode<br>=> nil</pre>
         </section>
-      </article>
-      
-      <article id='nil-nothing'>
-        <style>
-          #nil-nothing p { margin: 80px 0px; }
-        </style>
-        <h3>What's nil? It's nothing, don't worry.</h3>
-        <p>You asked Ruby to output your tweet, and Ruby did just that.</p>
-        <p>
-          Remember that in IRB, Ruby always responds to your message.
-          This time, it gave the output, and had nothing else to say, so it returned nil. 
-        </p>
-        <p>nil is also an Object, and it just represents nothing.</p>
       </article>
 
       <article id='ask-for-tweet'>
@@ -806,8 +753,9 @@ end
         <p>Now try:</p>
         <pre>> number_of_characters = 200</pre><pre>=> 200</pre>
         <br />
+        <pre>> number_of_characters > 140</pre>
         <section class='build'>
-          <pre>> number_of_characters > 140</pre><pre>=> true</pre>
+          <pre>=> true</pre>
         </section>
       </article>
       
@@ -817,8 +765,9 @@ end
         </h3>
         <p>Now try:</p>
         <pre>> number_of_characters = 80</pre><pre>=> 80</pre>
+        <pre>> number_of_characters > 140</pre>
         <section class='build'>
-          <pre>> number_of_characters > 140</pre><pre>=> false</pre>
+          <pre>=> false</pre>
         </section>
       </article>
       
@@ -832,8 +781,9 @@ end
         <p class='large-font'>The math symbol for <b>less than</b> is <b><</b></p>
         <p>Try the code below in irb</p>
         <pre>> llc = "ladieslearningcode"</pre><pre>=> "ladieslearningcode"</pre>
+        <pre>> llc.length < 140</pre>
         <section class='build'>
-          <pre>> llc.length < 140</pre><pre>=> true</pre>
+          <pre>=> true</pre>
         </section>
       </article>
       
@@ -1140,7 +1090,7 @@ end</pre>
       
       <article>
         <h3>Count from 1 to 5</h3>
-        <p>Create a new program with the following code, or use run the program in assignments/loop_3.rb:</p>
+        <p>Create a new program with the following code, or use the program in assignments/loop_3.rb:</p>
         <section>
           <pre>
 puts "Okay, on the count of 5 ..."
@@ -1185,9 +1135,9 @@ puts "GO!"</pre>
         <section>
           <pre>
 99.downto(1).each do |i|
-  puts "#{i} bottles of beer on the wall, #{i} bottles of beer.
+  puts "#{i} bottles of soda on the wall, #{i} bottles of soda.
         Take one down, pass it around, 
-        and now there are #{i - 1} bottles of beer on the wall!"
+        and now there are #{i - 1} bottles of soda on the wall!"
   sleep 0.5
 end</pre>
         </section>
@@ -1198,9 +1148,9 @@ end</pre>
         <section>
           <pre>
 99.downto(1).each do |i|
-  puts "#{i} bottles of beer on the wall, #{i} bottles of beer.
+  puts "#{i} bottles of soda on the wall, #{i} bottles of soda.
         Take one down, pass it around, 
-        and now there are #{i - 1} bottles of beer on the wall!"
+        and now there are #{i - 1} bottles of soda on the wall!"
   sleep 0.5
 end</pre>
         </section>
@@ -1225,9 +1175,9 @@ end</pre>
         <h3>Counting down</h3>
         <p>Wait a second, how did we get an Integer in that String?</p>
         <section>
-          <pre>puts "#{i} bottles of beer on the wall, #{i} bottles of beer.
+          <pre>puts "#{i} bottles of soda on the wall, #{i} bottles of soda.
       Take one down, pass it around, 
-      and now there are #{i - 1} bottles of beer on the wall!"
+      and now there are #{i - 1} bottles of soda on the wall!"
           </pre>
         </section>
         <p class='large-font'>
@@ -1238,22 +1188,20 @@ end</pre>
 
       <article>
         <h3>String Interpolation</h3>
+        <pre>> lesson = "Ruby"</pre>
+        <pre>=> "Ruby"</pre>
+        <pre>> tweet = "I am learning all about #{lesson} at the <br />#ladieslearningcode workshop"</pre>
         <section class='build'>
-          <pre>> lesson = "Ruby"</pre>
-          <pre>=> "Ruby"</pre>
-          
-          <pre>> tweet = "I am learning all about #{lesson} at the <br />#ladieslearningcode workshop"</pre>
           <pre>=> "I am learning all about Ruby at the <br />#ladieslearningcode workshop"</pre>
         </section>
       </article>
 
       <article>
         <h3>String Interpolation</h3>
+        <pre>> lesson = "String Interpolation"</pre>
+        <pre>=> "String Interpolation"</pre>        
+        <pre>> tweet = "I am learning all about #{lesson} at the <br />#ladieslearningcode workshop"</pre>
         <section class='build'>
-          <pre>> lesson = "String Interpolation"</pre>
-          <pre>=> "String Interpolation"</pre>
-          
-          <pre>> tweet = "I am learning all about #{lesson} at the <br />#ladieslearningcode workshop"</pre>
           <pre>=> "I am learning all about String Interpolation at the <br />#ladieslearningcode workshop"</pre>
         </section>
       </article>
@@ -1350,7 +1298,7 @@ end</pre>
         <p>
           Back in IRB, let's create an array of winning lottery numbers and store it in the variable lottery.
         </p>
-        <section class='build'>
+        <section>
           <pre>> lottery = [7, 13, 14, 16, 14, 48]</pre>
           <pre>=> [7, 13, 14, 16, 14, 48]</pre>
         </section>
@@ -1360,11 +1308,10 @@ end</pre>
         <h3>
           Methods that do NOT modify the array
         </h3>
+        <pre>> lottery.join(', ')</pre>
+        <pre>=> "7, 13, 14, 16, 14, 48"</pre>
+        <pre>> lottery</pre>
         <section class='build'>
-          <pre>> lottery.join(', ')</pre>
-          <pre>=> "7, 13, 14, 16, 14, 48"</pre>
-
-          <pre>> lottery</pre>
           <pre>=> [7, 13, 14, 16, 14, 48]</pre>
         </section>
       </article>
@@ -1373,8 +1320,8 @@ end</pre>
         <h3>
           Methods that do NOT modify the array
         </h3>
+        <pre>> lottery[0]</pre>
         <section class='build'>
-          <pre>> lottery[0]</pre>
           <pre>=> 7</pre>
 
           <pre>> lottery[1]</pre>
@@ -1389,11 +1336,10 @@ end</pre>
         <h3>
           Methods that do NOT modify the array
         </h3>
+        <pre>> lottery.uniq</pre>
+        <pre>=> [7, 13, 14, 16, 48]</pre>
+        <pre>> lottery</pre>
         <section class='build'>
-          <pre>> lottery.uniq</pre>
-          <pre>=> [7, 13, 14, 16, 48]</pre>
-          
-          <pre>> lottery</pre>
           <pre>=> [7, 13, 14, 16, 14, 48]</pre>
         </section>
       </article>
@@ -1402,11 +1348,10 @@ end</pre>
         <h3>
           Methods that DO modify the array
         </h3>
+        <pre>> lottery.delete_at(0)</pre>
+        <pre>=> 7</pre>
+        <pre>> lottery</pre>
         <section class='build'>
-          <pre>> lottery.delete_at(0)</pre>
-          <pre>=> 7</pre>
-          
-          <pre>> lottery</pre>
           <pre>=> [13, 14, 16, 14, 48]</pre>
         </section>
       </article>
@@ -1415,11 +1360,10 @@ end</pre>
         <h3>
           Methods that DO modify the array
         </h3>
+        <pre>> lottery << 92</pre>
+        <pre>=> [13, 14, 16, 14, 48, 92]</pre>
+        <pre>> lottery</pre>
         <section class='build'>
-          <pre>> lottery << 92</pre>
-          <pre>=> [13, 14, 16, 14, 48, 92]</pre>
-          
-          <pre>> lottery</pre>
           <pre>=> [13, 14, 16, 14, 48, 92]</pre>
         </section>
       </article>

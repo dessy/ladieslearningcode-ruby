@@ -1,0 +1,9 @@
+YES - true
+NO - false
+ANY LETTER, WORD, ETC. - string
+NUMBER - integer
+CATEGORY - class
+COMMAND - method
+ANY ITEM IN RUBY WORLD - object
+STICKY NOTE - variable
+ENTER KEY - \n
